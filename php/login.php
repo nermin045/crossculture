@@ -4,6 +4,7 @@
  * User: Xiao
  * Date: 17/04/2016
  * Time: 1:35 AM
+ * Function:
  */
 require 'dbinfo.php';
 session_start();

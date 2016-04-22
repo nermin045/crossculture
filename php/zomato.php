@@ -5,6 +5,7 @@
  * User: Xiao
  * Date: 14/04/2016
  * Time: 8:32 PM
+ * Function: Get information from zomato API
  */
 class zomato
 {

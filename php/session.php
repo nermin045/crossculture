@@ -4,6 +4,8 @@
  * User: Xiao
  * Date: 18/04/2016
  * Time: 1:04 AM
+ * Function: get the session information.
+ * If user have not logged in, redirect user to homepage
  */
 require 'dbinfo.php';
 session_start();

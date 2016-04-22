@@ -4,6 +4,7 @@
  * User: Xiao
  * Date: 18/04/2016
  * Time: 4:54 PM
+ * Function: Organize Event Page, Enter information for ORGANIZE an event
  */
 include '../php/session.php';
 ?>
@@ -30,9 +31,11 @@ include '../php/session.php';
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
-    <script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript"
+            src="../bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
-<link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+    <link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet"/>
 
     <script src="../js/gen_validatorv4.js" type="text/javascript"></script>
 
@@ -97,7 +100,8 @@ include '../php/session.php';
                         <div class="arrow"></div>
                         <a href="../pages/event.php?clt=test">Event <span
                                 class="icon octicon octicon-list-ordered"></span></a>
-                        <a href="../pages/community.php">Community <span class="icon octicon octicon-organization"></span></a>
+                        <a href="../pages/community.php">Community <span
+                                class="icon octicon octicon-organization"></span></a>
                         <a href="../pages/story.php">Story <span class="icon octicon octicon-squirrel"></span></a>
                     </div>
                 </li>
@@ -185,8 +189,8 @@ include '../php/session.php';
                     <div class="forminput">
                         <div class="container" style="padding: 0px; margin: 0px">
                             <div class="col-md-1" style="padding-left: 0px; width: 3%">
-                                <label for="datetimepicker1" ><b>From</b></label>
-<!--                                <b>From</b>-->
+                                <label for="datetimepicker1"><b>From</b></label>
+                                <!--                                <b>From</b>-->
                             </div>
                             <div class='col-md-4' style="width:250px; padding-bottom: 0px;">
                                 <div class="form-group">
@@ -199,8 +203,8 @@ include '../php/session.php';
                                 </div>
                             </div>
                             <div class="col-md-1" style="margin-left: 20px; width: 3%">
-                                <label for="datetimepicker2" ><b>To</b></label>
-<!--                                <b>To</b>-->
+                                <label for="datetimepicker2"><b>To</b></label>
+                                <!--                                <b>To</b>-->
                             </div>
                             <div class='col-md-4' style="width:250px; padding-bottom: 0px">
                                 <div class="form-group">
@@ -212,33 +216,33 @@ include '../php/session.php';
                 </span>
                                     </div>
                                 </div>
-</div>
-<script type="text/javascript">
-var dateToday = new Date();
-$(function () {
-  $('#datetimepicker1').datetimepicker({
-                                       format: "DD MM YYYY - hh:mm A",
-                                       minDate: dateToday
-                                       });
-  $('#datetimepicker2').datetimepicker({
-                                       format: "DD MM YYYY - hh:mm A",
-                                       minDate: dateToday,
-                                       useCurrent: false //Important! See issue #1075
-                                       });
-  $("#datetimepicker1").on("dp.change", function (e) {
-                           $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
-                           });
-  $("#datetimepicker2").on("dp.change", function (e) {
-                           $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
-                           });
-  });
+                            </div>
+                            <script type="text/javascript">
+                                var dateToday = new Date();
+                                $(function () {
+                                    $('#datetimepicker1').datetimepicker({
+                                        format: "DD MM YYYY - hh:mm A",
+                                        minDate: dateToday
+                                    });
+                                    $('#datetimepicker2').datetimepicker({
+                                        format: "DD MM YYYY - hh:mm A",
+                                        minDate: dateToday,
+                                        useCurrent: false //Important! See issue #1075
+                                    });
+                                    $("#datetimepicker1").on("dp.change", function (e) {
+                                        $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
+                                    });
+                                    $("#datetimepicker2").on("dp.change", function (e) {
+                                        $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+                                    });
+                                });
 
-</script>
+                            </script>
                         </div>
                     </div>
                 </div>
-
-                <div class="formrow">
+            </div>
+            <div class="formrow">
                 <div class="rowtitle">
                     Capacity
                 </div>
@@ -285,10 +289,11 @@ $(function () {
                             <tr>
                                 <td class="label">State</td>
                                 <td class="slimField">
-                                    <input class="field" id="administrative_area_level_1" name="administrative_area_level_1"></td>
+                                    <input class="field" id="administrative_area_level_1"
+                                           name="administrative_area_level_1"></td>
                                 <td class="label">Zip code</td>
                                 <td class="wideField">
-                                <input class="field" id="postal_code" name="postal_code"></td>
+                                    <input class="field" id="postal_code" name="postal_code"></td>
                             </tr>
                             <tr>
                                 <td class="label">Country</td>
@@ -320,10 +325,10 @@ $(function () {
                 </div>
             </div>
             <div class="formrow">
-            <div class="g-recaptcha" data-sitekey="6LeU8h0TAAAAAHKvV84ZVEgg37JxBcGnCOWe5OL4"></div>
-                </div>
+                <div class="g-recaptcha" data-sitekey="6LeU8h0TAAAAAHKvV84ZVEgg37JxBcGnCOWe5OL4"></div>
+            </div>
             <div class="formrow">
-            <button type="submit" name="submit" id="submit" value="submit">Submit</button>
+                <button type="submit" name="submit" id="submit" value="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>
@@ -351,13 +356,13 @@ $(function () {
 <script type="text/javascript">
 
     var frmvalidator = new Validator("eventform");
-    frmvalidator.addValidation("nametext","req","Please enter event name");
-    frmvalidator.addValidation("radio","selone","Please select culture",true);
-    frmvalidator.addValidation("descp","req","Please enter event description");
-    frmvalidator.addValidation("venuetext","req","Please enter venue");
-    frmvalidator.addValidation("autocomplete","req","Please enter event address");
-    frmvalidator.addValidation("datetimepicker1","req","Please enter start date for the event");
-    frmvalidator.addValidation("datetimepicker2","req","Please enter end date for the event name");
+    frmvalidator.addValidation("nametext", "req", "Please enter event name");
+    frmvalidator.addValidation("radio", "selone", "Please select culture", true);
+    frmvalidator.addValidation("descp", "req", "Please enter event description");
+    frmvalidator.addValidation("venuetext", "req", "Please enter venue");
+    frmvalidator.addValidation("autocomplete", "req", "Please enter event address");
+    frmvalidator.addValidation("datetimepicker1", "req", "Please enter start date for the event");
+    frmvalidator.addValidation("datetimepicker2", "req", "Please enter end date for the event name");
 </script>
 
 <script src="../js/maporganize.js"></script>

@@ -10,10 +10,10 @@
 
 require "dbinfo.php";
 include "session.php";
-//var_dump($GLOBALS);
-//echo file_get_contents('php://input');
-//
 $path = '';
+
+//************ get Files, make sure its size is not too large.
+//************ Move image to a folder
 if(isset($_FILES['image'])){
     $errors= array();
     $file_name = uniqid(). $_FILES['image']['name'];
@@ -28,12 +28,13 @@ if(isset($_FILES['image'])){
 
     if(empty($errors)==true){
         move_uploaded_file($file_tmp, $path);
-//        echo "Success";
         header("Location:../pages/myevent.php");
     }else{
         print_r($errors);
     }
 }
+
+//Access database to store the event
 $conn = new mysqli($hn, $un, $pw, $db);
 if ($conn->connect_error) die($conn->connect_error);
 
@@ -41,13 +42,10 @@ $name = $_POST["nametext"];
 $descp = $_POST["comment"];
 $descp = addslashes($descp);
 $eid = 0;
-//$start = $_POST["starttime"];
-//$end = $_POST["endtime"];
-$startdate = date_create_from_format('m/d/Y g:i A', $_POST["starttime"]);
+$startdate = date_create_from_format('d m Y - g:i A', $_POST["starttime"]);
 $start = date_format($startdate, 'Y-m-d').'T'.date_format($startdate, 'H:i:s');
-$enddate = date_create_from_format('m/d/Y g:i A', $_POST["starttime"]);
-$end = date_format($enddate, 'Y-m-d').'T'.date_format($enddate, 'H:i:s');
-$capacity = $_POST["capacity"];
+$enddate = date_create_from_format('d m Y - g:i A', $_POST["starttime"]);
+$end = date_format($enddate, 'Y-m-d').'T'.date_format($enddate, 'H:i:s');$capacity = $_POST["capacity"];
 $logo = $pic;
 $organizer = $_SESSION['login_username'];
 $venue = hexdec(uniqid());
@@ -56,8 +54,8 @@ $venuename = $_POST["venuetext"];
 $venuename = addslashes($venuename);
 $latitude = $_POST["latitude"];
 $longitude = $_POST["longitude"];
-$address1 = $_POST["street_number"];
-$address2 = $_POST["route"];
+$address1 = $_POST["route"];
+$address2 = $_POST["street_number"];
 $city = $_POST["locality"];
 $postal_code = $_POST["postal_code"];
 $culture = $_POST["radio"];
