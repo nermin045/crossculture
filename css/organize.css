@@ -175,3 +175,20 @@ input.radio:checked ~ label {
     height: 20px;
     margin-bottom: 2px;
 }
+
+.btn-group > .btn-primary{
+    color: slategray;
+    background-color: white;
+    border-color: slategray;
+    width: 100px;
+}
+
+.input-group-lg > .input-group-addon{
+    height: 34px !important;
+}
+
+.input-group-lg > .form-control{
+    height: 34px !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+}

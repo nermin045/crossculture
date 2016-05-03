@@ -295,10 +295,46 @@ if (isset($_SESSION['login_username'])) {
                 </div>
             </fieldset>
             <fieldset class="form-group row">
-                <div class="col-md-5">
+                <div class="col-md-10">
+                    <label for="gender">Interest</label>
+                    <br>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" id="interest" name="interest" value="Chinese" autocomplete="off"
+                                   checked="true"> Chinese
+                            <span class="flag-icon flag-icon-cn"></span>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" id="interest" name="interest" value="Greek" autocomplete="off"
+                            > Greek
+                            <span class="flag-icon flag-icon-gr"></span>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" id="interest" name="interest" value="Indian" autocomplete="off"
+                            > Indian
+                            <span class="flag-icon flag-icon-in"></span>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" id="interest" name="interest" value="Italian" autocomplete="off"> Italian
+                            <span class="flag-icon flag-icon-it"></span>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" id="interest" name="interest" value="Turkish" autocomplete="off">
+                            Turkish
+                            <span class="flag-icon flag-icon-tr"></span>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group row">
+                <div class="col-md-6">
                     <label for="autocomplete">Address</label>
-                    <input id="autocomplete" placeholder="Enter your address"
-                           type="text" class="form-control" style="position: relative">
+                    <div class="input-group input-group-lg" style="height: 34px">
+                        <span class="input-group-addon" id="sizing-addon1" style="padding-bottom: 6px;padding-top: 6px"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <input id="autocomplete" placeholder="Enter your address"
+                               type="text" class="form-control" style="position: relative; padding-bottom: 6px;padding-top: 6px">
+                    </div>
+
                 </div>
                 <div class="row" style="margin-top: 10px" hidden="true">
                     <div id="map" class="col-lg-5 col-md-6 col-sm-8 col-xs-12"></div>
@@ -344,57 +380,26 @@ if (isset($_SESSION['login_username'])) {
                     </table>
                 </div>
             </fieldset>
-            <fieldset class="form-group row">
-                <div class="col-md-10">
-                    <label for="gender">Gender</label>
-                    <br>
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary active">
-                            <input type="radio" id="interest" name="interest" value="Chinese" autocomplete="off"
-                                   checked="true"> Chinese
-                            <span class="flag-icon flag-icon-cn"></span>
-                        </label>
-                        <label class="btn btn-primary active">
-                            <input type="radio" id="interest" name="interest" value="Greek" autocomplete="off"
-                            > Greek
-                            <span class="flag-icon flag-icon-gr"></span>
-                        </label>
-                        <label class="btn btn-primary active">
-                            <input type="radio" id="interest" name="interest" value="Indian" autocomplete="off"
-                            > Indian
-                            <span class="flag-icon flag-icon-in"></span>
-                        </label>
-                        <label class="btn btn-primary active">
-                            <input type="radio" id="interest" name="interest" value="Italian" autocomplete="off"
-                            > Italian
-                            <span class="flag-icon flag-icon-it"></span>
-                        </label>
-                        <label class="btn btn-primary active">
-                            <input type="radio" id="interest" name="interest" value="Turkish" autocomplete="off">
-                            Turkish
-                            <span class="flag-icon flag-icon-tr"></span>
-                        </label>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset class="form-group">
 
-                <p><img id="captcha" src="../php/captcha.php" width="160" height="45" border="1" alt="CAPTCHA">
+            <fieldset class="form-group row">
+                <div class="col-md-6">
+                <img id="captcha" src="../php/captcha.php" width="160" height="45" border="1" class="img-rounded" alt="CAPTCHA">
                     <small><a href="#" onclick="document.getElementById('captcha').src = '../php/captcha.php?' + Math.random();
   document.getElementById('captcha_code').value = '';
   return false;
 ">refresh</a></small>
-                </p>
-                <p><input id="captcha_code" type="text" name="captcha" size="6" maxlength="5"
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-3" style="margin-top: 10px">
+                <input id="captcha_code" type="text" name="captcha" class="form-control " size="6" maxlength="5"
                           onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <small>copy the digits from the image into this box</small>
-                </p>
+                </div>
 
             </fieldset>
             <button type="submit" name="submit" value="submit" class="btn btn-primary">
                 Submit
             </button>
-            <br><br><br>
         </form>
     </div>
 
