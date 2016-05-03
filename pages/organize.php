@@ -62,32 +62,32 @@ include '../php/session.php';
         <div class="cta"><a href="http://andytran.me">Forgot your password?</a></div>
     </div>
 </div>
-<header id="navigation" class="navbar-static-top">
-    <div class="container" style="width: 100%">
+
+
+<!--Fixed Navigation
+==================================== -->
+<header id="navigation" class="nav navbar-static-top">
+    <div class="container">
 
         <div class="navbar-header">
             <!-- responsive nav button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                <h3><i class="fa fa-bars"></i></h3>
             </button>
             <!-- /responsive nav button -->
 
             <!-- logo -->
-            <h1 class="navbar-brand">
-                <a href="#body">
-                    <a href="../index.php"><img src="../images/logo.png" width="112" height="36" alt="Logo">
-                    </a>
-            </h1>
+            <a class="navbar-brand" href="../index.php">
+                <img src="../images/logo.png" width="112" height="36" alt="Logo">
+            </a>
             <!-- /logo -->
 
         </div>
 
         <!-- main nav -->
-        <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
-            <ul class="nav navbar-nav">
+        <nav id="main-menu" class="collapse navigation navbar-collapse navbar-right"
+             style="z-index:1000; position: relative" role="navigation">
+            <ul class="nav navbar-nav hidden-xs ">
                 <li><a href="../pages/organize.php">
                         <div style="border-style: solid; border-color: gainsboro; border-width: thin">
                             &nbsp&nbsp Organize an event &nbsp&nbsp
@@ -98,36 +98,70 @@ include '../php/session.php';
                     <a href="#">Service</a>
                     <div id="menu2" class="menu">
                         <div class="arrow"></div>
-                        <a href="../pages/event.php?clt=test">Event <span
+                        <a href="event.php?clt=test">Event <span
                                 class="icon octicon octicon-list-ordered"></span></a>
-                        <a href="../pages/community.php">Community <span
+                        <a href="community.php">Community <span
                                 class="icon octicon octicon-organization"></span></a>
-                        <a href="../pages/story.php">Story <span class="icon octicon octicon-squirrel"></span></a>
+                        <a href="story.php">Story <span class="icon octicon octicon-squirrel"></span></a>
                     </div>
                 </li>
                 <li id="admin1" style="width: auto;">
-                    <a href="javascript:login('show');">
-                        <?php
-                        if (isset($_SESSION['login_username'])) {
-                            echo $_SESSION['login_username'] . ' </a>';
-                            echo '<div id="menu1" class="menu">
+                    <?php
+
+
+                    if (isset($_SESSION['login_username'])) {
+
+                        echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
+                        echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
                             <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
-                            <a href="#">My Stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="#">My stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="../php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
-                        } else {
-                            echo 'login </a>';
-                        }
-                        ?>
+                    } else {
+                        echo '<a href="javascript:login(\'show\');">login </a>';
+                    }
+                    ?>
 
                 </li>
             </ul>
+
+            <ul id="mobnav" class="nav navbar-nav visible-xs">
+                <?php
+                if (isset($_SESSION['login_username'])) {
+                    echo '<li><a href="#">' . $_SESSION['login_username'] . '<i class="fa fa-user pull-right" aria-hidden="true"></i></a></li>';
+
+                    ?>
+                    <li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>
+                    <li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right"
+                                                             aria-hidden="true"></i></a></li>
+                    <li><a href="community.php">Community<i class="fa fa-university pull-right"
+                                                            aria-hidden="true"></i></a></li>
+                    <li><a href="story.php">Story<i class="fa fa-paper-plane pull-right"
+                                                    aria-hidden="true"></i></a></li>
+
+                    <?php
+                    echo '<li><a href="../php/logout.php">Logout<i class="fa fa-sign-out pull-right" aria-hidden="true"></i></a></li>';
+
+                } else {
+                    echo '<li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="community.php">Community<i class="fa fa-university pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="javascript:login(\'show\');">Login<i class="fa fa-sign-in pull-right" aria-hidden="true"></i></a></li>';
+                }
+                ?>
+            </ul>
         </nav>
         <!-- /main nav -->
+
+
     </div>
+
+
 </header>
+
 <div class="titlediv">
     <h2>Organize An Event</h2>
     <h4>You can organize your own event here.</h4>
@@ -142,23 +176,23 @@ include '../php/session.php';
                 </div>
                 <div class="row">
                     <div class="onright">
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
                             <input type="radio" name="radio" id="radio1" class="radio" value="Chinese OR China"/>
                             <label for="radio1" style="border-radius: 3px; border: 1px solid #D1D3D4">Chinese</label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
                             <input type="radio" name="radio" id="radio2" class="radio" value="Greek OR Greece"/>
                             <label for="radio2" style="border-radius: 3px; border: 1px solid #D1D3D4">Greek</label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
                             <input type="radio" name="radio" id="radio3" class="radio" value="Indian OR India"/>
                             <label for="radio3" style="border-radius: 3px; border: 1px solid #D1D3D4">Indian</label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
                             <input type="radio" name="radio" id="radio4" class="radio" value="Italian OR Italy"/>
                             <label for="radio4" style="border-radius: 3px; border: 1px solid #D1D3D4">Italian</label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
                             <input type="radio" name="radio" id="radio5" class="radio" value="Turkish OR Turkey"/>
                             <label for="radio5" style="border-radius: 3px; border: 1px solid #D1D3D4">Turkish</label>
                         </div>
@@ -170,76 +204,79 @@ include '../php/session.php';
                 <div class="rowtitle">
                     Event Name
                 </div>
-                <div class="forminput">
-                    <input type="text" name="nametext" id="nametext" class="inputfield"/>
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" name="nametext" id="nametext" class="inputfield"/>
+                    </div>
                 </div>
             </div>
             <div class="formrow">
                 <div class="rowtitle">
                     Event Description
                 </div>
-                <div class="forminput">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                     <textarea name="comment" class="inputfield" id="descp" style="height: 80px" form="eventform"
                               placeholder="Enter text here..."></textarea>
+                    </div>
                 </div>
             </div>
             <div class="formrow">
                 <div class="rowtitle">
                     Event Time
-                    <div class="forminput">
-                        <div class="container" style="padding: 0px; margin: 0px">
-                            <div class="col-md-1" style="padding-left: 0px; width: 3%">
-                                <label for="datetimepicker1"><b>From</b></label>
-                                <!--                                <b>From</b>-->
-                            </div>
-                            <div class='col-md-4' style="width:250px; padding-bottom: 0px;">
-                                <div class="form-group">
-                                    <div class='input-group date'>
-                                        <input type="text" name="starttime" id="datetimepicker1" class="form-control"/>
+                </div>
+                <div class="row">
+                    <div class="col-md-1" style="padding-right: 0px">
+                        <label for="datetimepicker1"><b>From</b></label>
+                        <!--                                <b>From</b>-->
+                    </div>
+                    <div class='col-md-3'>
+                        <div class="form-group">
+                            <div class='input-group date'>
+                                <input type="text" name="starttime" id="datetimepicker1" class="form-control"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="col-md-1" style="margin-left: 20px; width: 3%">
-                                <label for="datetimepicker2"><b>To</b></label>
-                                <!--                                <b>To</b>-->
-                            </div>
-                            <div class='col-md-4' style="width:250px; padding-bottom: 0px">
-                                <div class="form-group">
-
-                                    <div class='input-group date'>
-                                        <input type="text" name="endtime" id="datetimepicker2" class="form-control"/>
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                var dateToday = new Date();
-                                $(function () {
-                                    $('#datetimepicker1').datetimepicker({
-                                        format: "DD MM YYYY - hh:mm A",
-                                        minDate: dateToday
-                                    });
-                                    $('#datetimepicker2').datetimepicker({
-                                        format: "DD MM YYYY - hh:mm A",
-                                        minDate: dateToday,
-                                        useCurrent: false //Important! See issue #1075
-                                    });
-                                    $("#datetimepicker1").on("dp.change", function (e) {
-                                        $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
-                                    });
-                                    $("#datetimepicker2").on("dp.change", function (e) {
-                                        $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
-                                    });
-                                });
-
-                            </script>
                         </div>
                     </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1" style="padding-right: 0px">
+                        <label for="datetimepicker2"><b>To</b></label>
+                        <!--                                <b>To</b>-->
+                    </div>
+                    <div class='col-md-3'>
+                        <div class="form-group">
+
+                            <div class='input-group date'>
+                                <input type="text" name="endtime" id="datetimepicker2" class="form-control"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        var dateToday = new Date();
+                        $(function () {
+                            $('#datetimepicker1').datetimepicker({
+                                format: "DD MM YYYY - hh:mm A",
+                                minDate: dateToday
+                            });
+                            $('#datetimepicker2').datetimepicker({
+                                format: "DD MM YYYY - hh:mm A",
+                                minDate: dateToday,
+                                useCurrent: false //Important! See issue #1075
+                            });
+                            $("#datetimepicker1").on("dp.change", function (e) {
+                                $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
+                            });
+                            $("#datetimepicker2").on("dp.change", function (e) {
+                                $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+                            });
+                        });
+
+                    </script>
                 </div>
             </div>
             <div class="formrow">
@@ -270,7 +307,7 @@ include '../php/session.php';
                         </div>
                     </div>
                     <div class="row" style="margin-top: 10px">
-                        <div id="map"></div>
+                        <div id="map" class="col-lg-5 col-md-6 col-sm-8 col-xs-12"></div>
                     </div>
                     <div class="row" hidden="true">
                         <table id="address">
@@ -333,6 +370,15 @@ include '../php/session.php';
         </form>
     </div>
 </div>
+
+<section class="rowfooter breath container-fluid" style="padding: 0px">
+    <div class="row">
+        <div class="col-md-12"
+             style="background-color: #adadad; color:black; text-align: center; height: 60px">
+            <p><br>© 2016 Dream Builders. All Rights Reserved</p>
+        </div>
+    </div>
+</section>
 
 <script type="text/javascript" src="../js/loginform.js"></script>
 <script src="../js/dropdownbtn.js"></script>

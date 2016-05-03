@@ -99,7 +99,7 @@ function load(culture) {
                 '<div class="iw-title"><a style="color: white" href="eventDetail.php?event='+event+'">'+event+'</a></div>' +
                 '<div class="iw-content">' +
                 '<div class="iw-subTitle">Where?</div>' +
-                '<a href="eventDetail.php?event=' + event +'"><img src=' + logo + ' width="140"></a>' +
+                '<a href="eventDetail.php?event=' + event +'"><img src=' + logo + ' class="img-thumbnail" width="140" onerror="thumbImgError(this);"></a>' +
                 '<div>' + venue + '</div><br>' +
                 '<div class="iw-subTitle">When?</div>' +
                 '<div>' + start.substr(8, 2) +'/'+ start.substr(5,2) +'/'+ start.substr(0,4) +'<br>' + start.substr(11, 5) + '</div><br>' +
@@ -107,12 +107,15 @@ function load(culture) {
                 '<div class="iw-bottom-gradient"></div>' +
                 '</div>';
 
-            var html_sidebar ='<div id="side-container">' +
-                '<div class="side-title">' + event + '</div>' +
-                '<div class="side-img">' +'<img src=' + logo + ' height="100">' +
+
+            var html_sidebar ='<div id="container" style="text-align: center">' +
+                '<h3 style="color: black">' + event + '</h3>' +
+                '<div class="row">' +'<img src=' + logo + ' height="100" class="img-rounded" style="max-width: 90%" onerror="imgError(this);">' + '</div>' +
+                    '<div class="row">' +
                 '<p><a href="eventDetail.php?event=' + event +'">Get More Information</a></p>' +
                 '</div>' +
-                '<div class="iw-bottom-gradient"></div>';
+                '</div>';
+
 
 
             //var a = document.getElementById("Culture");
@@ -148,7 +151,7 @@ function load(culture) {
                 });
                 var options={
                     sidebarItem: html_sidebar,
-                    sidebarItemWidth: "326px"
+                    sidebarItemWidth: "100%"
                 }
                 marker.setOptions(options);
 

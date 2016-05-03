@@ -31,22 +31,10 @@ session_start();
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
 
 
-    <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
-    <script src="../js/respond.min.js"></script>
-    <![endif]-->
     <script src="../js/pace.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <!-- [profolio B] -->
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]>
-    <script src="../themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
     <!--simple-line-icons-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAohlvHFSdn17Csms1_VTA-BNkvc4aJ9YY"
             type="text/javascript"></script>
@@ -88,33 +76,31 @@ session_start();
     </div>
 </div>
 
-<header id="navigation" class="navbar-static-top">
+
+<!--Fixed Navigation
+==================================== -->
+<header id="navigation" class="nav navbar-static-top">
     <div class="container">
 
         <div class="navbar-header">
             <!-- responsive nav button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                <h3><i class="fa fa-bars"></i></h3>
             </button>
             <!-- /responsive nav button -->
 
             <!-- logo -->
-            <h1 class="navbar-brand">
-                <a href="#body">
-                    <a href="../index.php"><img src="../images/logo.png" width="112" height="36" alt="Logo">
-                    </a>
-                </a>
-            </h1>
+            <a class="navbar-brand" href="../index.php">
+                <img src="../images/logo.png" width="112" height="36" alt="Logo">
+            </a>
             <!-- /logo -->
 
         </div>
 
         <!-- main nav -->
-        <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
-            <ul class="nav navbar-nav">
+        <nav id="main-menu" class="collapse navigation navbar-collapse navbar-right"
+             style="z-index:1000; position: relative" role="navigation">
+            <ul class="nav navbar-nav hidden-xs ">
                 <li><a href="../pages/organize.php">
                         <div style="border-style: solid; border-color: gainsboro; border-width: thin">
                             &nbsp&nbsp Organize an event &nbsp&nbsp
@@ -125,30 +111,60 @@ session_start();
                     <a href="#">Service</a>
                     <div id="menu2" class="menu">
                         <div class="arrow"></div>
-                        <a href="../pages/event.php?clt=test">Event <span
+                        <a href="event.php?clt=test">Event <span
                                 class="icon octicon octicon-list-ordered"></span></a>
-                        <a href="../pages/community.php">Community <span class="icon octicon octicon-organization"></span></a>
-                        <a href="../pages/story.php">Story <span class="icon octicon octicon-squirrel"></span></a>
+                        <a href="community.php">Community <span
+                                class="icon octicon octicon-organization"></span></a>
+                        <a href="story.php">Story <span class="icon octicon octicon-squirrel"></span></a>
                     </div>
                 </li>
                 <li id="admin1" style="width: auto;">
-                    <a href="javascript:login('show');">
-                        <?php
-                        if (isset($_SESSION['login_username'])) {
-                            echo $_SESSION['login_username'] . ' </a>';
-                            echo '<div id="menu1" class="menu">
+                    <?php
+
+
+                    if (isset($_SESSION['login_username'])) {
+
+                        echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
+                        echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
                             <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
-                            <a href="#">My Stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="#">My stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="../php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
-                        } else {
-                            echo 'login </a>';
-                        }
-                        ?>
+                    } else {
+                        echo '<a href="javascript:login(\'show\');">login </a>';
+                    }
+                    ?>
 
                 </li>
+            </ul>
+
+            <ul id="mobnav" class="nav navbar-nav visible-xs">
+                <?php
+                if (isset($_SESSION['login_username'])) {
+                    echo '<li><a href="#">' . $_SESSION['login_username'] . '<i class="fa fa-user pull-right" aria-hidden="true"></i></a></li>';
+
+                    ?>
+                    <li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>
+                    <li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right"
+                                                             aria-hidden="true"></i></a></li>
+                    <li><a href="community.php">Community<i class="fa fa-university pull-right"
+                                                            aria-hidden="true"></i></a></li>
+                    <li><a href="story.php">Story<i class="fa fa-paper-plane pull-right"
+                                                    aria-hidden="true"></i></a></li>
+
+                    <?php
+                    echo '<li><a href="../php/logout.php">Logout<i class="fa fa-sign-out pull-right" aria-hidden="true"></i></a></li>';
+
+                } else {
+                    echo '<li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="community.php">Community<i class="fa fa-university pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="javascript:login(\'show\');">Login<i class="fa fa-sign-in pull-right" aria-hidden="true"></i></a></li>';
+                }
+                ?>
             </ul>
         </nav>
         <!-- /main nav -->
@@ -160,29 +176,43 @@ session_start();
 </header>
 
 
-<div id="container" style="margin-left: 7%; margin-right: 7%; margin-top: 30px;">
-    <div id="content">
-        <div id="buttonculture">
-            <button class="denem  hvr-grow" onclick="load('test')" data-toggle="tooltip" title="ALL"></button><br>
-            <button class="denem1 hvr-grow" onclick="load('Chinese OR China')" data-toggle="tooltip" title="Chinese"></button><br>
-            <button class="denem2 hvr-grow" onclick="load('Greek OR Greece')" data-toggle="tooltip" title="Greek"></button><br>
-            <button class="denem3 hvr-grow" onclick="load('Indian OR India')" data-toggle="tooltip" title="Indian"></button><br>
-            <button class="denem4 hvr-grow" onclick="load('Italian OR Italy')" data-toggle="tooltip" title="Italian"></button><br>
-            <button class="denem5 hvr-grow" onclick="load('Turkish OR Turkey')" data-toggle="tooltip" title="Turkish"></button>
+<div id="container" style="margin-left: 7%; margin-right: 7%; margin-top: 30px;" style="z-index:100">
+    <!--    <div id="content">-->
+    <div class="row">
+        <div id="buttonculture" class="col-lg-1 col-md-2 col-sm-3 col-xs-3">
+            <button class="denem  hvr-grow" onclick="load('test')" data-toggle="tooltip" title="ALL"></button>
+            <br>
+            <button class="denem1 hvr-grow" onclick="load('Chinese OR China')" data-toggle="tooltip"
+                    title="Chinese"></button>
+            <br>
+            <button class="denem2 hvr-grow" onclick="load('Greek OR Greece')" data-toggle="tooltip"
+                    title="Greek"></button>
+            <br>
+            <button class="denem3 hvr-grow" onclick="load('Indian OR India')" data-toggle="tooltip"
+                    title="Indian"></button>
+            <br>
+            <button class="denem4 hvr-grow" onclick="load('Italian OR Italy')" data-toggle="tooltip"
+                    title="Italian"></button>
+            <br>
+            <button class="denem5 hvr-grow" onclick="load('Turkish OR Turkey')" data-toggle="tooltip"
+                    title="Turkish"></button>
         </div>
-        <div id="map-canvas"></div>
+        <div id="map-canvas" class="col-lg-9 col-md-9 col-sm-8 col-xs-8"></div>
+        <!--    </div>-->
+        <div id="sidebar" class="col-lg-3 col-md-3 col-sm-4 col-xs-4"
+             style="padding-left: 0px;padding-right: 0px" ></div>
     </div>
-    <div id="sidebar"></div>
 </div>
 
 
-
-<section class="rowfooter breath" >
-    <div class="col-md-12 footerlinks"  style="background-color: #adadad; margin-top: 30px;color:black;">
+<section class="rowfooter breath container-fluid" style="padding: 0px">
+    <div class="row">
+    <div class="col-md-12"
+         style="background-color: #adadad; color:black; text-align: center; height: 60px; margin-top: 30px">
         <p><br>© 2016 Dream Builders. All Rights Reserved</p>
     </div>
+    </div>
 </section>
-
 
 
 </body>
@@ -191,9 +221,23 @@ session_start();
 <script src="../js/dropdownbtn.js"></script>
 <script src="../js/map.js" type="text/javascript"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
+    function imgError(image) {
+        image.onerror = "";
+        image.src = "../images/not-available.jpg";
+        image.maxWidth = "90%";
+        image.height = "100";
+        return true;
+    }
+    function thumbImgError(image) {
+        image.onerror = "";
+        image.src = "../images/not-available.jpg";
+        image.width="140";
+        return true;
+    }
 </script>
+
 
 </html>

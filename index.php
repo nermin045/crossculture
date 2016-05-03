@@ -26,9 +26,11 @@ session_start();
     <!-- Animate -->
     <link rel="stylesheet" href="css/animate.css">
 
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
 
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <link href="css/main.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/loginform.css">
@@ -39,6 +41,12 @@ session_start();
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
     <link rel="stylesheet" href="css/dropdownbtn.css">
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -47,18 +55,10 @@ session_start();
     <script src="js/pace.js"></script>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
 
-
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- [profolio B] -->
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]>
-    <script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -138,32 +138,29 @@ if (isset($get_array['logged'])) {
 
 <!--Fixed Navigation
 ==================================== -->
-<header id="navigation" class="navbar-fixed-top">
+<header id="navigation" class="nav navbar-fixed-top">
     <div class="container">
 
         <div class="navbar-header">
             <!-- responsive nav button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                <h3><i class="fa fa-bars"></i></h3>
             </button>
+
             <!-- /responsive nav button -->
 
             <!-- logo -->
-            <h1 class="navbar-brand">
-                <a href="#body">
-                    <a href="index.php"><img src="images/logo.png" width="112" height="36" alt="Logo">
-                    </a>
-            </h1>
+            <a class="navbar-brand" href="index.php">
+                <img src="images/logo.png" width="112" height="36" alt="Logo">
+            </a>
             <!-- /logo -->
+            <p></p>
 
         </div>
 
         <!-- main nav -->
-        <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
-            <ul class="nav navbar-nav">
+        <nav id="main-menu" class="collapse navigation navbar-collapse navbar-right" role="navigation">
+            <ul class="nav navbar-nav hidden-xs ">
                 <li><a href="pages/organize.php">
                         <div style="border-style: solid; border-color: white; border-width: thin">
                             &nbsp&nbsp Organize an event &nbsp&nbsp
@@ -181,26 +178,58 @@ if (isset($get_array['logged'])) {
                     </div>
                 </li>
                 <li id="admin1" style="width: auto;">
-                    <a href="javascript:login('show');">
-                        <?php
-                        if (isset($_SESSION['login_username'])) {
-                            echo $_SESSION['login_username'] . ' </a>';
-                            echo '<div id="menu1" class="menu">
+                    <?php
+
+
+                    if (isset($_SESSION['login_username'])) {
+
+                        echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
+                        echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
                             <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="pages/myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
                             <a href="#">My stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
-                        } else {
-                            echo 'login </a>';
-                        }
-                        ?>
+                    } else {
+                        echo '<a href="javascript:login(\'show\');">login </a>';
+                    }
+                    ?>
 
                 </li>
             </ul>
+
+
+            <!-------------- mobile----------------- --->
+            <ul id="mobnav" class="nav navbar-nav visible-xs">
+                <?php
+                if (isset($_SESSION['login_username'])) {
+                    echo '<li><a href="#">' . $_SESSION['login_username'] . '<i class="fa fa-user pull-right" aria-hidden="true"></i></a></li>';
+
+                    ?>
+                    <li><a href="index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>
+                    <li><a href="pages/event.php?clt=test">Event<i class="fa fa-list-ol pull-right"
+                                                                   aria-hidden="true"></i></a></li>
+                    <li><a href="pages/community.php">Community<i class="fa fa-university pull-right"
+                                                                  aria-hidden="true"></i></a></li>
+                    <li><a href="pages/story.php">Story<i class="fa fa-paper-plane pull-right"
+                                                          aria-hidden="true"></i></a></li>
+
+                    <?php
+                    echo '<li><a href="php/logout.php">Logout<i class="fa fa-sign-out pull-right" aria-hidden="true"></i></a></li>';
+
+                } else {
+                    echo '<li><a href="index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="pages/event.php?clt=test">Event<i class="fa fa-list-ol pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="pages/community.php">Community<i class="fa fa-university pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="pages/story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="javascript:login(\'show\');">Login<i class="fa fa-sign-in pull-right" aria-hidden="true"></i></a></li>';
+                }
+                ?>
+            </ul>
         </nav>
-        <!-- /main nav -->
+
+
     </div>
 
 </header>
@@ -208,55 +237,62 @@ if (isset($get_array['logged'])) {
 End Fixed Navigation
 ==================================== -->
 
-
-<div style="display: none;" class="preloader">
-    <div class="pace  pace-inactive">
-        <div data-progress="99" data-progress-text="100%" style="width: 100%;" class="pace-progress">
-            <div class="pace-progress-inner"></div>
-        </div>
-        <div class="pace-activity"></div>
-    </div>
-</div>
-
+<!---->
+<!--<div style="display: none;" class="preloader">-->
+<!--    <div class="pace  pace-inactive">-->
+<!--        <div data-progress="99" data-progress-text="100%" style="width: 100%;" class="pace-progress">-->
+<!--            <div class="pace-progress-inner"></div>-->
+<!--        </div>-->
+<!--        <div class="pace-activity"></div>-->
+<!--    </div>-->
+<!--</div>-->
+<!---->
 
 <!-- -- ******************** Banner SECTION ******************** ---->
 <main id="top" class="masthead" role="main">
     <div class="container">
-        <div class="logo"><a href="index.php#"><img src="images/logo.png" alt="logo"></a></div>
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 ">
+                <div class="logo"><a href="index.php#"><img src="images/logo.png" style="width: 80%" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+
 
         <h1>The Most Excellent <strong>Cultural Event Platform</strong> <br>
             to <strong>enjoy</strong> your new life.</h1>
 
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-                <form class="form-horizontal" role="form" id="subscribeForm">
-                    <div class="form-group">
-                        <div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
-                            <div class="dropdown">
-                                <button data-toggle="dropdown" class="form-control drop-cl" type="button"
-                                        id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">- Please Select a
-                                    Culture -<span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu form-control drop-item" aria-labelledby="dropdownMenu1">
-                                    <li><a id="aclt">All Cultures</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a id="cnclt">Chinese</a></li>
-                                    <li><a id="inclt">Indian</a></li>
-                                    <li><a id="grclt">Greek</a></li>
-                                    <li><a id="itclt">Italian</a></li>
-                                    <li><a id="trclt">Turkish</a></li>
+            <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 subscribe">
+                <!--                <form class="form-horizontal" role="form" id="subscribeForm">-->
+                <!--                    <div class="form-group">-->
+                <!--                        <div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">-->
+                <div id="eventmenu" class="dropdown">
+                    <button data-toggle="dropdown" class="form-control drop-cl" type="button"
+                            id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">- Find Event -<span
+                            class="caret pull-right"
+                            style="border-left-width: 8px; border-right-width: 8px; border-top-width: 10px; margin-top: 7px"></span>
+                    </button>
+                    <ul class="dropdown-menu form-control drop-item" aria-labelledby="dropdownMenu1">
+                        <li><a id="aclt">All Cultures</a></li>
+                        <li role="separator" class="divider" style="margin: 0px;"></li>
+                        <li><a id="cnclt" href="">Chinese</a></li>
+                        <li><a id="inclt">Indian</a></li>
+                        <li><a id="grclt">Greek</a></li>
+                        <li><a id="itclt">Italian</a></li>
+                        <li><a id="trclt">Turkish</a></li>
 
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-4">
-                            <button id="febtn" type="button" class="btn btn-success btn-lg">FIND EVENTS</button>
-                        </div>
-                    </div>
-                </form>
+                    </ul>
+                </div>
+                <!--                        </div>-->
+                <!--                        <div class="col-md-5 col-sm-4">-->
+                <!--                            <button id="febtn" type="button" class="btn btn-success btn-lg">FIND EVENTS</button>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </form>-->
             </div>
 
-                <span id="result" class="alertMsg"></span>
+            <span id="result" class="alertMsg"></span>
         </div>
 
         <a href="#community" class="scrollto">
@@ -279,7 +315,7 @@ End Fixed Navigation
             <div class="row">
 
                 <!-- PORTFOLIO IMAGE 1 -->
-                <div class="col-md-4 ">
+                <div class="col-md-4 col-sm-6">
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive"
@@ -296,7 +332,7 @@ End Fixed Navigation
 
 
                 <!-- PORTFOLIO IMAGE 2 -->
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive"
@@ -313,7 +349,7 @@ End Fixed Navigation
                 </div><!-- /col -->
 
                 <!-- PORTFOLIO IMAGE 3 -->
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive"
@@ -328,16 +364,9 @@ End Fixed Navigation
                         </figure><!-- /figure -->
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
-            </div><!-- /row -->
-
-        </div><!-- /row -->
-    </section><!-- --/section ---->
-    <section class="row">
-        <div class="container">
-            <div class="row">
 
                 <!-- PORTFOLIO IMAGE 1 -->
-                <div class="col-md-4 ">
+                <div class="col-md-4  col-sm-6">
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive"
@@ -354,7 +383,7 @@ End Fixed Navigation
 
 
                 <!-- PORTFOLIO IMAGE 2 -->
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive"
@@ -371,7 +400,7 @@ End Fixed Navigation
                 </div><!-- /col -->
 
                 <!-- PORTFOLIO IMAGE 3 -->
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="grid mask">
                         <figure>
                             <img class="img-responsive"
@@ -419,13 +448,10 @@ End Fixed Navigation
 
 </div>
 
-<script src="js/bootstrap.js"></script>
 <script src="js/easing.js"></script>
 <script src="js/nicescroll.js"></script>
 <!-- main jQuery -->
 
-
-<script src="js/bootstrap.min.js"></script>
 <!-- Bootstrap -->
 <script src="js/jquery.nav.js"></script>
 <!-- Portfolio Filtering -->
@@ -461,35 +487,41 @@ End Fixed Navigation
     document.getElementById('aclt').addEventListener("click", function () {
         culture = 'test';
         document.getElementById('dropdownMenu1').innerHTML = 'All Cultures';
+        window.location = "pages/event.php?clt=" + culture;
     });
     document.getElementById('cnclt').addEventListener("click", function () {
         culture = 'Chinese OR China';
         document.getElementById('dropdownMenu1').innerHTML = 'Chinese';
+        window.location = "pages/event.php?clt=" + culture;
     });
     document.getElementById('inclt').addEventListener("click", function () {
         culture = 'Indian OR India';
         document.getElementById('dropdownMenu1').innerHTML = 'Indian';
+        window.location = "pages/event.php?clt=" + culture;
     });
     document.getElementById('grclt').addEventListener("click", function () {
         culture = 'Greek OR Greece';
         document.getElementById('dropdownMenu1').innerHTML = 'Greek';
+        window.location = "pages/event.php?clt=" + culture;
     });
     document.getElementById('trclt').addEventListener("click", function () {
         culture = 'Turkish OR Turkey';
         document.getElementById('dropdownMenu1').innerHTML = 'Turkish';
+        window.location = "pages/event.php?clt=" + culture;
     });
     document.getElementById('itclt').addEventListener("click", function () {
         culture = 'Italian OR Italy';
         document.getElementById('dropdownMenu1').innerHTML = 'Italian';
+        window.location = "pages/event.php?clt=" + culture;
     });
-    document.getElementById('febtn').addEventListener("click", function () {
-        if (culture === 'select') {
-            alert('Please select one option');
-        } else {
-            window.location = "pages/event.php?clt=" + culture;
-        }
-
-    });
+    //    document.getElementById('febtn').addEventListener("click", function () {
+    //        if (culture === 'select') {
+    //            alert('Please select one option');
+    //        } else {
+    //            window.location = "pages/event.php?clt=" + culture;
+    //        }
+    //
+    //    });
 
 </script>
 <script type="text/javascript" src="js/loginform.js"></script>

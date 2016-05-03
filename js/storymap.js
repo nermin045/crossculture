@@ -96,12 +96,13 @@ function load(culture) {
             //     '<div class="iw-bottom-gradient">' +
             //     '</div>';
 
-            var html1 = '<div class="side-container" style="margin-right: 15px;">'+
-                '<div class="side-title">'+ title + '</div>'+
-                '<p class="iw-subTitle">'+cultur+' Story</p>'+
-                '<p class="iw-subTitle">Posted by: '+uname+'</p>'+
-                '<img src="../photos/'+pic+'" width="200px;"></div>'+
-                '</div>' ;
+
+            var html1 = '<div id="container" style="text-align: center">' +
+                '<h3 style="color: black">' + title + '</h3>' +
+                '<div class="row">'+ cultur+ ' Story</div>' +
+                '<div class="row">Posted by:'+ uname+ ' Story</div>' +
+                '<div class="row">' +'<img src="../photos/' + pic + '" height="150" class="img-rounded" style="max-width: 90%" onerror="imgError(this);">' + '</div>' +
+                '</div>';;
 
             if ((cultur == b && b == 'Greek') || cultur == b && b == 'Chinese' || cultur == b && b == 'Turkish' || cultur == b && b == 'Indian' || cultur == b && b == 'Italian' || b=='test') {
 
@@ -128,7 +129,7 @@ function load(culture) {
                 });
                 var options={
                     sidebarItem: html1,
-                    sidebarItemWidth: "326px"
+                    sidebarItemWidth: "100%"
                 }
                 marker.setOptions(options);
 

@@ -6,7 +6,7 @@
  * Time: AM 12:39
  */
 session_start();
-if(isset($_SESSION['login_username'])){
+if (isset($_SESSION['login_username'])) {
     header("Location:../index.php");
 }
 ?>
@@ -18,13 +18,18 @@ if(isset($_SESSION['login_username'])){
     <title>CrossCulture</title>
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/pwdwidget.css" />
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/pwdwidget.css"/>
+    <link rel="stylesheet" href="../css/animate.css">
     <link href="../css/main.css" rel="stylesheet">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-formhelpers.css" rel="stylesheet" media="screen">
+
+    <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <!--              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
     <link href="../css/Infowindow.css" rel="stylesheet">
+
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'>
@@ -36,30 +41,41 @@ if(isset($_SESSION['login_username'])){
     <link rel="stylesheet" href="../css/loginform.css">
     <link rel="stylesheet" href="../css/dropdownbtn.css">
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
+    <link href="../css/organize.css" rel="stylesheet">
 
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link href="../css/flag-icon.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--    <script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
     <script src="../js/pwdwidget.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
     <![endif]-->
     <script src="../js/pace.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- [profolio B] -->
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]>
-    <script src="../themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+    <script src="../js/bootstrap-formhelpers.min.js"></script>
+
+    <script type="text/javascript"
+            src="../bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet"/>
+
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--simple-line-icons-->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="..//assets/js/modernizr.custom.js"></script>
     <script src="../js/gen_validatorv4.js" type="text/javascript"></script>
-
 
 
 </head>
@@ -94,32 +110,30 @@ if(isset($_SESSION['login_username'])){
 </div>
 
 
-<header id="navigation" class="navbar-static-top" style="background-color: black;">
+<!--Fixed Navigation
+==================================== -->
+<header id="navigation" class="nav navbar-static-top">
     <div class="container">
 
         <div class="navbar-header">
             <!-- responsive nav button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                <h3><i class="fa fa-bars"></i></h3>
             </button>
             <!-- /responsive nav button -->
 
             <!-- logo -->
-            <h1 class="navbar-brand">
-                <a href="#body">
-                    <a href="../index.php"><img src="../images/logo.png" width="112" height="36" alt="Logo"></a>
-                </a>
-            </h1>
+            <a class="navbar-brand" href="../index.php">
+                <img src="../images/logo.png" width="112" height="36" alt="Logo">
+            </a>
             <!-- /logo -->
 
         </div>
 
         <!-- main nav -->
-        <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
-            <ul class="nav navbar-nav">
+        <nav id="main-menu" class="collapse navigation navbar-collapse navbar-right"
+             style="z-index:1000; position: relative" role="navigation">
+            <ul class="nav navbar-nav hidden-xs ">
                 <li><a href="../pages/organize.php">
                         <div style="border-style: solid; border-color: gainsboro; border-width: thin">
                             &nbsp&nbsp Organize an event &nbsp&nbsp
@@ -130,132 +144,271 @@ if(isset($_SESSION['login_username'])){
                     <a href="#">Service</a>
                     <div id="menu2" class="menu">
                         <div class="arrow"></div>
-                        <a href="../pages/event.php?clt=test">Event <span
+                        <a href="event.php?clt=test">Event <span
                                 class="icon octicon octicon-list-ordered"></span></a>
-                        <a href="../pages/community.php">Community <span class="icon octicon octicon-organization"></span></a>
-                        <a href="../pages/story.php">Story <span class="icon octicon octicon-squirrel"></span></a>
+                        <a href="community.php">Community <span
+                                class="icon octicon octicon-organization"></span></a>
+                        <a href="story.php">Story <span class="icon octicon octicon-squirrel"></span></a>
                     </div>
                 </li>
                 <li id="admin1" style="width: auto;">
-                    <a href="javascript:login('show');">
-                        <?php
-                        if (isset($_SESSION['login_username'])) {
-                            echo $_SESSION['login_username'] . ' </a>';
-                            echo '<div id="menu1" class="menu">
+                    <?php
+
+
+                    if (isset($_SESSION['login_username'])) {
+
+                        echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
+                        echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
                             <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
-                            <a href="#">My Stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="#">My stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="../php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
-                        } else {
-                            echo 'login </a>';
-                        }
-                        ?>
+                    } else {
+                        echo '<a href="javascript:login(\'show\');">login </a>';
+                    }
+                    ?>
 
                 </li>
             </ul>
+
+            <ul id="mobnav" class="nav navbar-nav visible-xs">
+                <?php
+                if (isset($_SESSION['login_username'])) {
+                    echo '<li><a href="#">' . $_SESSION['login_username'] . '<i class="fa fa-user pull-right" aria-hidden="true"></i></a></li>';
+
+                    ?>
+                    <li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>
+                    <li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right"
+                                                             aria-hidden="true"></i></a></li>
+                    <li><a href="community.php">Community<i class="fa fa-university pull-right"
+                                                            aria-hidden="true"></i></a></li>
+                    <li><a href="story.php">Story<i class="fa fa-paper-plane pull-right"
+                                                    aria-hidden="true"></i></a></li>
+
+                    <?php
+                    echo '<li><a href="../php/logout.php">Logout<i class="fa fa-sign-out pull-right" aria-hidden="true"></i></a></li>';
+
+                } else {
+                    echo '<li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="community.php">Community<i class="fa fa-university pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="javascript:login(\'show\');">Login<i class="fa fa-sign-in pull-right" aria-hidden="true"></i></a></li>';
+                }
+                ?>
+            </ul>
         </nav>
         <!-- /main nav -->
+
+
     </div>
+
 
 </header>
 
-<div id="reg">
 
-    <form id="regform" action="insertuser.php" method="POST" name="input" accept-charset="utf-8">
-        <fieldset>
-            <legend><b>Registration</b></legend>
+<div class="titlediv">
+    <h2>Registration</h2>
+    <h4>Register as a new user and join us.</h4>
+</div>
 
-            <label for="username">Username</label><br>
-            <input type="text" name="username" id="username" style="width: 20%"><br><br>
+<div class="contentdiv">
+    <div class="container">
+        <form id="eventform" class="formdiv" action="insertuser.php" method="POST" name="input" accept-charset="utf-8">
+            <fieldset class="form-group row">
+                <div class="col-md-5">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form-control ">
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset class="form-group col-md-5 col-xs-12">
+                    <label for='regpwd'>Password</label>
+                    <input type='password' id='regpwd' name='regpwd' class="form-control">
+                    <script type="text/javascript">
+                        var pwdwidget = new PasswordWidget('thepwddiv', 'regpwd');
+                        pwdwidget.txtShow = 'Display';
+                        pwdwidget.txtMask = 'Hide';
+                        pwdwidget.MakePWDWidget();
+                    </script>
+                </fieldset>
+                <div class="col-md-1"></div>
+                <fieldset class="form-group col-md-5 col-xs-12">
+                    <label for="repassword">Re-type Password</label>
+                    <input type="password" name="repassword" id="repassword" class="form-control">
+                </fieldset>
+            </div>
+            <div class="row">
+                <fieldset class="form-group col-md-5 col-xs-12">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control">
+                </fieldset>
+                <div class="col-md-1"></div>
+                <fieldset class="form-group col-md-5 col-xs-12">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control">
+                </fieldset>
+            </div>
+            <fieldset class="form-group row">
+                <div class="col-md-5">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" class="form-control"/>
+                </div>
+            </fieldset>
+            <fieldset class="form-group row">
+                <div class="col-md-5">
+                    <label for="nationality">Country</label>
 
-            <div style="width: 50%; float: left;">
-                <label for='regpwd'>Password</label> <br />
-                <div class='pwdwidgetdiv' id='thepwddiv'></div>"
-                <script  type="text/javascript" >
-                    var pwdwidget = new PasswordWidget('thepwddiv','regpwd');
-                    pwdwidget.txtShow= 'Display';
-                    pwdwidget.txtMask= 'Hide';
-                    pwdwidget.MakePWDWidget();
-                </script>
-                <noscript>
-                    <div><input type='password' id='regpwd' value="regpwd" name='regpwd' /></div>
-                </noscript>
-            </div>
-            <div style="width: 50%; float: left;">
-                <label for="repassword">Re-type Password</label><br>
-                <input type="password" name="repassword" id="repassword"><br><br><br>
-            </div>
+                    <div class="bfh-selectbox bfh-countries" data-country="AU" data-flags="true">
+                        <input type="hidden" value="">
+                        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+                            <span class="bfh-selectbox-option input-medium" data-option=""></span>
+                            <b class="caret"></b>
+                        </a>
+                        <div class="bfh-selectbox-options">
+                            <input type="text" name="nationality" id="nationality" class="bfh-selectbox-filter">
+                            <div role="listbox">
+                                <ul role="option">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group row">
+                <div class="col-md-5">
+                    <label for="gender">Gender</label>
+                    <br>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="gender" id="gender" value="Male" autocomplete="off"
+                                   checked="true"> Male
+                            <i class="fa fa-male" aria-hidden="true"></i>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="gender" id="gender" value="Female" autocomplete="off"> Female
+                            <i class="fa fa-female" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group row">
+                <div class="col-md-5">
+                    <label for="autocomplete">Address</label>
+                    <input id="autocomplete" placeholder="Enter your address"
+                           type="text" class="form-control" style="position: relative">
+                </div>
+                <div class="row" style="margin-top: 10px" hidden="true">
+                    <div id="map" class="col-lg-5 col-md-6 col-sm-8 col-xs-12"></div>
+                </div>
+                <div class="row" hidden="true">
+                    <table id="address">
+                        <tr>
+                            <td class="label">Street address</td>
+                            <td class="slimField">
+                                <input class="field" id="street_number" name="street_number"></td>
+                            <td class="wideField" colspan="2">
+                                <input class="field" id="route" name="route"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">City</td>
+                            <td class="wideField" colspan="3">
+                                <input class="field" id="locality" name="locality"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">State</td>
+                            <td class="slimField">
+                                <input class="field" id="administrative_area_level_1"
+                                       name="administrative_area_level_1"></td>
+                            <td class="label">Zip code</td>
+                            <td class="wideField">
+                                <input class="field" id="postal_code" name="postal_code"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Country</td>
+                            <td class="wideField" colspan="3">
+                                <input class="field" id="country" name="country"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Longitude</td>
+                            <td class="wideField" colspan="3">
+                                <input class="field" id="longitude" name="longitude"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Latitude</td>
+                            <td class="wideField" colspan="3">
+                                <input class="field" id="latitude" name="latitude"></td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+            <fieldset class="form-group row">
+                <div class="col-md-10">
+                    <label for="gender">Gender</label>
+                    <br>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" id="interest" name="interest" value="Chinese" autocomplete="off"
+                                   checked="true"> Chinese
+                            <span class="flag-icon flag-icon-cn"></span>
+                        </label>
+                        <label class="btn btn-primary active">
+                            <input type="radio" id="interest" name="interest" value="Greek" autocomplete="off"
+                            > Greek
+                            <span class="flag-icon flag-icon-gr"></span>
+                        </label>
+                        <label class="btn btn-primary active">
+                            <input type="radio" id="interest" name="interest" value="Indian" autocomplete="off"
+                            > Indian
+                            <span class="flag-icon flag-icon-in"></span>
+                        </label>
+                        <label class="btn btn-primary active">
+                            <input type="radio" id="interest" name="interest" value="Italian" autocomplete="off"
+                            > Italian
+                            <span class="flag-icon flag-icon-it"></span>
+                        </label>
+                        <label class="btn btn-primary active">
+                            <input type="radio" id="interest" name="interest" value="Turkish" autocomplete="off">
+                            Turkish
+                            <span class="flag-icon flag-icon-tr"></span>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
 
-            <div style="width: 50%; float: left;">
-                <label for="firstname">Firstname</label><br>
-                <input type="text" name="firstname" id="firstname"/>
-            </div>
-            <div style="width: 50%; float: left;">
-                <label for="lastname">Lastname</label><br>
-                <input type="text" name="lastname" id="lastname"/><br><br>
-            </div>
-            <label for="email">E-mail</label><br>
-            <input type="text" name="email" id="email" style="width: 20%"/><br><br>
-            <label for="nationality">Nationality</label><br>
-            <input type="text" name="nationality" id="nationality" style="width: 20%"/><br><br>
-            <label for="datepicker">Date of Birth</label><br>
-            <input type="date" name="dob" id="datepicker" style="width: 20%"/><br><br>
-            <label for="gender">Gender</label><br>
-            <input type="radio" name="gender" id="gender" value="Male"/> Male
-            <input type="radio" name="gender" id="gender" value="Female"/> Female<br><br>
-
-            <div style="width: 50%; float: left">
-                <label for="address">Address</label><br>
-                <input type="text" id="address" name="address"/>
-            </div>
-            <div style="float: left; width: 50%">
-                <label for="suburb">Suburb</label><br>
-                <input type="text" name="suburb" id="suburb"/>
-            </div>
-            <div style="width: 100%; float: left; padding-top: 3%">
-                <label for="interest">Cultural  Interest</label><br>
-                <select id="interest" name="interest" onChange="OnDropDownChange(this);">
-                    <option value="choose">Select one</option>
-                    <option value="Chinese">Chinese</option>
-                    <option value="Greek">Greek</option>
-                    <option value="Indian">Indian</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Turkish">Turkish</option>
-                </select><br><br><br>
-            </div>
-            <p><img id="captcha" src="../php/captcha.php" width="160" height="45" border="1" alt="CAPTCHA">
-                <small><a href="#" onclick="document.getElementById('captcha').src = '../php/captcha.php?' + Math.random();
+                <p><img id="captcha" src="../php/captcha.php" width="160" height="45" border="1" alt="CAPTCHA">
+                    <small><a href="#" onclick="document.getElementById('captcha').src = '../php/captcha.php?' + Math.random();
   document.getElementById('captcha_code').value = '';
   return false;
-">refresh</a></small></p>
-            <p><input id="captcha_code" type="text" name="captcha" size="6" maxlength="5" onkeyup="this.value = this.value.replace(/[^\d]+/g, '');"> <small>copy the digits from the image into this box</small></p>
+">refresh</a></small>
+                </p>
+                <p><input id="captcha_code" type="text" name="captcha" size="6" maxlength="5"
+                          onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
+                    <small>copy the digits from the image into this box</small>
+                </p>
 
-        </fieldset>
-        <button type="submit" name="submit" value="submit" class="btn-group btn-toolbar" style="margin-left: 60%">Submit</button><br><br><br>
-    </form>
-
-
+            </fieldset>
+            <button type="submit" name="submit" value="submit" class="btn btn-primary">
+                Submit
+            </button>
+            <br><br><br>
+        </form>
+    </div>
 
 </div>
 
-<section class="rowfooter breath" >
-    <div class="col-md-12 footerlinks"  style="background-color: #adadad;bottom: 0;color: black;">
-        <p><br>© 2016 Dream Builders. All Rights Reserved</p>
+<section class="rowfooter breath container-fluid" style="padding: 0px">
+    <div class="row">
+        <div class="col-md-12"
+             style="background-color: #adadad; color:black; text-align: center; height: 60px;">
+            <p><br>© 2016 Dream Builders. All Rights Reserved</p>
+        </div>
     </div>
 </section>
 
-<script>
-    $(function() {
-        $( "#datepicker" ).datepicker({
-            changeYear: true,
-            dateFormat: 'dd/mm/yy',
-            maxDate: '01/01/2006'
-//            showButtonPanel:true
-        });
-    });
-</script>
 <script type="text/javascript">
     function OnDropDownChange(dropDown) {
         var selectedValue = dropDown.options[dropDown.selectedIndex].value;
@@ -266,22 +419,27 @@ if(isset($_SESSION['login_username'])){
 <script type="text/javascript">
 
     var frmvalidator = new Validator("regform");
-    frmvalidator.addValidation("username","req","Please enter username");
+    frmvalidator.addValidation("username", "req", "Please enter username");
     frmvalidator.addValidation("username", "maxlen=10  ", "Username length should be maximum 10");
     frmvalidator.addValidation("regpwd", "req", "Please enter password");
     frmvalidator.addValidation("firstname", "req", "Please enter your firstname");
     frmvalidator.addValidation("lastname", "req", "Please enter your lastname");
-    frmvalidator.addValidation("email","email");
+    frmvalidator.addValidation("email", "email");
     frmvalidator.addValidation("regpwd", "minlen=6  ", "Password length should be at least 6");
     frmvalidator.addValidation("regpwd", "eqelmnt=repassword", "Password should match re-type password");
-    frmvalidator.addValidation("firstname","alpha");
-    frmvalidator.addValidation("lastname","alpha");
-    frmvalidator.addValidation("nationality","alpha");
-    frmvalidator.addValidation("suburb","alpha");
-    frmvalidator.addValidation("captcha","req","Please enter the captcha digits in the box provided");
+    frmvalidator.addValidation("firstname", "alpha");
+    frmvalidator.addValidation("lastname", "alpha");
+    frmvalidator.addValidation("nationality", "alpha");
+    frmvalidator.addValidation("suburb", "alpha");
+    frmvalidator.addValidation("captcha", "req", "Please enter the captcha digits in the box provided");
 </script>
 </body>
 <script type="text/javascript" src="../js/loginform.js"></script>
 <script src="../js/dropdownbtn.js"></script>
+
+<script src="../js/maporganize.js"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAohlvHFSdn17Csms1_VTA-BNkvc4aJ9YY&libraries=places&callback=initAutocomplete"
+        async defer></script>
 
 </html>

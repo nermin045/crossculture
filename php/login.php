@@ -24,7 +24,11 @@ session_start();
     {
         $_SESSION['login_username']=$user;
         $_SESSION['islogin'] = true;
-        header("Location:../index.php");
+        if(isset($_SERVER['HTTP_REFERER'])) {
+            header('Location: '.$_SERVER['HTTP_REFERER']);
+        } else {
+            header("Location: ../index.php");
+        }
     }
     else
     {

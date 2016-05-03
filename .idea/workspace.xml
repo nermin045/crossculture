@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bb0ef31-6879-46eb-a198-cb15b372364c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bootstrap-formhelpers-countries.flags.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bootstrap-formhelpers-currencies.flags.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bootstrap-formhelpers-googlefonts.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bfh-country.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bfh-select.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-formhelpers.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/flag-icon.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ad.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ae.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/af.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ag.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ai.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/al.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/am.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ao.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/aq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ar.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/as.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/at.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/au.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/aw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ax.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/az.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ba.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/be.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/br.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bs.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/by.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/bz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ca.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ch.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ci.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ck.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/co.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cx.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/cz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/de.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/dj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/dk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/dm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/do.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/dz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ec.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ee.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/eg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/eh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/er.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/es.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/et.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/eu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/fi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/fj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/fk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/fm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/fo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/fr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ga.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gb-eng.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gb-sct.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gb-wls.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ge.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gs.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/gy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/hk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/hm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/hn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/hr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ht.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/hu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/id.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ie.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/il.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/im.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/in.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/io.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/iq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ir.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/is.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/it.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/je.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/jm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/jo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/jp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ke.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/kg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/kh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ki.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/km.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/kn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/kp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/kr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/kw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ky.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/kz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/la.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/lb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/lc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/li.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/lk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/lr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ls.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/lt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/lu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/lv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ly.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ma.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/md.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/me.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ml.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ms.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mx.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/my.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/mz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/na.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/nc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ne.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/nf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ng.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ni.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/nl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/no.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/np.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/nr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/nu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/nz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/om.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pa.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pe.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ph.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ps.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/pw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/py.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/qa.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/re.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ro.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/rs.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ru.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/rw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sa.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/se.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/si.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/so.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ss.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/st.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sx.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/sz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/td.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/th.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/to.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/tz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ua.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ug.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/um.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/un.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/us.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/uy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/uz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/va.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/vc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ve.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/vg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/vi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/vn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/vu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/wf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ws.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/ye.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/yt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/za.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/zm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/zw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/1x1/zz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ad.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ae.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/af.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ag.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ai.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/al.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/am.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ao.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/aq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ar.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/as.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/at.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/au.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/aw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ax.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/az.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ba.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/be.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/br.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bs.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/by.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/bz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ca.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ch.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ci.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ck.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/co.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cx.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/cz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/de.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/dj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/dk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/dm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/do.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/dz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ec.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ee.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/eg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/eh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/er.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/es.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/et.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/eu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/fi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/fj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/fk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/fm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/fo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/fr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ga.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gb-eng.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gb-sct.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gb-wls.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ge.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gs.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/gy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/hk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/hm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/hn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/hr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ht.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/hu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/id.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ie.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/il.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/im.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/in.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/io.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/iq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ir.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/is.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/it.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/je.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/jm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/jo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/jp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ke.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/kg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/kh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ki.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/km.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/kn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/kp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/kr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/kw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ky.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/kz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/la.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/lb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/lc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/li.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/lk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/lr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ls.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/lt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/lu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/lv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ly.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ma.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/md.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/me.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ml.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mq.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ms.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mx.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/my.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/mz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/na.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/nc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ne.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/nf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ng.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ni.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/nl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/no.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/np.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/nr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/nu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/nz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/om.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pa.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pe.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ph.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ps.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/pw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/py.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/qa.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/re.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ro.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/rs.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ru.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/rw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sa.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sd.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/se.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sh.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/si.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/so.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ss.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/st.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sx.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/sz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/td.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/th.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tj.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tk.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tl.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/to.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tv.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/tz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ua.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ug.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/um.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/un.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/us.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/uy.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/uz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/va.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/vc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ve.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/vg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/vi.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/vn.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/vu.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/wf.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ws.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/ye.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/yt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/za.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/zm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/zw.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flags/4x3/zz.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-formhelpers.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/header.css" afterPath="$PROJECT_DIR$/css/header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/organize.css" afterPath="$PROJECT_DIR$/css/organize.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/commap.js" afterPath="$PROJECT_DIR$/js/commap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/storymap.js" afterPath="$PROJECT_DIR$/js/storymap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/community.php" afterPath="$PROJECT_DIR$/pages/community.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/event.php" afterPath="$PROJECT_DIR$/pages/event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/eventDetail.php" afterPath="$PROJECT_DIR$/pages/eventDetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/myevent.php" afterPath="$PROJECT_DIR$/pages/myevent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/organize.php" afterPath="$PROJECT_DIR$/pages/organize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/registration.php" afterPath="$PROJECT_DIR$/pages/registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/story.php" afterPath="$PROJECT_DIR$/pages/story.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/styles.css" afterPath="$PROJECT_DIR$/pages/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/login.php" afterPath="$PROJECT_DIR$/php/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/logout.php" afterPath="$PROJECT_DIR$/php/logout.php" />
+    </list>
+    <ignored path="development.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="development" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="organize.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/organize.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1462157389000" expanded="true" signature="5044:5574" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flag-icon.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/flag-icon.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maporganize.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/maporganize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.518518">
+              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/registration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42608696">
+              <caret line="386" column="20" selection-start-line="386" selection-start-column="20" selection-end-line="386" selection-end-column="20" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#fieldset#4;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#fieldset#4;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1462287368000" expanded="true" signature="7000:7530" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bfh-country.jquery.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfh-country.jquery.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-formhelpers.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap-formhelpers.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.041667">
+              <caret line="1729" column="1" selection-start-line="1729" selection-start-column="1" selection-end-line="1729" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <marker date="1462162435000" expanded="true" signature="5365:5895" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1461307797000" expanded="true" signature="1130:1306" placeholder="INSERT INTO Story... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventDetail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/eventDetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.7647059">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1462278755000" expanded="true" signature="1635:1974" placeholder="SELECT E.nam... " />
+                <marker date="1462278755000" expanded="true" signature="7697:8227" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organize.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/organize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.041666">
+              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/php/session.php" />
+        <option value="$PROJECT_DIR$/php/zomato.php" />
+        <option value="$PROJECT_DIR$/php/newEvent.php" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/pages/styles.css" />
+        <option value="$PROJECT_DIR$/css/header.css" />
+        <option value="$PROJECT_DIR$/js/commap.js" />
+        <option value="$PROJECT_DIR$/js/storymap.js" />
+        <option value="$PROJECT_DIR$/css/organize.css" />
+        <option value="$PROJECT_DIR$/pages/community.php" />
+        <option value="$PROJECT_DIR$/pages/myevent.php" />
+        <option value="$PROJECT_DIR$/pages/story.php" />
+        <option value="$PROJECT_DIR$/php/logout.php" />
+        <option value="$PROJECT_DIR$/php/login.php" />
+        <option value="$PROJECT_DIR$/js/map.js" />
+        <option value="$PROJECT_DIR$/pages/event.php" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/pages/eventDetail.php" />
+        <option value="$PROJECT_DIR$/pages/organize.php" />
+        <option value="$PROJECT_DIR$/pages/registration.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP XAMPP" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crossculture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crossculture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crossculture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crossculture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.smarty" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.php">
+    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/development/index.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bb0ef31-6879-46eb-a198-cb15b372364c" name="Default" comment="" />
+      <created>1461307890571</created>
+      <option name="number" value="Default" />
+      <updated>1461307890571</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pages/myevent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1462157434000" expanded="true" signature="330:398" placeholder="SELECT * FRO... Events" />
+            <marker date="1462157434000" expanded="true" signature="4342:4872" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/eventDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1462162435000" expanded="true" signature="5365:5895" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/organize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="193" column="74" selection-start-line="193" selection-start-column="65" selection-end-line="193" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462157389000" expanded="true" signature="5044:5574" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/newEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461327939000" expanded="true" signature="1890:2096" placeholder="INSERT INTO Events... " />
+            <marker date="1461327939000" expanded="true" signature="2305:2350" placeholder="SELECT * FRO... Venues" />
+            <marker date="1461327939000" expanded="true" signature="2529:2659" placeholder="INSERT INTO Venues... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Eventbrite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/dbupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/genstorymap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/zomato.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="92.458336">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/phpinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Front-end/polmo/assets/css/responsive.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36092716">
+          <caret line="0" column="11021" selection-start-line="0" selection-start-column="11021" selection-end-line="0" selection-end-column="11021" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/XAMPP/xamppfiles/htdocs/crossculture/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="150" selection-end-column="21" />
+          <folding>
+            <marker date="1461265899000" expanded="true" signature="6842:7375" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33282444">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1568627">
+          <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="119" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Front-end/polmo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/deneme.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Greece48.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dropdownbtn.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="144.41667">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/Infowindow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.208334">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/commap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+          <folding>
+            <marker date="1462099180000" expanded="true" signature="2948:2966" placeholder="..." />
+            <marker date="1462099180000" expanded="true" signature="3000:3012" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/storymap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.259259">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <marker date="1462108279000" expanded="true" signature="2445:2481" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="2559:2577" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="2640:2658" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="2725:2761" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="2846:2921" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="2976:3032" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="3604:3622" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="3623:4015" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="3656:3668" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="3725:4015" placeholder="..." />
+            <marker date="1462108279000" expanded="true" signature="3936:3950" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/eventdetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="13.166667">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <marker date="1462160558000" expanded="true" signature="464:528" placeholder="SELECT id FR... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="103" selection-start-line="101" selection-start-column="91" selection-end-line="101" selection-end-column="103" />
+          <folding>
+            <marker date="1462162431000" expanded="true" signature="2883:2895" placeholder="..." />
+            <marker date="1462162431000" expanded="true" signature="3717:3735" placeholder="..." />
+            <marker date="1462162431000" expanded="true" signature="3736:4123" placeholder="..." />
+            <marker date="1462162431000" expanded="true" signature="3769:3781" placeholder="..." />
+            <marker date="1462162431000" expanded="true" signature="3782:4097" placeholder="..." />
+            <marker date="1462162431000" expanded="true" signature="3800:4097" placeholder="..." />
+            <marker date="1462162431000" expanded="true" signature="3905:3919" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.333333">
+          <caret line="186" column="22" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/core-scripting.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3323124">
+          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/newEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.791667">
+          <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
+          <folding>
+            <marker date="1461327939000" expanded="true" signature="1890:2096" placeholder="INSERT INTO Events... " />
+            <marker date="1461327939000" expanded="true" signature="2305:2350" placeholder="SELECT * FRO... Venues" />
+            <marker date="1461327939000" expanded="true" signature="2529:2659" placeholder="INSERT INTO Venues... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/insertuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.29411766">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="2" />
+          <folding>
+            <marker date="1461307801000" expanded="true" signature="954:1179" placeholder="INSERT INTO Users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/poststory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461307799000" expanded="true" signature="6318:6838" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/story.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.208333">
+          <caret line="246" column="17" selection-start-line="246" selection-start-column="17" selection-end-line="246" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462157456000" expanded="true" signature="7196:7726" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="48" selection-end-column="45" />
+          <folding>
+            <marker date="1462168380000" expanded="true" signature="6841:7374" placeholder="..." />
+            <marker date="1462168380000" expanded="true" signature="7695:7754" placeholder="..." />
+            <marker date="1462168380000" expanded="true" signature="19992:20011" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/community.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <marker date="1462157349000" expanded="true" signature="5848:6378" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/eventDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7647059">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462278755000" expanded="true" signature="1635:1974" placeholder="SELECT E.nam... " />
+            <marker date="1462278755000" expanded="true" signature="7697:8227" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461307797000" expanded="true" signature="1130:1306" placeholder="INSERT INTO Story... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <marker date="1462162435000" expanded="true" signature="5365:5895" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap-formhelpers.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-formhelpers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.041667">
+          <caret line="1729" column="1" selection-start-line="1729" selection-start-column="1" selection-end-line="1729" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/myevent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <marker date="1462157434000" expanded="true" signature="330:398" placeholder="SELECT * FRO... Events" />
+            <marker date="1462157434000" expanded="true" signature="4342:4872" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/organize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.041666">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bfh-country.jquery.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/maporganize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.518518">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flags/1x1/ad.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/flag-icon.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/organize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462157389000" expanded="true" signature="5044:5574" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42608696">
+          <caret line="386" column="20" selection-start-line="386" selection-start-column="20" selection-end-line="386" selection-end-column="20" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#fieldset#4;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#fieldset#4;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462287368000" expanded="true" signature="7000:7530" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

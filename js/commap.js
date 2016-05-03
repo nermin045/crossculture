@@ -87,12 +87,14 @@ function load(culture) {
                 '<div class="iw-bottom-gradient"></div>' +
                 '</div>';
             
-            var html1 = '<div class="side-container">'+
-                '<div class="side-title">'+ name + '</div>'+
-                '<p class="iw-subTitle">Address</p>'+ address+
-                '<p class="iw-subTitle">Phone</p>'+ phone+
-                '<br><br><a href="'+website+'" target="_blank">Visit Their Website'+
-                '</div>' ;
+            var html1 = '<div id="container" style="text-align: center">' +
+                '<h3 style="color: black">' + name + '</h3>' +
+                '<div class="row">Address</div>'+ address+
+                '<div class="row">Phone</div>'+ phone+
+                '<br><div class="row"><a href="'+website+'" target="_blank">Visit Their Website</a></div>'+
+                '</div>';;
+
+
 
 
             //var a = document.getElementById("Culture");
@@ -122,7 +124,7 @@ function load(culture) {
                 });
                 var options={
                     sidebarItem: html1,
-                    sidebarItemWidth: "326px"
+                    sidebarItemWidth: "100%"
                 }
                 marker.setOptions(options);
 

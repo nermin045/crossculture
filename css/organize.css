@@ -133,7 +133,6 @@ input.radio:checked ~ label {
 /* Map */
 #map {
     height: 300px;
-    width: 475.2px;
     position: relative;
 
 }
