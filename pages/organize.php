@@ -166,148 +166,227 @@ include '../php/session.php';
     <h2>Organize An Event</h2>
     <h4>You can organize your own event here.</h4>
 </div>
-<div class="contentdiv">
-    <div class="container">
-        <form id="eventform" class="formdiv" enctype="multipart/form-data" method="POST" action="../php/newEvent.php">
 
-            <div class="formrow">
-                <div class="rowtitle">
-                    Culture
-                </div>
-                <div class="row">
-                    <div class="onright">
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-                            <input type="radio" name="radio" id="radio1" class="radio" value="Chinese OR China"/>
-                            <label for="radio1" style="border-radius: 3px; border: 1px solid #D1D3D4">Chinese</label>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-                            <input type="radio" name="radio" id="radio2" class="radio" value="Greek OR Greece"/>
-                            <label for="radio2" style="border-radius: 3px; border: 1px solid #D1D3D4">Greek</label>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-                            <input type="radio" name="radio" id="radio3" class="radio" value="Indian OR India"/>
-                            <label for="radio3" style="border-radius: 3px; border: 1px solid #D1D3D4">Indian</label>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-                            <input type="radio" name="radio" id="radio4" class="radio" value="Italian OR Italy"/>
-                            <label for="radio4" style="border-radius: 3px; border: 1px solid #D1D3D4">Italian</label>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
-                            <input type="radio" name="radio" id="radio5" class="radio" value="Turkish OR Turkey"/>
-                            <label for="radio5" style="border-radius: 3px; border: 1px solid #D1D3D4">Turkish</label>
+<div class="container-fluid contentdiv">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
+            <form id="eventform" class="formdiv" enctype="multipart/form-data" method="POST"
+                  action="../php/newEvent.php">
+
+                <div class="formrow">
+                    <div class="rowtitle">
+                        Culture
+                    </div>
+                    <div class="row">
+                        <div class="onright">
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                <input type="radio" name="radio" id="radio1" class="radio" value="Chinese OR China"/>
+                                <label for="radio1"
+                                       style="border-radius: 3px; border: 1px solid #D1D3D4">Chinese</label>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                <input type="radio" name="radio" id="radio2" class="radio" value="Greek OR Greece"/>
+                                <label for="radio2" style="border-radius: 3px; border: 1px solid #D1D3D4">Greek</label>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                <input type="radio" name="radio" id="radio3" class="radio" value="Indian OR India"/>
+                                <label for="radio3" style="border-radius: 3px; border: 1px solid #D1D3D4">Indian</label>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                <input type="radio" name="radio" id="radio4" class="radio" value="Italian OR Italy"/>
+                                <label for="radio4"
+                                       style="border-radius: 3px; border: 1px solid #D1D3D4">Italian</label>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-8">
+                                <input type="radio" name="radio" id="radio5" class="radio" value="Turkish OR Turkey"/>
+                                <label for="radio5"
+                                       style="border-radius: 3px; border: 1px solid #D1D3D4">Turkish</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="formrow">
-                <div class="rowtitle">
-                    Event Name
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                        <input type="text" name="nametext" id="nametext" class="inputfield"/>
+                <div class="formrow">
+                    <div class="rowtitle">
+                        Event Name
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                            <input type="text" name="nametext" id="nametext" class="inputfield"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="formrow">
-                <div class="rowtitle">
-                    Event Description
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <div class="formrow">
+                    <div class="rowtitle">
+                        Event Description
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                     <textarea name="comment" class="inputfield" id="descp" style="height: 80px" form="eventform"
                               placeholder="Enter text here..."></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="formrow">
-                <div class="rowtitle">
-                    Event Time
-                </div>
-                <div class="row">
-                    <div class="col-md-1" style="padding-right: 0px">
-                        <label for="datetimepicker1"><b>From</b></label>
-                        <!--                                <b>From</b>-->
-                    </div>
-                    <div class='col-md-3'>
-                        <div class="form-group">
-                            <div class='input-group date'>
-                                <input type="text" name="starttime" id="datetimepicker1" class="form-control"/>
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-1" style="padding-right: 0px">
-                        <label for="datetimepicker2"><b>To</b></label>
-                        <!--                                <b>To</b>-->
+                </div>
+                <div class="formrow">
+                    <div class="rowtitle">
+                        Event Time
                     </div>
-                    <div class='col-md-3'>
-                        <div class="form-group">
-
-                            <div class='input-group date'>
-                                <input type="text" name="endtime" id="datetimepicker2" class="form-control"/>
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <script type="text/javascript">
-                        var dateToday = new Date();
-                        $(function () {
-                            $('#datetimepicker1').datetimepicker({
-                                format: "DD MM YYYY - hh:mm A",
-                                minDate: dateToday
-                            });
-                            $('#datetimepicker2').datetimepicker({
-                                format: "DD MM YYYY - hh:mm A",
-                                minDate: dateToday,
-                                useCurrent: false //Important! See issue #1075
-                            });
-                            $("#datetimepicker1").on("dp.change", function (e) {
-                                $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
-                            });
-                            $("#datetimepicker2").on("dp.change", function (e) {
-                                $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
-                            });
-                        });
-
-                    </script>
-                </div>
-            </div>
-            <div class="formrow">
-                <div class="rowtitle">
-                    Capacity
-                </div>
-                <div class="forminput" style="width: 30%">
-                    <input type="number" class="form-control bfh-number" name="capacity" value="10"/>
-                </div>
-            </div>
-            <div class="formrow">
-                <div class="rowtitle">
-                    <label for="venuetext">Venue Name</label>
-                </div>
-                <div class="forminput">
-                    <input type="text" name="venuetext" id="venuetext" class="inputfield" style="width: 480px;"/>
-                </div>
-            </div>
-            <div class="formrow">
-                <div class="rowtitle">
-                    <label for="autocomplete">Address</label>
-                </div>
-                <div class="container">
                     <div class="row">
-                        <div id="locationField">
-                            <input id="autocomplete" placeholder="Enter your address"
-                                   onFocus="geolocate()" type="text">
+                        <div class="col-md-1" style="padding-right: 0px">
+                            <label for="datetimepicker1"><b>From</b></label>
+                            <!--                                <b>From</b>-->
                         </div>
+                        <div class='col-md-3'>
+                            <div class="form-group">
+                                <div class='input-group date'>
+                                    <input type="text" name="starttime" id="datetimepicker1" class="form-control"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1" style="padding-right: 0px">
+                            <label for="datetimepicker2"><b>To</b></label>
+                            <!--                                <b>To</b>-->
+                        </div>
+                        <div class='col-md-3'>
+                            <div class="form-group">
+
+                                <div class='input-group date'>
+                                    <input type="text" name="endtime" id="datetimepicker2" class="form-control"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            var dateToday = new Date();
+                            $(function () {
+                                $('#datetimepicker1').datetimepicker({
+                                    format: "DD MM YYYY - hh:mm A",
+                                    minDate: dateToday
+                                });
+                                $('#datetimepicker2').datetimepicker({
+                                    format: "DD MM YYYY - hh:mm A",
+                                    minDate: dateToday,
+                                    useCurrent: false //Important! See issue #1075
+                                });
+                                $("#datetimepicker1").on("dp.change", function (e) {
+                                    $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
+                                });
+                                $("#datetimepicker2").on("dp.change", function (e) {
+                                    $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+                                });
+                            });
+
+                        </script>
                     </div>
-                    <div class="row" style="margin-top: 10px">
-                        <div id="map" class="col-lg-5 col-md-6 col-sm-8 col-xs-12"></div>
+                </div>
+                <div class="formrow">
+                    <div class="rowtitle">
+                        Capacity
+                    </div>
+                    <div class="forminput">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="number" class="form-control bfh-number" name="capacity" value="10"/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="rowtitle">
+                        <label for="venuetext">Venue Name</label>
+                    </div>
+                    <div class="forminput">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="text" name="venuetext" id="venuetext" class="inputfield"/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+<!--                <div class="formrow">-->
+<!--                    <div class="rowtitle">-->
+<!--                        <label for="autocomplete">Address</label>-->
+<!--                    </div>-->
+<!--                    <div class="forminput">-->
+<!--                        <div id="locationField">-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-8 col-xs-12">-->
+<!--                                    <input id="autocomplete" placeholder="Enter your address"-->
+<!--                                           onFocus="geolocate()" type="text" style="position: relative; padding-bottom: 6px;padding-top: 6px">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!---->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="clearfix"></div>-->
+<!--                    <div class="forminput row" style="margin-top: 10px">-->
+<!--                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">-->
+<!--                        <div id="map" class=""></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="row" hidden="true">-->
+<!--                        <table id="address">-->
+<!--                            <tr>-->
+<!--                                <td class="label">Street address</td>-->
+<!--                                <td class="slimField">-->
+<!--                                    <input class="field" id="street_number" name="street_number"></td>-->
+<!--                                <td class="wideField" colspan="2">-->
+<!--                                    <input class="field" id="route" name="route"></td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="label">City</td>-->
+<!--                                <td class="wideField" colspan="3">-->
+<!--                                    <input class="field" id="locality" name="locality"></td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="label">State</td>-->
+<!--                                <td class="slimField">-->
+<!--                                    <input class="field" id="administrative_area_level_1"-->
+<!--                                           name="administrative_area_level_1"></td>-->
+<!--                                <td class="label">Zip code</td>-->
+<!--                                <td class="wideField">-->
+<!--                                    <input class="field" id="postal_code" name="postal_code"></td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="label">Country</td>-->
+<!--                                <td class="wideField" colspan="3">-->
+<!--                                    <input class="field" id="country" name="country"></td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="label">Longitude</td>-->
+<!--                                <td class="wideField" colspan="3">-->
+<!--                                    <input class="field" id="longitude" name="longitude"></td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="label">Latitude</td>-->
+<!--                                <td class="wideField" colspan="3">-->
+<!--                                    <input class="field" id="latitude" name="latitude"></td>-->
+<!--                            </tr>-->
+<!--                        </table>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <fieldset class="form-group row">
+                    <div class="col-md-6">
+                        <label for="autocomplete">Address</label>
+                        <div class="input-group input-group-lg" style="height: 34px">
+                            <span class="input-group-addon" id="sizing-addon1" style="padding-bottom: 4px;padding-top: 4px"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <input id="autocomplete" placeholder="Enter your address"
+                                   type="text" class="form-control" style="position: relative; padding-bottom: 6px;padding-top: 6px">
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-5 col-md-6 col-sm-8 col-xs-12" style="margin-top: 10px">
+                        <div id="map"></div>
                     </div>
                     <div class="row" hidden="true">
                         <table id="address">
@@ -349,25 +428,26 @@ include '../php/session.php';
                             </tr>
                         </table>
                     </div>
-                </div>
-            </div>
+                </fieldset>
 
-            <div class="formrow">
-                <div class="rowtitle">
-                    Image
+                <div class="formrow">
+                    <div class="rowtitle">
+                        Image
+                    </div>
+                    <div class="forminput">
+                        <input type='file' onchange="readURL(this);" name="image" accept="image/*"/>
+                        <img id="blah" src="#" alt="Please upload an image..."/>
+                    </div>
                 </div>
-                <div class="forminput">
-                    <input type='file' onchange="readURL(this);" name="image" accept="image/*"/>
-                    <img id="blah" src="#" alt="Please upload an image..."/>
+                <div class="formrow">
+                    <div class="g-recaptcha" data-sitekey="6LeU8h0TAAAAAHKvV84ZVEgg37JxBcGnCOWe5OL4"></div>
                 </div>
-            </div>
-            <div class="formrow">
-                <div class="g-recaptcha" data-sitekey="6LeU8h0TAAAAAHKvV84ZVEgg37JxBcGnCOWe5OL4"></div>
-            </div>
-            <div class="formrow">
-                <button type="submit" name="submit" id="submit" value="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
+                <div class="formrow">
+                    <button type="submit" name="submit" id="submit" value="submit" class="btn btn-primary">Submit
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 

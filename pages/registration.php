@@ -214,8 +214,10 @@ if (isset($_SESSION['login_username'])) {
     <h4>Register as a new user and join us.</h4>
 </div>
 
-<div class="contentdiv">
-    <div class="container">
+<div class="container-fluid contentdiv">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
+
         <form id="eventform" class="formdiv" action="insertuser.php" method="POST" name="input" accept-charset="utf-8">
             <fieldset class="form-group row">
                 <div class="col-md-5">
@@ -330,7 +332,7 @@ if (isset($_SESSION['login_username'])) {
                 <div class="col-md-6">
                     <label for="autocomplete">Address</label>
                     <div class="input-group input-group-lg" style="height: 34px">
-                        <span class="input-group-addon" id="sizing-addon1" style="padding-bottom: 6px;padding-top: 6px"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="input-group-addon" id="sizing-addon1" style="padding-bottom: 4px;padding-top: 4px"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                         <input id="autocomplete" placeholder="Enter your address"
                                type="text" class="form-control" style="position: relative; padding-bottom: 6px;padding-top: 6px">
                     </div>
@@ -401,8 +403,8 @@ if (isset($_SESSION['login_username'])) {
                 Submit
             </button>
         </form>
+        </div>
     </div>
-
 </div>
 
 <section class="rowfooter breath container-fluid" style="padding: 0px">
