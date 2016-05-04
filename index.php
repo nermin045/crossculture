@@ -277,7 +277,7 @@ End Fixed Navigation
                     <ul class="dropdown-menu form-control drop-item" aria-labelledby="dropdownMenu1">
                         <li><a id="aclt">All Cultures</a></li>
                         <li role="separator" class="divider" style="margin: 0px;"></li>
-                        <li><a id="cnclt" href="">Chinese</a></li>
+                        <li><a id="cnclt">Chinese</a></li>
                         <li><a id="inclt">Indian</a></li>
                         <li><a id="grclt">Greek</a></li>
                         <li><a id="itclt">Italian</a></li>

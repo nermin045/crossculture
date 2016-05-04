@@ -14,14 +14,18 @@ include '../php/session.php';
     <title>CrossCulture</title>
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/pwdwidget.css" />
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/pwdwidget.css"/>
+    <link rel="stylesheet" href="../css/animate.css">
+    <link href="../css/main.css" rel="stylesheet">
+
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/bootstrap-formhelpers.css" rel="stylesheet" media="screen">
-    <link href="../css/main.css" rel="stylesheet">
+
+    <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <!--              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
     <link href="../css/Infowindow.css" rel="stylesheet">
+
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'>
@@ -33,34 +37,44 @@ include '../php/session.php';
     <link rel="stylesheet" href="../css/loginform.css">
     <link rel="stylesheet" href="../css/dropdownbtn.css">
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link href="../css/organize.css" rel="stylesheet">
+
+
     <link href="../css/flag-icon.min.css" rel="stylesheet">
 
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--    <script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
     <script src="../js/pwdwidget.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
     <![endif]-->
     <script src="../js/pace.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- [profolio B] -->
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]>
-    <script src="../themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+    <script src="../js/bootstrap-formhelpers.min.js"></script>
+
+    <script type="text/javascript"
+            src="../bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet"/>
+
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--simple-line-icons-->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="..//assets/js/modernizr.custom.js"></script>
     <script src="../js/gen_validatorv4.js" type="text/javascript"></script>
+
     <script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
-    <script src="../js/bootstrap-formhelpers.min.js"></script>
+
 
 
 </head>
@@ -178,7 +192,7 @@ include '../php/session.php';
                     <div class="rowtitle">
                         Title of the Story
                     </div>
-                    <div class="row">
+                    <div>
                         <input type="text" name="title" id="title">
                     </div>
                 </div>
@@ -187,7 +201,7 @@ include '../php/session.php';
                     <div class="rowtitle">
                         Story
                     </div>
-                    <div class="row">
+                    <div>
                         <textarea id="content" name="content" rows="12" cols="60"></textarea><br><br>
                         <script type="text/javascript">
                             CKEDITOR.replace( 'content' );

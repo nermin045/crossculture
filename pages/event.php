@@ -36,7 +36,7 @@ session_start();
     <script src="../js/bootstrap.min.js"></script>
 
     <!--simple-line-icons-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAohlvHFSdn17Csms1_VTA-BNkvc4aJ9YY"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAohlvHFSdn17Csms1_VTA-BNkvc4aJ9YY&sensor=true"
             type="text/javascript"></script>
 </head>
 <body onload="firstLoad()">
@@ -239,6 +239,6 @@ session_start();
         return true;
     }
 </script>
-
+<script src="//js.arcgis.com/3.16/"></script>
 
 </html>

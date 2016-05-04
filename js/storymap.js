@@ -100,7 +100,7 @@ function load(culture) {
             var html1 = '<div id="container" style="text-align: center">' +
                 '<h3 style="color: black">' + title + '</h3>' +
                 '<div class="row">'+ cultur+ ' Story</div>' +
-                '<div class="row">Posted by:'+ uname+ ' Story</div>' +
+                '<div class="row">Posted by:'+ uname+ '</div>' +
                 '<div class="row">' +'<img src="../php/photos/' + pic + '" height="150" class="img-rounded" style="max-width: 90%" onerror="imgError(this);">' + '</div>' +
                 '</div>';;
 

@@ -2,6 +2,54 @@
  * Created by Xiao on 5/04/2016.
  * function: Create event map and its sidebar
  */
+function CenterControl(controlDiv, map) {
+
+    // Set CSS for the control border.
+    var controlUI = document.createElement('div');
+    // controlUI.style.backgroundColor = '#fff';
+    // controlUI.style.border = '2px solid #fff';
+    // controlUI.style.borderRadius = '3px';
+    // controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+    controlUI.style.cursor = 'pointer';
+    // controlUI.style.marginBottom = '2px';
+    controlUI.style.marginLeft = '880px';
+    controlUI.style.marginTop = '20px';
+    controlUI.style.textAlign = 'center';
+    controlUI.title = 'Click to recenter the map';
+    controlDiv.appendChild(controlUI);
+
+    // Set CSS for the control interior.
+    var controlText = document.createElement('div');
+    controlText.style.color = 'rgb(25,25,25)';
+    controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+    controlText.style.fontSize = '16px';
+    controlText.style.lineHeight = '38px';
+    controlText.style.paddingLeft = '5px';
+    controlText.style.paddingRight = '5px';
+    controlText.innerHTML = '<img src="../images/locateme.png" width="30px">';
+    controlUI.appendChild(controlText);
+
+    // Setup the click event listeners: simply set the map to Chicago.
+    controlUI.addEventListener('click', function() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+
+            var geolocate = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: geolocate
+            });
+
+            map.setCenter(geolocate);
+
+        });
+    });
+
+
+}
+
+
+
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -61,6 +109,12 @@ function load(culture) {
         }
     ]);
 
+    var centerControlDiv = document.createElement('div');
+    var centerControl = new CenterControl(centerControlDiv, map);
+
+    centerControlDiv.index = 1;
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
+
     google.maps.event.addListenerOnce(map, 'idle', function(){
         $('body').addClass('loaded');
         //alert("load map completed");
@@ -92,7 +146,6 @@ function load(culture) {
                 parseFloat(markers[i].getAttribute("lat")),
                 parseFloat(markers[i].getAttribute("lon")));
             //document.write(type);
-
 
 
             var html = '<div id="iw-container">' +
@@ -155,7 +208,7 @@ function load(culture) {
                 }
                 marker.setOptions(options);
 
-                bindInfoWindow(marker, map, infoWindow, html);
+                bindInfoWindow(marker, map, infoWindow, html,point);
                 var idleIcon = marker.getIcon();
 
                 if(options.sidebarItem){
@@ -172,10 +225,11 @@ function load(culture) {
 
     });
 
-    function bindInfoWindow(marker, map, infoWindow, html) {
+    function bindInfoWindow(marker, map, infoWindow, html,point) {
         google.maps.event.addListener(marker, 'click', function () {
             infoWindow.setContent(html);
             infoWindow.open(map, marker);
+            map.setCenter(point);
             if(this.sidebarButton)this.sidebarButton.button.focus();
         });
 

@@ -52,17 +52,27 @@ session_start();
             type="text/javascript"></script>
     <script src="../js/story.js"></script>
 
+    <link href='http://static.tumblr.com/blpgwiz/usPm404d2/bounce_normal.css' rel='stylesheet' type='text/css'>
+
+
+
 </head>
-<body onload="firstLoad()">
+<body id="deneme" onload="firstLoad()">
 
-
-<div>
-    <div id="popupdiv" class="story">
-        <a class="fa fa-times" href="javascript:story('hide');"></a>
+<div class="pop-up" id="popupdiv">
+    <div>
+        <a href="javascript:story('hide');"></a>
     </div>
 </div>
 
 
+<!--<div>-->
+<!--    <div id="popupdiv" class="story">-->
+<!--        <a href="javascript:story('hide');"></a>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div id="back" style="height: 100%">
 <div style="width: 100%">
     <div id="popupbox" class="module form-module popuplogin">
         <div class="toggle">
@@ -71,7 +81,7 @@ session_start();
         </div>
         <div class="form">
             <h2>Login to your account</h2>
-            <form method="post" name="login" action="php/login.php">
+            <form method="post" name="login" action="../php/login.php">
                 <input type="text" name="username" id="userid" required="required" placeholder="Username"/>
                 <input type="password" name="password" id="passid" required="required" placeholder="Password"/>
                 <button type="submit" name="submit" id="submit" value="submit">Login</button>
@@ -87,7 +97,7 @@ session_start();
                 <button>Register</button>
             </form>
         </div>
-        <div class="cta"><a href="pages/registration.php">Sign Up</a></div>
+        <div class="cta"><a href="../pages/registration.php">Sign Up</a></div>
     </div>
 </div>
 
@@ -242,6 +252,9 @@ session_start();
              style="padding-left: 0px;padding-right: 0px"></div>
     </div>
 </div>
+
+
+    </div>
 
 <section class="rowfooter breath container-fluid" style="padding: 0px">
     <div class="row">
