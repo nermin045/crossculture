@@ -53,7 +53,7 @@ session_start();
     <script src="../js/story.js"></script>
 
     <link href='http://static.tumblr.com/blpgwiz/usPm404d2/bounce_normal.css' rel='stylesheet' type='text/css'>
-
+    <script src="../js/readmore.js"></script>
 
 
 </head>

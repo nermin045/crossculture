@@ -16,6 +16,12 @@ div#navigation{float:right;width:30%;}
 div#extra{float:right;clear:right;width:30%;}
 div#footer{clear:both;width:100%}
 div#reg{padding-left: 20%; padding-right: 20%; padding-top: 2%}
+
+.show-read-more .more-text{
+    display: none;
+}
+
+
 div#buttonculture{
     z-index: 10;
     position: absolute;

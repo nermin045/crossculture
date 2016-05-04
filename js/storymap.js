@@ -82,8 +82,8 @@ function load(culture) {
                 '<h2>'+title+'</h2></div>'+
                 '<div style="text-align: center"><b>'+cultur+' Story</b></div>'+
                 '<div style="text-align: center"><b>Posted by: '+uname+'</b></div>'+
-                '<div style="text-align: center; margin-top: 7px;" ><img src="../php/photos/'+pic+'" height="200px"></div>'+
-                '<div style="text-align: center; margin-left: 30px; margin-right: 30px; margin-top: 7px;"><b>'+text+'</b></div>'+
+                '<div style="text-align: center; margin-top: 7px;" ><img src="'+pic+'" height="200px"></div>'+
+                '<div class="show-read-more" style="text-align: center; margin-left: 30px; margin-right: 30px; margin-top: 7px;"><b>'+text+'</b></div>'+
                 '<div style="text-align: center; margin-top: 7px; margin-bottom: 7px;"><b>Posted on: '+postdate.substr(8,2)+'/'+
                 postdate.substr(5,2)+'/'+postdate.substr(0,4) +'</b></div>';
 
@@ -101,7 +101,7 @@ function load(culture) {
                 '<h3 style="color: black">' + title + '</h3>' +
                 '<div class="row">'+ cultur+ ' Story</div>' +
                 '<div class="row">Posted by:'+ uname+ '</div>' +
-                '<div class="row">' +'<img src="../php/photos/' + pic + '" height="150" class="img-rounded" style="max-width: 90%" onerror="imgError(this);">' + '</div>' +
+                '<div class="row">' +'<img src="' + pic + '" height="150" class="img-rounded" style="max-width: 90%" onerror="imgError(this);">' + '</div>' +
                 '</div>';;
 
             if ((cultur == b && b == 'Greek') || cultur == b && b == 'Chinese' || cultur == b && b == 'Turkish' || cultur == b && b == 'Indian' || cultur == b && b == 'Italian' || b=='test') {
@@ -231,4 +231,3 @@ SidebarItem.prototype.remove = function(){
     this.div.removeChild(this.button);
     return true;
 }
-
