@@ -18,11 +18,14 @@ function parseToXML($htmlStr)
     return $xmlStr;
 }
 
+$time = mktime(date("m")  , date("d"), date("Y"));
+$tarih = gmdate('Y-m-d\TH:i:s', $time);
+
 // Opens a connection to a MySQL server
     $conn = new mysqli($hn, $un, $pw, $db);
     if ($conn->connect_error) die($conn->connect_error);
     $query = "SELECT E.name as ename, E.descp as description, E.capacity as cap, V.name as vname, E.start as start, E.end as end, E.logo as logo,
- V.latitude as lat, V.longitude as lon, E.culture as culture FROM Events E ,Venues V WHERE E.Venue = V.id"  ;
+ V.latitude as lat, V.longitude as lon, E.culture as culture FROM Events E ,Venues V WHERE E.Venue = V.id " ;
     $result = $conn->query($query);
     if (!$result) die($conn->error);
 

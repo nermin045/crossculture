@@ -38,7 +38,8 @@ $content = $get_array['content'];
 $culture = $get_array['culture'];
 
 $image = $pic;
-$time = mktime(0, 0, 0, date("m")  , date("d"), date("Y"));
+$time = mktime(date("m")  , date("d"), date("Y"));
+$tarih = gmdate('Y-m-d\TH:i:s', $time);
 
 $user_ip = getenv('REMOTE_ADDR');
 $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
@@ -48,7 +49,7 @@ $user = $_SESSION['login_username'];
 
 
 $sql = "INSERT INTO Story(title, content, image, latitude, longtitude, postdate, culture, username) " .
-"VALUES ('$title', '$content', '$image', '$latitude','$longitude', $time, '$culture', '$user')";
+"VALUES ('$title', '$content', '$image', '$latitude','$longitude', '$tarih', '$culture', '$user')";
 
 $result = $conn->query($sql);
 
