@@ -99,14 +99,14 @@ class Google_Client
           'base_path' => self::API_BASE_PATH,
 
           // https://developers.google.com/console
-          'client_id' => '',
-          'client_secret' => '',
+          'client_id' => '578478015916-fd1fj0ktuske55nfjthuu1v1hhl9j5mg.apps.googleusercontent.com',
+          'client_secret' => 'DTQNRjuHif5CoReSkRVc2VfV',
           'redirect_uri' => null,
           'state' => null,
 
           // Simple API access key, also from the API console. Ensure you get
           // a Server key, and not a Browser key.
-          'developer_key' => '',
+          'developer_key' => 'AIzaSyDEUKpjtRbak5N5AEgenSkXT-F0K_qCOQQ',
 
           // For use with Google Cloud Platform
           // fetch the ApplicationDefaultCredentials, if applicable

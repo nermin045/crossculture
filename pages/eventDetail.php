@@ -68,6 +68,13 @@ foreach($result as $row){
     break;
 }
 
+//            $conn = new mysqli($hn, $un, $pw, $db);
+//            if ($conn->connect_error) die($conn->connect_error);
+$query1 = "SELECT E.name as event, V.name as venue, E.start as startdate, E.end as enddate, E.logo as picture, E.culture as cul,
+V.address1 as adr1, V.address2 as adr2, V.postal_code as pcode, V.city as cit
+  FROM Events E ,Venues V WHERE E.Venue = V.id and E.culture = '$culture' and E.name != '$eventname'"  ;
+$result1 = $conn->query($query1);
+if (!$result1) die($conn->error);
 
 
 $zmt_client = new zomato('c31173bf9d57bbc6aeee69445019a82f');
@@ -261,7 +268,7 @@ for($i=0; $i<7; $i++ ) {
         <div class="eventname">
             <h2> <?=$eventname?> </h2>
             <br>
-            <?=$venue?><br><br>
+            <?=$venue?><br>
             <a href="../php/calendar.php" style="color: black"><img src="../images/GoogleCalendar.png"></a>
         </div>
     </div>
@@ -350,6 +357,49 @@ for($i=0; $i<7; $i++ ) {
         ?>
     </div>
         </div>
+
+    <div style="width: 90%; margin-left: 5%; margin-top: 20px">
+        <h3 style="color: black; font: 'Lato', sans-serif">Events You May Like</h3>
+        <div class="sliderc">
+
+            <?php
+            $count = 0;
+            foreach($result1 as $row) {
+                $Ename = $row['event'];
+                $evstart = $row['startdate'];
+                $evend = $row['enddate'];
+                $ven = $row['venue'];
+                $image = $row['picture'];
+                $adres = $row['adr2'] . ' ' . $row['adr1'] . ' ' . $row['cit'];
+                $code = $row['pcode'];
+                $cult = $row['cul'];
+                if($count >= 10){
+                    break;
+                }
+                ?>
+                <div>
+                    <a style="display:block" href="eventDetail.php?event=<?= $Ename ?>">
+                        <div id="" class="slick-img"
+                             style="background-image: url('<?= $image ?>');">
+                        </div>
+                        <h3 href="eventDetail.php?event=<?= $Ename ?>"> <?= $Ename ?> </h3>
+                    </a>
+                    <p> Place: <?= $ven ?>
+                        <br>
+                        Date: <?=substr($evstart, 8,-9)?>
+                        /
+                        <?=substr($evstart, 5,-12)?>
+                        /
+                        <?=substr($evstart, 0,-15)?>
+                    </p>
+                </div>
+                <?php
+                $count++;
+            }
+            ?>
+        </div>
+    </div>
+
 </div>
 
 <section class="rowfooter breath container-fluid" style="padding: 0px">
