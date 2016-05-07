@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../css/dropdownbtn.css">
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+
 </head>
 <body>
 <?php
@@ -40,19 +42,22 @@ parse_str($get_string, $get_array);
 
 $name = $get_array['event'];
 $name = addslashes($name);
-
+/*
+ * get Event information
+ */
 $conn = new mysqli($hn, $un, $pw, $db);
 if ($conn->connect_error) die($conn->connect_error);
-$query = "SELECT E.name as ename, E.descp as description, E.capacity as cap, V.name as vname, E.start as start, E.end as end, E.logo as logo,
+$query = "SELECT E.id as eid, E.name as ename, E.descp as description, E.capacity as cap, V.name as vname, E.start as start, E.end as end, E.logo as logo,
  V.latitude as lat, V.longitude as lon, E.culture as culture, V.address1 as ad1, V.address2 as ad2, V.postal_code as postcode, V.city as city
-  FROM Events E ,Venues V WHERE E.Venue = V.id and E.name='$name'"   ;
+  FROM Events E ,Venues V WHERE E.Venue = V.id and E.name='$name'";
 $result = $conn->query($query);
 if (!$result) die($conn->error);
-
 $event;
 foreach($result as $row){
     //print_r($row);
+
     $event = $row;
+    $eid = $row['eid'];
     $eventname = $row['ename'];
     $descp = $row['description'];
     $cap = $row['cap'];
@@ -68,7 +73,9 @@ foreach($result as $row){
     break;
 }
 
-
+/*
+ * get restaurant information
+ */
 
 $zmt_client = new zomato('c31173bf9d57bbc6aeee69445019a82f');
 
@@ -124,6 +131,26 @@ for($i=0; $i<7; $i++ ) {
     }
 }
 
+/*
+ * get like number and status
+ */
+
+if ($conn->connect_error) die($conn->connect_error);
+$query = "SELECT * FROM UserEvent WHERE eventid='$eid'";
+$result = $conn->query($query);
+if (!$result) die($conn->error);
+$countLike = $result->num_rows;
+$userid = $_SESSION['login_userid'];
+$query = "SELECT * FROM UserEvent WHERE userid='$userid'";
+$result = $conn->query($query);
+if (!$result) die($conn->error);
+$likeStatus = $result->num_rows;
+if($likeStatus == 0){
+    $likeClass = "fa fa-heart-o";
+}else{
+    $likeClass = "fa fa-heart";
+}
+
 ?>
 <div style="width: 100%">
     <div id="popupbox" class="module form-module popuplogin">
@@ -152,9 +179,6 @@ for($i=0; $i<7; $i++ ) {
         <div class="cta"><a href="registration.php">Sign Up</a></div>
     </div>
 </div>
-
-
-
 
 <!--Fixed Navigation
 ==================================== -->
@@ -227,11 +251,11 @@ for($i=0; $i<7; $i++ ) {
                     ?>
                     <li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>
                     <li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right"
-                                                                   aria-hidden="true"></i></a></li>
+                                                             aria-hidden="true"></i></a></li>
                     <li><a href="community.php">Community<i class="fa fa-university pull-right"
-                                                                  aria-hidden="true"></i></a></li>
+                                                            aria-hidden="true"></i></a></li>
                     <li><a href="story.php">Story<i class="fa fa-paper-plane pull-right"
-                                                          aria-hidden="true"></i></a></li>
+                                                    aria-hidden="true"></i></a></li>
 
                     <?php
                     echo '<li><a href="../php/logout.php">Logout<i class="fa fa-sign-out pull-right" aria-hidden="true"></i></a></li>';
@@ -240,7 +264,7 @@ for($i=0; $i<7; $i++ ) {
                     echo '<li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>';
                     echo '<li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right" aria-hidden="true"></i></a></li>';
                     echo '<li><a href="community.php">Community<i class="fa fa-university pull-right" aria-hidden="true"></i></a></li>';
-                    echo '<li><a href="pages/story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
                     echo '<li><a href="javascript:login(\'show\');">Login<i class="fa fa-sign-in pull-right" aria-hidden="true"></i></a></li>';
                 }
                 ?>
@@ -255,12 +279,13 @@ for($i=0; $i<7; $i++ ) {
 </header>
 
 
+
 <div id="" class="eventhead" style="background-image: url('<?=$pic?>');">
     <div class="image-overlay"">
         <div class="eventname">
             <h2> <?=$eventname?> </h2>
             <br>
-            <?=$venue?>
+            <?=$venue?> <button id="likeBtn" class="<?=$likeClass?>" style="color: red" ></button>
         </div>
     </div>
 
@@ -360,7 +385,34 @@ for($i=0; $i<7; $i++ ) {
 </section>
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#likeBtn").click(function () {
+            $.post("../php/likeEvent.php", {status:<?php echo $likeStatus; ?>}, function (data) {
+                if (data == 1) {
+                    <?php
+                    $likeStatus = 1;
+                    ?>
+                    $("#likeBtn").removeClass("fa-heart-o");
+                    $("#likeBtn").addClass("fa-heart");
+                } else {
+                    <?php
+                    $likeStatus = 0;
+                    ?>
+                    $("#likeBtn").removeClass("fa-heart");
+                    $("#likeBtn").addClass("fa-heart-o");
+                }
+
+            })
+        });
+    });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../css/slick/slick.min.js"></script>
 <script type="text/javascript">
@@ -415,7 +467,10 @@ for($i=0; $i<7; $i++ ) {
 
     });
 </script>
-</body>
 <script type="text/javascript" src="../js/loginform.js"></script>
 <script src="../js/dropdownbtn.js"></script>
+
+</body>
+
+
 </html>

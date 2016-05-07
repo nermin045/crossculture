@@ -218,7 +218,7 @@ if (isset($_SESSION['login_username'])) {
     <div class="row">
         <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
 
-        <form id="eventform" class="formdiv" action="insertuser.php" method="POST" name="input" accept-charset="utf-8">
+        <form id="regform" class="formdiv" action="insertuser.php" method="POST" name="input" accept-charset="utf-8">
             <fieldset class="form-group row">
                 <div class="col-md-5">
                     <label for="username">Username</label>
@@ -258,6 +258,24 @@ if (isset($_SESSION['login_username'])) {
                     <label for="email">E-mail</label>
                     <input type="text" name="email" id="email" class="form-control"/>
                 </div>
+            </fieldset>
+            <fieldset class="form-group row">
+                <div class="col-md-5">
+                    <label for="dob">Date of Birth</label>
+                    <div class='input-group date'>
+                        <input type="text" name="dob" id="dob" class="form-control"/>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var date = new Date(2006,0,1);
+                    $(function () {
+                        $('#dob').datetimepicker({
+                            format: "DD-MM-YYYY",
+                            maxDate: date
+                        });
+                    });
+
+                </script>
             </fieldset>
             <fieldset class="form-group row">
                 <div class="col-md-5">

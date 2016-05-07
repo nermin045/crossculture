@@ -22,7 +22,12 @@ session_start();
     $count=$fetch->num_rows;
     if($count!="")
     {
-        $_SESSION['login_username']=$user;
+        foreach($fetch as $row) {
+            //print_r($row);
+            $_SESSION['login_userid'] = row['id'];
+            break;
+        }
+            $_SESSION['login_username']=$user;
         $_SESSION['islogin'] = true;
         if(isset($_SERVER['HTTP_REFERER'])) {
             header('Location: '.$_SERVER['HTTP_REFERER']);
