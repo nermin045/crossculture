@@ -101,7 +101,19 @@ if (isset($get_array['logged'])) {
     });
     "
         , '</script>';
+    }else if ($name == 'successful') {
+        echo '<script type="text/javascript">'
+        , " $(document).ready(function () {
+    $('#popup3').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'
+        });
+    });
+    "
+        , '</script>';
     }
+
 }
 ?>
 
@@ -446,6 +458,12 @@ End Fixed Navigation
 <div id="popup2">
     <span class="button b-close"><span>X</span></span>
     <span class="logo">Sorry. <br> Your username or password was wrong.</span><br>
+
+</div>
+
+<div id="popup3">
+    <span class="button b-close"><span>X</span></span>
+    <span class="logo">Registration Successful<br>You can login now</span><br>
 
 </div>
 

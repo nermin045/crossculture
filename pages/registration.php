@@ -162,8 +162,7 @@ if (isset($_SESSION['login_username'])) {
                             <div class="arrow"></div>
                             <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
-                            <a href="mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
-                            <a href="poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>
+                            <a href="#">My stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="../php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
                     } else {
@@ -259,6 +258,24 @@ if (isset($_SESSION['login_username'])) {
                     <label for="email">E-mail</label>
                     <input type="text" name="email" id="email" class="form-control"/>
                 </div>
+            </fieldset>
+            <fieldset class="form-group row">
+                <div class="col-md-5">
+                    <label for="dob">Date of Birth</label>
+                    <div class='input-group date'>
+                        <input type="text" name="dob" id="dob" class="form-control"/>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var date = new Date(2006,0,1);
+                    $(function () {
+                        $('#dob').datetimepicker({
+                            format: "DD-MM-YYYY",
+                            maxDate: date
+                        });
+                    });
+
+                </script>
             </fieldset>
             <fieldset class="form-group row">
                 <div class="col-md-5">

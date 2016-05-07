@@ -2,7 +2,8 @@
 require "dbinfo.php";
 include "session.php";
 $path = '';
-
+$data = file_get_contents("php://input");
+parse_str($data, $get_array);
 
 if(isset($_FILES['image'])){
     $errors= array();
@@ -28,9 +29,14 @@ if(isset($_FILES['image'])){
 $conn = new mysqli($hn, $un, $pw, $db);
 if ($conn->connect_error) die($conn->connect_error);
 
-$title = $_POST['title'];
-$content = $_POST['content'];
-$culture = $_POST['culture'];
+//$title = $_POST["title"];
+//$content = $_POST["content"];
+//$culture = $_POST["culture"];
+
+$title = $get_array['title'];
+$content = $get_array['content'];
+$culture = $get_array['culture'];
+
 $image = $pic;
 $time = mktime(0, 0, 0, date("m")  , date("d"), date("Y"));
 
@@ -38,19 +44,16 @@ $user_ip = getenv('REMOTE_ADDR');
 $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
 $latitude = $geo["geoplugin_latitude"];
 $longitude = $geo["geoplugin_longitude"];
-
-if (isset($_SESSION['login_username'])){
-    $user = $_SESSION['login_username'];
-}
+$user = $_SESSION['login_username'];
 
 
-$sql = "INSERT INTO Story(title, content, image, latitude, longtitude, postdate, culture, username) 
-VALUES ('$title', '$content', '$image', '$latitude','$longitude', $time, '$culture', '$user')";
+$sql = "INSERT INTO Story(title, content, image, latitude, longtitude, postdate, culture, username) " .
+"VALUES ('$title', '$content', '$image', '$latitude','$longitude', $time, '$culture', '$user')";
 
-$result = $conn->query($query);
+$result = $conn->query($sql);
 
 if (!$result) {
-    echo "INSERT failed: $query<br>" .
+    echo "INSERT failed: $sql<br>" .
         $conn->error . "<br><br>";
 }
 

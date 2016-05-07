@@ -186,22 +186,24 @@ include '../php/session.php';
     <div class="row">
         <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
 
-            <form id="storyform" class="formdiv" action="../php/upload.php" enctype="multipart/form-data" method="POST">
+            <form id="storyform" class="formdiv" action="../php/upload.php" enctype="multipart/form-data" method="POST" name="input">
 
                 <div class="formrow">
-                    <div class="rowtitle">
-                        Title of the Story
-                    </div>
+<!--                    <div class="rowtitle">-->
+<!--                        Title of the Story-->
+<!--                    </div>-->
                     <div>
+                        <label for="title">Title of Story</label><br>
                         <input type="text" name="title" id="title">
                     </div>
                 </div>
 
                 <div class="formrow">
-                    <div class="rowtitle">
-                        Story
-                    </div>
+<!--                    <div class="rowtitle">-->
+<!--                        Story-->
+<!--                    </div>-->
                     <div>
+                        <label for="content">Story</label><br>
                         <textarea id="content" name="content" rows="12" cols="60"></textarea><br><br>
                         <script type="text/javascript">
                             CKEDITOR.replace( 'content' );
@@ -210,9 +212,10 @@ include '../php/session.php';
                 </div>
 
                 <div class="formrow">
-                    <div class="rowtitle">
-                        Culture
-                    </div>
+<!--                    <div class="rowtitle">-->
+<!--                        Culture-->
+<!--                    </div>-->
+                    <label for="culture">Culture</label><br>
                     <div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" id="culture" name="culture" value="Chinese" autocomplete="off"
@@ -243,10 +246,11 @@ include '../php/session.php';
 
 
                 <div class="formrow">
-                    <div class="rowtitle">
-                        Image
-                    </div>
+<!--                    <div class="rowtitle">-->
+<!--                        Image-->
+<!--                    </div>-->
                     <div class="forminput">
+                        <label for="image">Story Image</label><br>
                         <input type='file' onchange="readURL(this);" name="image" accept="image/*"/>
                         <img id="blah" src="#" alt="Please upload an image..."/>
                     </div>

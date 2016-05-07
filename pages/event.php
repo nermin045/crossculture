@@ -36,7 +36,7 @@ session_start();
     <script src="../js/bootstrap.min.js"></script>
 
     <!--simple-line-icons-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAohlvHFSdn17Csms1_VTA-BNkvc4aJ9YY&sensor=true"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAohlvHFSdn17Csms1_VTA-BNkvc4aJ9YY"
             type="text/javascript"></script>
 </head>
 <body onload="firstLoad()">

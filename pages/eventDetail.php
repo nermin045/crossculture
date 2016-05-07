@@ -261,7 +261,8 @@ for($i=0; $i<7; $i++ ) {
         <div class="eventname">
             <h2> <?=$eventname?> </h2>
             <br>
-            <?=$venue?>
+            <?=$venue?><br><br>
+            <a href="../php/calendar.php" style="color: black"><img src="../images/GoogleCalendar.png"></a>
         </div>
     </div>
 

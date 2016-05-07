@@ -563,7 +563,7 @@ jQuery.each( {
 	slideDown: genFx( "show" ),
 	slideUp: genFx( "hide" ),
 	slideToggle: genFx( "toggle" ),
-	fadeIn: { opacity: "show" },
+	fadeIn: { opacity: "show"},
 	fadeOut: { opacity: "hide" },
 	fadeToggle: { opacity: "toggle" }
 }, function( name, props ) {
