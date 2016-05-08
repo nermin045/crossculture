@@ -18,9 +18,6 @@
     <link rel="stylesheet" href="../css/dropdownbtn.css">
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <script type="text/javascript" src="../js/jquery.bpopup.min.js"></script>
-    <script src="../js/pace.js"></script>
-
 </head>
 <body>
 <?php
@@ -40,21 +37,25 @@ $get_string = $_SERVER['QUERY_STRING'];
 
 parse_str($get_string, $get_array);
 
+
 $name = $get_array['event'];
 $name = addslashes($name);
-
+/*
+ * get Event information
+ */
 $conn = new mysqli($hn, $un, $pw, $db);
 if ($conn->connect_error) die($conn->connect_error);
-$query = "SELECT E.name as ename, E.descp as description, E.capacity as cap, V.name as vname, E.start as start, E.end as end, E.logo as logo,
+$query = "SELECT E.id as eid, E.name as ename, E.descp as description, E.capacity as cap, V.name as vname, E.start as start, E.end as end, E.logo as logo,
  V.latitude as lat, V.longitude as lon, E.culture as culture, V.address1 as ad1, V.address2 as ad2, V.postal_code as postcode, V.city as city
-  FROM Events E ,Venues V WHERE E.Venue = V.id and E.name='$name'"   ;
+  FROM Events E ,Venues V WHERE E.Venue = V.id and E.name='$name'";
 $result = $conn->query($query);
 if (!$result) die($conn->error);
-
 $event;
 foreach($result as $row){
     //print_r($row);
+
     $event = $row;
+    $eid = $row['eid'];
     $eventname = $row['ename'];
     $descp = $row['description'];
     $cap = $row['cap'];
@@ -70,30 +71,54 @@ foreach($result as $row){
     break;
 }
 
-//            $conn = new mysqli($hn, $un, $pw, $db);
-//            if ($conn->connect_error) die($conn->connect_error);
+//get similar events for recommendation
 $query1 = "SELECT E.name as event, V.name as venue, E.start as startdate, E.end as enddate, E.logo as picture, E.culture as cul,
 V.address1 as adr1, V.address2 as adr2, V.postal_code as pcode, V.city as cit
-  FROM Events E ,Venues V WHERE E.Venue = V.id and E.culture = '$culture' and E.name != '$eventname'"  ;
+FROM Events E ,Venues V WHERE E.Venue = V.id and E.culture = '$culture' and E.name != '$eventname'"  ;
 $result1 = $conn->query($query1);
 if (!$result1) die($conn->error);
 
+
+/*
+ * get like number and status
+ */
+
+//if ($conn->connect_error) die($conn->connect_error);
+$query = "SELECT * FROM UserEvent WHERE eventid='$eid'";
+$result = $conn->query($query);
+if (!$result) die($conn->error);
+$countLike = $result->num_rows;
+if (isset($_SESSION['login_username'])) {
+    $userid = $_SESSION['login_userid'];
+    $query = "SELECT * FROM UserEvent WHERE userid='$userid' and eventid=$eid";
+    $result = $conn->query($query);
+    if (!$result) die($conn->error);
+    $likeStatus = $result->num_rows;
+    if ($likeStatus == 0) {
+        $likeClass = "fa fa-heart-o";
+    } else {
+        $likeClass = "fa fa-heart";
+    }
+} else {
+    $likeClass = "fa fa-heart-o";
+}
+
+
+/*
+ * get restaurant information
+ */
 
 $zmt_client = new zomato('c31173bf9d57bbc6aeee69445019a82f');
 
 if ($culture == 'Chinese OR China') {
     $culture = '25';
-}
-else if ($culture == 'Greek OR Greece') {
+} else if ($culture == 'Greek OR Greece') {
     $culture = '156';
-}
-else if ($culture == 'Turkish OR Turkey') {
+} else if ($culture == 'Turkish OR Turkey') {
     $culture = '142';
-}
-else if ($culture == 'Indian OR India') {
+} else if ($culture == 'Indian OR India') {
     $culture = '148';
-}
-else if ($culture == 'Italian OR Italy') {
+} else if ($culture == 'Italian OR Italy') {
     $culture = '55';
 }
 
@@ -103,7 +128,7 @@ $info = array(
         'lat' => $lati,
         'lon' => $long,
         'cuisines' => $culture,
-        'radius'=>'5000',
+        'radius' => '5000',
         'sort' => 'rating'
     )
 );
@@ -111,13 +136,13 @@ $info = array(
 $result = $zmt_client->restaurants('search', $info)["restaurants"];
 
 //$json = file_get_contents('http://api.openweathermap.org/data/2.5/weather?lat='.$lati.'&lon='.$long.'&dt='.$eventstart.'&units=metric&APPID=e3756cc5200d05460a0df2833f10214a');
-$json = file_get_contents('http://api.openweathermap.org/data/2.5/forecast/daily?lat='.$lati.'&lon='.$long.'&count=7&units=metric&APPID=e3756cc5200d05460a0df2833f10214a');
+$json = file_get_contents('http://api.openweathermap.org/data/2.5/forecast/daily?lat=' . $lati . '&lon=' . $long . '&count=7&units=metric&APPID=e3756cc5200d05460a0df2833f10214a');
 //print_r($json);
 //$json  = file_get_contents('http://api.openweathermap.org/data/2.5/weather?lat=-37.814396&lon=144.963616&units=metric&APPID=e3756cc5200d05460a0df2833f10214a');
-$data  = json_decode($json,true);
+$data = json_decode($json, true);
 
 
-for($i=0; $i<7; $i++ ) {
+for ($i = 0; $i < 7; $i++) {
     $dt = $data['list'][$i]['dt'];
     $tarih = date('d/m/Y H:i:s', $dt);
 
@@ -132,7 +157,6 @@ for($i=0; $i<7; $i++ ) {
 
     }
 }
-
 ?>
 <div style="width: 100%">
     <div id="popupbox" class="module form-module popuplogin">
@@ -215,7 +239,7 @@ for($i=0; $i<7; $i++ ) {
                         echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
                         echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
-                            <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
+                            <a href="myprofile.php">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
                             <a href="mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>
@@ -265,17 +289,21 @@ for($i=0; $i<7; $i++ ) {
 </header>
 
 
-<div id="" class="eventhead" style="background-image: url('<?=$pic?>');">
-    <div class="image-overlay"">
-        <div class="eventname">
-            <h2> <?=$eventname?> </h2>
-            <br>
-            <?=$venue?><br>
-            <a href="../php/calendar.php?event=<?=$eventname?>" style="color: black"><img src="../images/GoogleCalendar.png"></a>
-        </div>
-    </div>
 
+<div id="" class="eventhead" style="background-image: url('<?= $pic ?>');">
+    <div class="image-overlay">
+    <div class="eventname">
+        <h2> <?= $eventname ?> </h2>
+        <?= $venue ?>
+        <h3>
+            <button id="likeBtn" class="<?= $likeClass ?>" style="color: red"></button>
+            <a id="countLike" style="color: white"><?= $countLike ?></a>
+            <a href="../php/calendar.php?event=<?=$eventname?>" style="color: black"><img src="../images/GoogleCalendar.png"></a>
+        </h3>
+    </div>
+        </div>
 </div>
+
 <div class="container">
     <div class="descp" style="margin-left: 90px; margin-right: 50px;">
         <?=$descp?>
@@ -402,6 +430,7 @@ for($i=0; $i<7; $i++ ) {
         </div>
     </div>
 
+
 </div>
 
 <section class="rowfooter breath container-fluid" style="padding: 0px">
@@ -413,9 +442,55 @@ for($i=0; $i<7; $i++ ) {
     </div>
 </section>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#likeBtn").click(function () {
+            if (<? if (isset($_SESSION['login_username'])) {
+                echo '1';
+            } else {
+                echo '0';
+            } ?> == 0
+            )
+            {
+                login('show');
+            }
+            else
+            {
+                var val = parseInt(document.getElementById("countLike").textContent, 10);
+                $.post("../php/likeEvent.php", {eventid:<?php echo $eid; ?>}, function (data) {
+//                likeCon = data.likeStatus
+                    if (data == "1") {
+                        $("#likeBtn").removeClass("fa-heart-o");
+                        $("#likeBtn").addClass("fa-heart");
+                        val = val + 1;
+                        $("#countLike").text(val);
+
+
+                    } else {
+                        $("#likeBtn").removeClass("fa-heart");
+                        $("#likeBtn").addClass("fa-heart-o");
+                        val = val - 1;
+                        $("#countLike").text(val);
+                    }
+                })
+
+            }
+        });
+    });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="../js/loginform.js"></script>
+<script src="../js/dropdownbtn.js"></script>
 <script type="text/javascript" src="../css/slick/slick.min.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function () {
 
@@ -469,8 +544,7 @@ for($i=0; $i<7; $i++ ) {
     });
 </script>
 
-
 </body>
-<script type="text/javascript" src="../js/loginform.js"></script>
-<script src="../js/dropdownbtn.js"></script>
+
+
 </html>

@@ -6,7 +6,6 @@
 
 .eventhead{
     position:relative;
-    padding:80px 15px;
     margin: 0;
     text-align:center;
     text-shadow:0 1px 0 rgba(0,0,0,.1);
@@ -25,7 +24,7 @@
     background-image: -webkit-linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4));
     background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4));
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#70000000, endColorstr=#70000000 );
-    position: absolute;
+    padding:80px 15px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -61,4 +60,12 @@
 }
 #clear {
     clear: both;
+}
+
+#likeBtn
+{
+    -webkit-appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent;
 }

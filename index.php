@@ -198,7 +198,7 @@ if (isset($get_array['logged'])) {
                         echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
                         echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
-                            <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
+                            <a href="pages/myprofile.php">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="pages/myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
                             <a href="pages/mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="pages/poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>
