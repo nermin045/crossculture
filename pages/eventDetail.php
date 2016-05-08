@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="../css/dropdownbtn.css">
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="../js/jquery.bpopup.min.js"></script>
+    <script src="../js/pace.js"></script>
+
 </head>
 <body>
 <?php
@@ -36,7 +39,6 @@ require "../php/zomato.php";
 $get_string = $_SERVER['QUERY_STRING'];
 
 parse_str($get_string, $get_array);
-
 
 $name = $get_array['event'];
 $name = addslashes($name);
@@ -248,7 +250,7 @@ for($i=0; $i<7; $i++ ) {
                     echo '<li><a href="../index.php">Home<i class="fa fa-home pull-right" aria-hidden="true"></i></a></li>';
                     echo '<li><a href="event.php?clt=test">Event<i class="fa fa-list-ol pull-right" aria-hidden="true"></i></a></li>';
                     echo '<li><a href="community.php">Community<i class="fa fa-university pull-right" aria-hidden="true"></i></a></li>';
-                    echo '<li><a href="pages/story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
+                    echo '<li><a href="story.php">Story<i class="fa fa-paper-plane pull-right" aria-hidden="true"></i></a></li>';
                     echo '<li><a href="javascript:login(\'show\');">Login<i class="fa fa-sign-in pull-right" aria-hidden="true"></i></a></li>';
                 }
                 ?>
@@ -269,7 +271,7 @@ for($i=0; $i<7; $i++ ) {
             <h2> <?=$eventname?> </h2>
             <br>
             <?=$venue?><br>
-            <a href="../php/calendar.php" style="color: black"><img src="../images/GoogleCalendar.png"></a>
+            <a href="../php/calendar.php?event=<?=$eventname?>" style="color: black"><img src="../images/GoogleCalendar.png"></a>
         </div>
     </div>
 
@@ -411,7 +413,6 @@ for($i=0; $i<7; $i++ ) {
     </div>
 </section>
 
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../css/slick/slick.min.js"></script>
@@ -467,6 +468,8 @@ for($i=0; $i<7; $i++ ) {
 
     });
 </script>
+
+
 </body>
 <script type="text/javascript" src="../js/loginform.js"></script>
 <script src="../js/dropdownbtn.js"></script>
