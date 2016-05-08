@@ -26,20 +26,23 @@ parse_str($data, $get_array);
     $lname = $get_array['lastname'];
     $mail = $get_array['email'];
     $nation = $get_array['nationality'];
-    $birth = $get_array['dob'];
+    //$birth = $get_array['dob'];
     $sex = $get_array['gender'];
-    $adr = $get_array['address'];
-    $sub = $get_array['suburb'];
+//    $adr = $get_array['address'];
+//    $sub = $get_array['suburb'];
+    $adr = $get_array['streetnumber'].' '.$get_array['route'].' '.$get_array['locality'];
+    $sub= $get_array['locality'];
     $int = $get_array['interest'];
     $pwd = md5($pwd);
-    $dob = date("Y-m-d", strtotime($birth));
+//    $dob = date("Y-m-d", strtotime($birth));
+
 
 session_start();
 if($get_array['captcha'] != $_SESSION['digit']) die("Sorry, the CAPTCHA code entered was incorrect!");
 session_destroy();
 
 
-    $sql = "INSERT INTO Users(username, password, firstname, lastname, email, nationality, dob, gender, address, suburb, interest) VALUES ('$usrname', '$pwd', '$fname', '$lname','$mail', '$nation', '$dob', '$sex', '$adr', '$sub', '$int')";
+    $sql = "INSERT INTO Users(username, password, firstname, lastname, email, nationality, dob, gender, address, suburb, interest) VALUES ('$usrname', '$pwd', '$fname', '$lname','$mail', '$nation', '2014-03-03', '$sex', '$adr', '$sub', '$int')";
 
 
     $retval = mysqli_query($conn, $sql);
@@ -50,7 +53,7 @@ session_destroy();
 
 //    echo "Entered data successfully\n";
 mysqli_close($conn);
-    header("Location:../index.php");
+    header("Location:../index.php?logged=successful");
 
 
 

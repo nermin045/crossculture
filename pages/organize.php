@@ -38,6 +38,7 @@ include '../php/session.php';
           rel="stylesheet"/>
 
     <script src="../js/gen_validatorv4.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
 
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 
@@ -114,9 +115,10 @@ include '../php/session.php';
                         echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
                         echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
-                            <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
+                            <a href="myprofile.php">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
-                            <a href="#">My stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>
                             <a href="../php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
                     } else {
@@ -224,6 +226,9 @@ include '../php/session.php';
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                     <textarea name="comment" class="inputfield" id="descp" style="height: 80px" form="eventform"
                               placeholder="Enter text here..."></textarea>
+                            <script type="text/javascript">
+                                CKEDITOR.replace( 'descp' );
+                            </script>
                         </div>
                     </div>
                 </div>

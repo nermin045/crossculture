@@ -266,3 +266,55 @@
 #popup2 {
     min-height: 250px
 }
+
+
+
+#popup3 .button.small {
+    border-radius: 15px;
+    float: right;
+    margin: 22px 5px 0;
+    padding: 6px 15px
+}
+
+#popup3 .button:hover {
+    background-color: #1e1e1e
+}
+
+#popup3 .button > span {
+    font-size: 84%
+}
+
+#popup3 .button.b-close, .button.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px
+}
+
+#popup3 .example {
+    display: block;
+    line-height: 1.25;
+    padding: 30px 110px 15px 0
+}
+
+#popup3 {
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 600px;
+    padding: 25px
+}
+
+#popup3 .logo {
+    color: #2b91af;
+    font: bold 325% 'Petrona', sans
+}
+
+#popup3 {
+    min-height: 250px
+}

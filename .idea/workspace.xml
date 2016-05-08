@@ -1,14 +1,523 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bb0ef31-6879-46eb-a198-cb15b372364c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/likeEvent.php" />
+    <list default="true" id="2bb0ef31-6879-46eb-a198-cb15b372364c" name="Default" comment="Merge branch 'master' of https://github.com/nermin045/crossculture&#10;&#10;# Conflicts:&#10;#&#9;.idea/.name&#10;#&#9;.idea/copyright/profiles_settings.xml&#10;#&#9;.idea/development.iml&#10;#&#9;.idea/dictionaries/Xiao.xml&#10;#&#9;.idea/encodings.xml&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/modules.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;README.md&#10;#&#9;assets/css/animate-custom.css&#10;#&#9;assets/css/bootstrap.css&#10;#&#9;assets/css/icomoon.css&#10;#&#9;assets/css/icomoon/icomoon-.eot&#10;#&#9;assets/css/icomoon/icomoon.eot&#10;#&#9;assets/css/icomoon/icomoon.svg&#10;#&#9;assets/css/icomoon/icomoon.ttf&#10;#&#9;assets/css/icomoon/icomoon.woff&#10;#&#9;assets/css/main.css&#10;#&#9;assets/fonts/glyphicons-halflings-regular.eot&#10;#&#9;assets/fonts/glyphicons-halflings-regular.svg&#10;#&#9;assets/fonts/glyphicons-halflings-regular.ttf&#10;#&#9;assets/fonts/glyphicons-halflings-regular.woff&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/CONTRIBUTING.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/Gruntfile.js&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/LICENSE&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/README.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/_bower.json&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/bower.json&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker-standalone.css&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/component.json&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/composer.json&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/ChangeLog.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/ContributorsGuide.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/Events.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/Extras.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/FAQ.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/Functions.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/Installing.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/Options.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/Version 4 Changelog.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/Version 4 Contributors guide.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/docs/index.md&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/mkdocs.yml&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/package.json&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/src/less/_bootstrap-datetimepicker.less&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/src/less/bootstrap-datetimepicker-build.less&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.CSS.nuspec&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.nuspec&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/install.ps1&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/src/sass/_bootstrap-datetimepicker.scss&#10;#&#9;bower_components/eonasdan-bootstrap-datetimepicker/tasks/bump_version.js&#10;#&#9;bower_components/jquery/AUTHORS.txt&#10;#&#9;bower_components/jquery/LICENSE.txt&#10;#&#9;bower_components/jquery/README.md&#10;#&#9;bower_components/jquery/_bower.json&#10;#&#9;bower_components/jquery/bower.json&#10;#&#9;bower_components/jquery/dist/jquery.js&#10;#&#9;bower_components/jquery/dist/jquery.min.js&#10;#&#9;bower_components/jquery/dist/jquery.min.map&#10;#&#9;bower_components/jquery/dist/jquery.slim.js&#10;#&#9;bower_components/jquery/dist/jquery.slim.min.js&#10;#&#9;bower_components/jquery/dist/jquery.slim.min.map&#10;#&#9;bower_components/jquery/sizzle/LICENSE.txt&#10;#&#9;bower_components/jquery/sizzle/dist/sizzle.js&#10;#&#9;bower_components/jquery/sizzle/dist/sizzle.min.js&#10;#&#9;bower_components/jquery/sizzle/dist/sizzle.min.map&#10;#&#9;bower_components/jquery/src/_jshintrc&#10;#&#9;bower_components/jquery/src/ajax.js&#10;#&#9;bower_components/jquery/src/ajax/jsonp.js&#10;#&#9;bower_components/jquery/src/ajax/load.js&#10;#&#9;bower_components/jquery/src/ajax/parseJSON.js&#10;#&#9;bower_components/jquery/src/ajax/parseXML.js&#10;#&#9;bower_components/jquery/src/ajax/script.js&#10;#&#9;bower_components/jquery/src/ajax/var/location.js&#10;#&#9;bower_components/jquery/src/ajax/var/nonce.js&#10;#&#9;bower_components/jquery/src/ajax/var/rquery.js&#10;#&#9;bower_components/jquery/src/ajax/xhr.js&#10;#&#9;bower_components/jquery/src/attributes.js&#10;#&#9;bower_components/jquery/src/attributes/attr.js&#10;#&#9;bower_components/jquery/src/attributes/classes.js&#10;#&#9;bower_components/jquery/src/attributes/prop.js&#10;#&#9;bower_components/jquery/src/attributes/support.js&#10;#&#9;bower_components/jquery/src/attributes/val.js&#10;#&#9;bower_components/jquery/src/callbacks.js&#10;#&#9;bower_components/jquery/src/core.js&#10;#&#9;bower_components/jquery/src/core/DOMEval.js&#10;#&#9;bower_components/jquery/src/core/access.js&#10;#&#9;bower_components/jquery/src/core/init.js&#10;#&#9;bower_components/jquery/src/core/parseHTML.js&#10;#&#9;bower_components/jquery/src/core/ready.js&#10;#&#9;bower_components/jquery/src/core/support.js&#10;#&#9;bower_components/jquery/src/core/var/rsingleTag.js&#10;#&#9;bower_components/jquery/src/css.js&#10;#&#9;bower_components/jquery/src/css/addGetHookIf.js&#10;#&#9;bower_components/jquery/src/css/adjustCSS.js&#10;#&#9;bower_components/jquery/src/css/curCSS.js&#10;#&#9;bower_components/jquery/src/css/defaultDisplay.js&#10;#&#9;bower_components/jquery/src/css/hiddenVisibleSelectors.js&#10;#&#9;bower_components/jquery/src/css/showHide.js&#10;#&#9;bower_components/jquery/src/css/support.js&#10;#&#9;bower_components/jquery/src/css/var/cssExpand.js&#10;#&#9;bower_components/jquery/src/css/var/getStyles.js&#10;#&#9;bower_components/jquery/src/css/var/isHidden.js&#10;#&#9;bower_components/jquery/src/css/var/rmargin.js&#10;#&#9;bower_components/jquery/src/css/var/rnumnonpx.js&#10;#&#9;bower_components/jquery/src/css/var/swap.js&#10;#&#9;bower_components/jquery/src/data.js&#10;#&#9;bower_components/jquery/src/data/Data.js&#10;#&#9;bower_components/jquery/src/data/accepts.js&#10;#&#9;bower_components/jquery/src/data/support.js&#10;#&#9;bower_components/jquery/src/data/var/acceptData.js&#10;#&#9;bower_components/jquery/src/data/var/dataPriv.js&#10;#&#9;bower_components/jquery/src/data/var/dataUser.js&#10;#&#9;bower_components/jquery/src/deferred.js&#10;#&#9;bower_components/jquery/src/deferred/exceptionHook.js&#10;#&#9;bower_components/jquery/src/deprecated.js&#10;#&#9;bower_components/jquery/src/dimensions.js&#10;#&#9;bower_components/jquery/src/effects.js&#10;#&#9;bower_components/jquery/src/effects/Tween.js&#10;#&#9;bower_components/jquery/src/effects/animatedSelector.js&#10;#&#9;bower_components/jquery/src/effects/support.js&#10;#&#9;bower_components/jquery/src/event.js&#10;#&#9;bower_components/jquery/src/event/ajax.js&#10;#&#9;bower_components/jquery/src/event/alias.js&#10;#&#9;bower_components/jquery/src/event/focusin.js&#10;#&#9;bower_components/jquery/src/event/support.js&#10;#&#9;bower_components/jquery/src/event/trigger.js&#10;#&#9;bower_components/jquery/src/exports/amd.js&#10;#&#9;bower_components/jquery/src/exports/global.js&#10;#&#9;bower_components/jquery/src/intro.js&#10;#&#9;bower_components/jquery/src/jquery.js&#10;#&#9;bower_components/jquery/src/manipulation.js&#10;#&#9;bower_components/jquery/src/manipulation/_evalUrl.js&#10;#&#9;bower_components/jquery/src/manipulation/buildFragment.js&#10;#&#9;bower_components/jquery/src/manipulation/createSafeFragment.js&#10;#&#9;bower_components/jquery/src/manipulation/getAll.js&#10;#&#9;bower_components/jquery/src/manipulation/setGlobalEval.js&#10;#&#9;bower_components/jquery/src/manipulation/support.js&#10;#&#9;bower_components/jquery/src/manipulation/var/nodeNames.js&#10;#&#9;bower_components/jquery/src/manipulation/var/rcheckableType.js&#10;#&#9;bower_components/jquery/src/manipulation/var/rleadingWhitespace.js&#10;#&#9;bower_components/jquery/src/manipulation/var/rscriptType.js&#10;#&#9;bower_components/jquery/src/manipulation/var/rtagName.js&#10;#&#9;bower_components/jquery/src/manipulation/wrapMap.js&#10;#&#9;bower_components/jquery/src/offset.js&#10;#&#9;bower_components/jquery/src/outro.js&#10;#&#9;bower_components/jquery/src/queue.js&#10;#&#9;bower_components/jquery/src/queue/delay.js&#10;#&#9;bower_components/jquery/src/selector-native.js&#10;#&#9;bower_components/jquery/src/selector-sizzle.js&#10;#&#9;bower_components/jquery/src/selector.js&#10;#&#9;bower_components/jquery/src/serialize.js&#10;#&#9;bower_components/jquery/src/support.js&#10;#&#9;bower_components/jquery/src/traversing.js&#10;#&#9;bower_components/jquery/src/traversing/findFilter.js&#10;#&#9;bower_components/jquery/src/traversing/var/dir.js&#10;#&#9;bower_components/jquery/src/traversing/var/rneedsContext.js&#10;#&#9;bower_components/jquery/src/traversing/var/siblings.js&#10;#&#9;bower_components/jquery/src/var/arr.js&#10;#&#9;bower_components/jquery/src/var/class2type.js&#10;#&#9;bower_components/jquery/src/var/concat.js&#10;#&#9;bower_components/jquery/src/var/deletedIds(2).js&#10;#&#9;bower_components/jquery/src/var/deletedIds.js&#10;#&#9;bower_components/jquery/src/var/document(2).js&#10;#&#9;bower_components/jquery/src/var/document.js&#10;#&#9;bower_components/jquery/src/var/documentElement(2).js&#10;#&#9;bower_components/jquery/src/var/documentElement.js&#10;#&#9;bower_components/jquery/src/var/hasOwn(2).js&#10;#&#9;bower_components/jquery/src/var/hasOwn.js&#10;#&#9;bower_components/jquery/src/var/indexOf(2).js&#10;#&#9;bower_components/jquery/src/var/indexOf.js&#10;#&#9;bower_components/jquery/src/var/pnum(2).js&#10;#&#9;bower_components/jquery/src/var/pnum.js&#10;#&#9;bower_components/jquery/src/var/push(2).js&#10;#&#9;bower_components/jquery/src/var/push.js&#10;#&#9;bower_components/jquery/src/var/rcssNum(2).js&#10;#&#9;bower_components/jquery/src/var/rcssNum.js&#10;#&#9;bower_components/jquery/src/var/rnotwhite(2).js&#10;#&#9;bower_components/jquery/src/var/rnotwhite.js&#10;#&#9;bower_components/jquery/src/var/slice(2).js&#10;#&#9;bower_components/jquery/src/var/slice.js&#10;#&#9;bower_components/jquery/src/var/support.js&#10;#&#9;bower_components/jquery/src/var/toString.js&#10;#&#9;bower_components/jquery/src/wrap.js&#10;#&#9;bower_components/moment-timezone/LICENSE&#10;#&#9;bower_components/moment-timezone/README.md&#10;#&#9;bower_components/moment-timezone/_bower.json&#10;#&#9;bower_components/moment-timezone/bower.json&#10;#&#9;bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js&#10;#&#9;bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js&#10;#&#9;bower_components/moment-timezone/builds/moment-timezone-with-data.js&#10;#&#9;bower_components/moment-timezone/builds/moment-timezone-with-data.min.js&#10;#&#9;bower_components/moment-timezone/builds/moment-timezone.min.js&#10;#&#9;bower_components/moment-timezone/changelog.md&#10;#&#9;bower_components/moment-timezone/composer.json&#10;#&#9;bower_components/moment-timezone/data/meta/latest.json&#10;#&#9;bower_components/moment-timezone/data/packed/latest.json&#10;#&#9;bower_components/moment-timezone/data/unpacked/latest.json&#10;#&#9;bower_components/moment-timezone/moment-timezone-utils.js&#10;#&#9;bower_components/moment-timezone/moment-timezone.js&#10;#&#9;bower_components/moment/CHANGELOG.md&#10;#&#9;bower_components/moment/LICENSE&#10;#&#9;bower_components/moment/README.md&#10;#&#9;bower_components/moment/_bower.json&#10;#&#9;bower_components/moment/bower.json&#10;#&#9;bower_components/moment/locale/af.js&#10;#&#9;bower_components/moment/locale/ar-ma.js&#10;#&#9;bower_components/moment/locale/ar-sa.js&#10;#&#9;bower_components/moment/locale/ar-tn.js&#10;#&#9;bower_components/moment/locale/ar.js&#10;#&#9;bower_components/moment/locale/az.js&#10;#&#9;bower_components/moment/locale/be.js&#10;#&#9;bower_components/moment/locale/bg.js&#10;#&#9;bower_components/moment/locale/bn.js&#10;#&#9;bower_components/moment/locale/bo.js&#10;#&#9;bower_components/moment/locale/br.js&#10;#&#9;bower_components/moment/locale/bs.js&#10;#&#9;bower_components/moment/locale/ca.js&#10;#&#9;bower_components/moment/locale/cs.js&#10;#&#9;bower_components/moment/locale/cv.js&#10;#&#9;bower_components/moment/locale/cy.js&#10;#&#9;bower_components/moment/locale/da.js&#10;#&#9;bower_components/moment/locale/de-at.js&#10;#&#9;bower_components/moment/locale/de.js&#10;#&#9;bower_components/moment/locale/dv.js&#10;#&#9;bower_components/moment/locale/el.js&#10;#&#9;bower_components/moment/locale/en-au.js&#10;#&#9;bower_components/moment/locale/en-ca.js&#10;#&#9;bower_components/moment/locale/en-gb.js&#10;#&#9;bower_components/moment/locale/en-ie.js&#10;#&#9;bower_components/moment/locale/en-nz.js&#10;#&#9;bower_components/moment/locale/eo.js&#10;#&#9;bower_components/moment/locale/es.js&#10;#&#9;bower_components/moment/locale/et.js&#10;#&#9;bower_components/moment/locale/eu.js&#10;#&#9;bower_components/moment/locale/fa.js&#10;#&#9;bower_components/moment/locale/fi.js&#10;#&#9;bower_components/moment/locale/fo.js&#10;#&#9;bower_components/moment/locale/fr-ca.js&#10;#&#9;bower_components/moment/locale/fr-ch.js&#10;#&#9;bower_components/moment/locale/fr.js&#10;#&#9;bower_components/moment/locale/fy.js&#10;#&#9;bower_components/moment/locale/gd.js&#10;#&#9;bower_components/moment/locale/gl.js&#10;#&#9;bower_components/moment/locale/he.js&#10;#&#9;bower_components/moment/locale/hi.js&#10;#&#9;bower_components/moment/locale/hr.js&#10;#&#9;bower_components/moment/locale/hu.js&#10;#&#9;bower_components/moment/locale/hy-am.js&#10;#&#9;bower_components/moment/locale/id.js&#10;#&#9;bower_components/moment/locale/is.js&#10;#&#9;bower_components/moment/locale/it.js&#10;#&#9;bower_components/moment/locale/ja.js&#10;#&#9;bower_components/moment/locale/jv.js&#10;#&#9;bower_components/moment/locale/ka.js&#10;#&#9;bower_components/moment/locale/kk.js&#10;#&#9;bower_components/moment/locale/km.js&#10;#&#9;bower_components/moment/locale/ko.js&#10;#&#9;bower_components/moment/locale/ky.js&#10;#&#9;bower_components/moment/locale/lb.js&#10;#&#9;bower_components/moment/locale/lo.js&#10;#&#9;bower_components/moment/locale/lt.js&#10;#&#9;bower_components/moment/locale/lv.js&#10;#&#9;bower_components/moment/locale/me.js&#10;#&#9;bower_components/moment/locale/mk.js&#10;#&#9;bower_components/moment/locale/ml.js&#10;#&#9;bower_components/moment/locale/mr.js&#10;#&#9;bower_components/moment/locale/ms-my.js&#10;#&#9;bower_components/moment/locale/ms.js&#10;#&#9;bower_components/moment/locale/my.js&#10;#&#9;bower_components/moment/locale/nb.js&#10;#&#9;bower_components/moment/locale/ne.js&#10;#&#9;bower_components/moment/locale/nl.js&#10;#&#9;bower_components/moment/locale/nn.js&#10;#&#9;bower_components/moment/locale/pa-in.js&#10;#&#9;bower_components/moment/locale/pl.js&#10;#&#9;bower_components/moment/locale/pt-br.js&#10;#&#9;bower_components/moment/locale/pt.js&#10;#&#9;bower_components/moment/locale/ro.js&#10;#&#9;bower_components/moment/locale/ru.js&#10;#&#9;bower_components/moment/locale/se.js&#10;#&#9;bower_components/moment/locale/si.js&#10;#&#9;bower_components/moment/locale/sk.js&#10;#&#9;bower_components/moment/locale/sl.js&#10;#&#9;bower_components/moment/locale/sq.js&#10;#&#9;bower_components/moment/locale/sr-cyrl.js&#10;#&#9;bower_components/moment/locale/sr.js&#10;#&#9;bower_components/moment/locale/ss.js&#10;#&#9;bower_components/moment/locale/sv.js&#10;#&#9;bower_components/moment/locale/sw.js&#10;#&#9;bower_components/moment/locale/ta.js&#10;#&#9;bower_components/moment/locale/te.js&#10;#&#9;bower_components/moment/locale/th.js&#10;#&#9;bower_components/moment/locale/tl-ph.js&#10;#&#9;bower_components/moment/locale/tlh.js&#10;#&#9;bower_components/moment/locale/tr.js&#10;#&#9;bower_components/moment/locale/tzl.js&#10;#&#9;bower_components/moment/locale/tzm-latn.js&#10;#&#9;bower_components/moment/locale/tzm.js&#10;#&#9;bower_components/moment/locale/uk.js&#10;#&#9;bower_components/moment/locale/uz.js&#10;#&#9;bower_components/moment/locale/vi.js&#10;#&#9;bower_components/moment/locale/x-pseudo.js&#10;#&#9;bower_components/moment/locale/zh-cn.js&#10;#&#9;bower_components/moment/locale/zh-tw.js&#10;#&#9;bower_components/moment/min/locales.js&#10;#&#9;bower_components/moment/min/locales.min.js&#10;#&#9;bower_components/moment/min/moment-with-locales.js&#10;#&#9;bower_components/moment/min/moment-with-locales.min.js&#10;#&#9;bower_components/moment/min/moment.min.js&#10;#&#9;bower_components/moment/moment.d.ts&#10;#&#9;bower_components/moment/moment.js&#10;#&#9;bower_components/moment/src/lib/create/check-overflow.js&#10;#&#9;bower_components/moment/src/lib/create/date-from-array.js&#10;#&#9;bower_components/moment/src/lib/create/from-anything.js&#10;#&#9;bower_components/moment/src/lib/create/from-array.js&#10;#&#9;bower_components/moment/src/lib/create/from-object.js&#10;#&#9;bower_components/moment/src/lib/create/from-string-and-array.js&#10;#&#9;bower_components/moment/src/lib/create/from-string-and-format.js&#10;#&#9;bower_components/moment/src/lib/create/from-string.js&#10;#&#9;bower_components/moment/src/lib/create/local.js&#10;#&#9;bower_components/moment/src/lib/create/parsing-flags.js&#10;#&#9;bower_components/moment/src/lib/create/utc.js&#10;#&#9;bower_components/moment/src/lib/create/valid.js&#10;#&#9;bower_components/moment/src/lib/duration/abs.js&#10;#&#9;bower_components/moment/src/lib/duration/add-subtract.js&#10;#&#9;bower_components/moment/src/lib/duration/as.js&#10;#&#9;bower_components/moment/src/lib/duration/bubble.js&#10;#&#9;bower_components/moment/src/lib/duration/constructor.js&#10;#&#9;bower_components/moment/src/lib/duration/create.js&#10;#&#9;bower_components/moment/src/lib/duration/duration.js&#10;#&#9;bower_components/moment/src/lib/duration/get.js&#10;#&#9;bower_components/moment/src/lib/duration/humanize.js&#10;#&#9;bower_components/moment/src/lib/duration/iso-string.js&#10;#&#9;bower_components/moment/src/lib/duration/prototype.js&#10;#&#9;bower_components/moment/src/lib/format/format.js&#10;#&#9;bower_components/moment/src/lib/locale/calendar.js&#10;#&#9;bower_components/moment/src/lib/locale/constructor.js&#10;#&#9;bower_components/moment/src/lib/locale/en.js&#10;#&#9;bower_components/moment/src/lib/locale/formats.js&#10;#&#9;bower_components/moment/src/lib/locale/invalid.js&#10;#&#9;bower_components/moment/src/lib/locale/lists.js&#10;#&#9;bower_components/moment/src/lib/locale/locale.js&#10;#&#9;bower_components/moment/src/lib/locale/locales.js&#10;#&#9;bower_components/moment/src/lib/locale/ordinal.js&#10;#&#9;bower_components/moment/src/lib/locale/pre-post-format.js&#10;#&#9;bower_components/moment/src/lib/locale/prototype.js&#10;#&#9;bower_components/moment/src/lib/locale/relative.js&#10;#&#9;bower_components/moment/src/lib/locale/set.js&#10;#&#9;bower_components/moment/src/lib/moment/add-subtract.js&#10;#&#9;bower_components/moment/src/lib/moment/calendar.js&#10;#&#9;bower_components/moment/src/lib/moment/clone.js&#10;#&#9;bower_components/moment/src/lib/moment/compare.js&#10;#&#9;bower_components/moment/src/lib/moment/constructor.js&#10;#&#9;bower_components/moment/src/lib/moment/creation-data.js&#10;#&#9;bower_components/moment/src/lib/moment/diff.js&#10;#&#9;bower_components/moment/src/lib/moment/format.js&#10;#&#9;bower_components/moment/src/lib/moment/from.js&#10;#&#9;bower_components/moment/src/lib/moment/get-set.js&#10;#&#9;bower_components/moment/src/lib/moment/locale.js&#10;#&#9;bower_components/moment/src/lib/moment/min-max.js&#10;#&#9;bower_components/moment/src/lib/moment/moment.js&#10;#&#9;bower_components/moment/src/lib/moment/now.js&#10;#&#9;bower_components/moment/src/lib/moment/prototype.js&#10;#&#9;bower_components/moment/src/lib/moment/start-end-of.js&#10;#&#9;bower_components/moment/src/lib/moment/to-type.js&#10;#&#9;bower_components/moment/src/lib/moment/to.js&#10;#&#9;bower_components/moment/src/lib/moment/valid.js&#10;#&#9;bower_components/moment/src/lib/parse/regex.js&#10;#&#9;bower_components/moment/src/lib/parse/token.js&#10;#&#9;bower_components/moment/src/lib/units/aliases.js&#10;#&#9;bower_components/moment/src/lib/units/constants.js&#10;#&#9;bower_components/moment/src/lib/units/day-of-month.js&#10;#&#9;bower_components/moment/src/lib/units/day-of-week.js&#10;#&#9;bower_components/moment/src/lib/units/day-of-year.js&#10;#&#9;bower_components/moment/src/lib/units/hour.js&#10;#&#9;bower_components/moment/src/lib/units/millisecond.js&#10;#&#9;bower_components/moment/src/lib/units/minute.js&#10;#&#9;bower_components/moment/src/lib/units/month.js&#10;#&#9;bower_components/moment/src/lib/units/offset.js&#10;#&#9;bower_components/moment/src/lib/units/quarter.js&#10;#&#9;bower_components/moment/src/lib/units/second.js&#10;#&#9;bower_components/moment/src/lib/units/timestamp.js&#10;#&#9;bower_components/moment/src/lib/units/timezone.js&#10;#&#9;bower_components/moment/src/lib/units/units.js&#10;#&#9;bower_components/moment/src/lib/units/week-calendar-utils.js&#10;#&#9;bower_components/moment/src/lib/units/week-year.js&#10;#&#9;bower_components/moment/src/lib/units/week.js&#10;#&#9;bower_components/moment/src/lib/units/year.js&#10;#&#9;bower_components/moment/src/lib/utils/abs-ceil.js&#10;#&#9;bower_components/moment/src/lib/utils/abs-floor.js&#10;#&#9;bower_components/moment/src/lib/utils/abs-round.js&#10;#&#9;bower_components/moment/src/lib/utils/compare-arrays.js&#10;#&#9;bower_components/moment/src/lib/utils/defaults.js&#10;#&#9;bower_components/moment/src/lib/utils/deprecate.js&#10;#&#9;bower_components/moment/src/lib/utils/extend.js&#10;#&#9;bower_components/moment/src/lib/utils/has-own-prop.js&#10;#&#9;bower_components/moment/src/lib/utils/hooks.js&#10;#&#9;bower_components/moment/src/lib/utils/index-of.js&#10;#&#9;bower_components/moment/src/lib/utils/is-array.js&#10;#&#9;bower_components/moment/src/lib/utils/is-date.js&#10;#&#9;bower_components/moment/src/lib/utils/is-function.js&#10;#&#9;bower_components/moment/src/lib/utils/is-object.js&#10;#&#9;bower_components/moment/src/lib/utils/is-undefined.js&#10;#&#9;bower_components/moment/src/lib/utils/keys.js&#10;#&#9;bower_components/moment/src/lib/utils/map.js&#10;#&#9;bower_components/moment/src/lib/utils/some.js&#10;#&#9;bower_components/moment/src/lib/utils/to-int.js&#10;#&#9;bower_components/moment/src/lib/utils/zero-fill.js&#10;#&#9;bower_components/moment/src/locale/af.js&#10;#&#9;bower_components/moment/src/locale/ar-ma.js&#10;#&#9;bower_components/moment/src/locale/ar-sa.js&#10;#&#9;bower_components/moment/src/locale/ar-tn.js&#10;#&#9;bower_components/moment/src/locale/ar.js&#10;#&#9;bower_components/moment/src/locale/az.js&#10;#&#9;bower_components/moment/src/locale/be.js&#10;#&#9;bower_components/moment/src/locale/bg.js&#10;#&#9;bower_components/moment/src/locale/bn.js&#10;#&#9;bower_components/moment/src/locale/bo.js&#10;#&#9;bower_components/moment/src/locale/br.js&#10;#&#9;bower_components/moment/src/locale/bs.js&#10;#&#9;bower_components/moment/src/locale/ca.js&#10;#&#9;bower_components/moment/src/locale/cs.js&#10;#&#9;bower_components/moment/src/locale/cv.js&#10;#&#9;bower_components/moment/src/locale/cy.js&#10;#&#9;bower_components/moment/src/locale/da.js&#10;#&#9;bower_components/moment/src/locale/de-at.js&#10;#&#9;bower_components/moment/src/locale/de.js&#10;#&#9;bower_components/moment/src/locale/dv.js&#10;#&#9;bower_components/moment/src/locale/el.js&#10;#&#9;bower_components/moment/src/locale/en-au.js&#10;#&#9;bower_components/moment/src/locale/en-ca.js&#10;#&#9;bower_components/moment/src/locale/en-gb.js&#10;#&#9;bower_components/moment/src/locale/en-ie.js&#10;#&#9;bower_components/moment/src/locale/en-nz.js&#10;#&#9;bower_components/moment/src/locale/eo.js&#10;#&#9;bower_components/moment/src/locale/es.js&#10;#&#9;bower_components/moment/src/locale/et.js&#10;#&#9;bower_components/moment/src/locale/eu.js&#10;#&#9;bower_components/moment/src/locale/fa.js&#10;#&#9;bower_components/moment/src/locale/fi.js&#10;#&#9;bower_components/moment/src/locale/fo.js&#10;#&#9;bower_components/moment/src/locale/fr-ca.js&#10;#&#9;bower_components/moment/src/locale/fr-ch.js&#10;#&#9;bower_components/moment/src/locale/fr.js&#10;#&#9;bower_components/moment/src/locale/fy.js&#10;#&#9;bower_components/moment/src/locale/gd.js&#10;#&#9;bower_components/moment/src/locale/gl(2).js&#10;#&#9;bower_components/moment/src/locale/gl.js&#10;#&#9;bower_components/moment/src/locale/he(2).js&#10;#&#9;bower_components/moment/src/locale/he.js&#10;#&#9;bower_components/moment/src/locale/hi(2).js&#10;#&#9;bower_components/moment/src/locale/hi.js&#10;#&#9;bower_components/moment/src/locale/hr(2).js&#10;#&#9;bower_components/moment/src/locale/hr.js&#10;#&#9;bower_components/moment/src/locale/hu(2).js&#10;#&#9;bower_components/moment/src/locale/hu.js&#10;#&#9;bower_components/moment/src/locale/hy-am(2).js&#10;#&#9;bower_components/moment/src/locale/hy-am.js&#10;#&#9;bower_components/moment/src/locale/id(2).js&#10;#&#9;bower_components/moment/src/locale/id.js&#10;#&#9;bower_components/moment/src/locale/is(2).js&#10;#&#9;bower_components/moment/src/locale/is.js&#10;#&#9;bower_components/moment/src/locale/it(2).js&#10;#&#9;bower_components/moment/src/locale/it.js&#10;#&#9;bower_components/moment/src/locale/ja(2).js&#10;#&#9;bower_components/moment/src/locale/ja.js&#10;#&#9;bower_components/moment/src/locale/jv.js&#10;#&#9;bower_components/moment/src/locale/ka.js&#10;#&#9;bower_components/moment/src/locale/kk.js&#10;#&#9;bower_components/moment/src/locale/km.js&#10;#&#9;bower_components/moment/src/locale/ko.js&#10;#&#9;bower_components/moment/src/locale/ky.js&#10;#&#9;bower_components/moment/src/locale/lb.js&#10;#&#9;bower_components/moment/src/locale/lo.js&#10;#&#9;bower_components/moment/src/locale/lt.js&#10;#&#9;bower_components/moment/src/locale/lv.js&#10;#&#9;bower_components/moment/src/locale/me.js&#10;#&#9;bower_components/moment/src/locale/mk.js&#10;#&#9;bower_components/moment/src/locale/ml.js&#10;#&#9;bower_components/moment/src/locale/mr.js&#10;#&#9;bower_components/moment/src/locale/ms-my.js&#10;#&#9;bower_components/moment/src/locale/ms.js&#10;#&#9;bower_components/moment/src/locale/my.js&#10;#&#9;bower_components/moment/src/locale/nb.js&#10;#&#9;bower_components/moment/src/locale/ne.js&#10;#&#9;bower_components/moment/src/locale/nl.js&#10;#&#9;bower_components/moment/src/locale/nn.js&#10;#&#9;bower_components/moment/src/locale/pa-in.js&#10;#&#9;bower_components/moment/src/locale/pl.js&#10;#&#9;bower_components/moment/src/locale/pt-br.js&#10;#&#9;bower_components/moment/src/locale/pt.js&#10;#&#9;bower_components/moment/src/locale/ro.js&#10;#&#9;bower_components/moment/src/locale/ru.js&#10;#&#9;bower_components/moment/src/locale/se.js&#10;#&#9;bower_components/moment/src/locale/si.js&#10;#&#9;bower_components/moment/src/locale/sk.js&#10;#&#9;bower_components/moment/src/locale/sl.js&#10;#&#9;bower_components/moment/src/locale/sq.js&#10;#&#9;bower_components/moment/src/locale/sr-cyrl.js&#10;#&#9;bower_components/moment/src/locale/sr.js&#10;#&#9;bower_components/moment/src/locale/ss.js&#10;#&#9;bower_components/moment/src/locale/sv.js&#10;#&#9;bower_components/moment/src/locale/sw.js&#10;#&#9;bower_components/moment/src/locale/ta.js&#10;#&#9;bower_components/moment/src/locale/te.js&#10;#&#9;bower_components/moment/src/locale/th.js&#10;#&#9;bower_components/moment/src/locale/tl-ph.js&#10;#&#9;bower_components/moment/src/locale/tlh.js&#10;#&#9;bower_components/moment/src/locale/tr.js&#10;#&#9;bower_components/moment/src/locale/tzl.js&#10;#&#9;bower_components/moment/src/locale/tzm-latn.js&#10;#&#9;bower_components/moment/src/locale/tzm.js&#10;#&#9;bower_components/moment/src/locale/uk.js&#10;#&#9;bower_components/moment/src/locale/uz.js&#10;#&#9;bower_components/moment/src/locale/vi.js&#10;#&#9;bower_components/moment/src/locale/x-pseudo.js&#10;#&#9;bower_components/moment/src/locale/zh-cn.js&#10;#&#9;bower_components/moment/src/locale/zh-tw.js&#10;#&#9;bower_components/moment/src/moment.js&#10;#&#9;bower_components/moment/templates/amd-named.js&#10;#&#9;bower_components/moment/templates/amd.js&#10;#&#9;bower_components/moment/templates/default.js&#10;#&#9;bower_components/moment/templates/globals.js&#10;#&#9;bower_components/moment/templates/locale-header.js&#10;#&#9;bower_components/moment/templates/test-header.js&#10;#&#9;css/Infowindow.css&#10;#&#9;css/animate.css&#10;#&#9;css/bootstrap.css&#10;#&#9;css/dropdownbtn.css&#10;#&#9;css/eventdetail.css&#10;#&#9;css/fancybox_loading.gif&#10;#&#9;css/fancybox_overlay.png&#10;#&#9;css/fancybox_sprite.png&#10;#&#9;css/font-awesome.min.css&#10;#&#9;css/header.css&#10;#&#9;css/jquery.fancybox.css&#10;#&#9;css/loginform.css&#10;#&#9;css/main.css&#10;#&#9;css/organize.css&#10;#&#9;css/owl.carousel.css&#10;#&#9;css/preload.css&#10;#&#9;css/pwdwidget.css&#10;#&#9;css/responsive.css&#10;#&#9;css/slick/ajax-loader.gif&#10;#&#9;css/slick/config.rb&#10;#&#9;css/slick/fonts/slick.eot&#10;#&#9;css/slick/fonts/slick.svg&#10;#&#9;css/slick/fonts/slick.ttf&#10;#&#9;css/slick/fonts/slick.woff&#10;#&#9;css/slick/slick-theme.css&#10;#&#9;css/slick/slick-theme.less&#10;#&#9;css/slick/slick-theme.scss&#10;#&#9;css/slick/slick.css&#10;#&#9;css/slick/slick.js&#10;#&#9;css/slick/slick.less&#10;#&#9;css/slick/slick.min.js&#10;#&#9;css/slick/slick.scss&#10;#&#9;css/storypop.css&#10;#&#9;data/en-US.properties&#10;#&#9;data/es.properties&#10;#&#9;data/locales.ini&#10;#&#9;fonts/FontAwesome.otf&#10;#&#9;fonts/fontawesome-webfont.eot&#10;#&#9;fonts/fontawesome-webfont.svg&#10;#&#9;fonts/fontawesome-webfont.ttf&#10;#&#9;fonts/fontawesome-webfont.woff&#10;#&#9;images/China48.png&#10;#&#9;images/Greece48.png&#10;#&#9;images/India48.png&#10;#&#9;images/Italy48.png&#10;#&#9;images/Turkey48.png&#10;#&#9;images/Turkish.png&#10;#&#9;images/back.jpg&#10;#&#9;images/chinese.gif&#10;#&#9;images/community/cgr.jpg&#10;#&#9;images/community/cin.jpg&#10;#&#9;images/community/cit.jpg&#10;#&#9;images/community/cnc.jpg&#10;#&#9;images/community/ctr.jpg&#10;#&#9;images/community/cworld.jpg&#10;#&#9;images/deneme.jpg&#10;#&#9;images/event/e1cn.jpg&#10;#&#9;images/event/e1ind.jpg&#10;#&#9;images/event/e1it.jpg&#10;#&#9;images/event/e1tk.jpg&#10;#&#9;images/event/e2cn.jpg&#10;#&#9;images/event/e2ind.jpg&#10;#&#9;images/event/e3cn.jpg&#10;#&#9;images/event/e3gr.jpg&#10;#&#9;images/greece.gif&#10;#&#9;images/header.jpg&#10;#&#9;images/india.png&#10;#&#9;images/italy.png&#10;#&#9;images/logo.png&#10;#&#9;images/multi.jpg&#10;#&#9;images/night.jpg&#10;#&#9;images/not-available.jpg&#10;#&#9;images/page_is_under_construction.jpg&#10;#&#9;images/scroll_down.png&#10;#&#9;images/weather_na.png&#10;#&#9;img/icons/icon.svg&#10;#&#9;img/icons/icon128x128.png&#10;#&#9;img/icons/icon16x16.png&#10;#&#9;img/icons/icon48x48.png&#10;#&#9;img/icons/icon60x60.png&#10;#&#9;img/icons/plus.png&#10;#&#9;index.php&#10;#&#9;js/app.js&#10;#&#9;js/bootstrap.js&#10;#&#9;js/bootstrap.min.js&#10;#&#9;js/commap.js&#10;#&#9;js/dropdownbtn.js&#10;#&#9;js/easing.js&#10;#&#9;js/gen_validatorv4.js&#10;#&#9;js/html5shiv.js&#10;#&#9;js/jquery-countTo.js&#10;#&#9;js/jquery.appear.js&#10;#&#9;js/jquery.bpopup.min.js&#10;#&#9;js/jquery.fancybox.pack.js&#10;#&#9;js/jquery.js&#10;#&#9;js/jquery.mixitup.min.js&#10;#&#9;js/jquery.nav.js&#10;#&#9;js/jquery.parallax-1.1.3.js&#10;#&#9;js/libs/l10n.js&#10;#&#9;js/loginform.js&#10;#&#9;js/main.js&#10;#&#9;js/map.js&#10;#&#9;js/maporganize.js&#10;#&#9;js/nicescroll.js&#10;#&#9;js/owl.carousel.min.js&#10;#&#9;js/pace.js&#10;#&#9;js/pwdwidget.js&#10;#&#9;js/respond.min.js&#10;#&#9;js/story.js&#10;#&#9;js/storymap.js&#10;#&#9;js/vendor/jquery-1.11.1.min.js&#10;#&#9;js/vendor/jquery-migrate-1.2.1.min.js&#10;#&#9;js/vendor/modernizr-2.6.2.min.js&#10;#&#9;js/wow.min.js&#10;#&#9;pages/community.php&#10;#&#9;pages/event.php&#10;#&#9;pages/eventDetail.php&#10;#&#9;pages/insertuser.php&#10;#&#9;pages/myevent.php&#10;#&#9;pages/organize.php&#10;#&#9;pages/poststory.php&#10;#&#9;pages/story.php&#10;#&#9;pages/styles.css&#10;#&#9;php/Eventbrite.php&#10;#&#9;php/captcha.php&#10;#&#9;php/dbinfo.php&#10;#&#9;php/dbupdate.php&#10;#&#9;php/deleteevent.php&#10;#&#9;php/eventDB.php&#10;#&#9;php/gencommap.php&#10;#&#9;php/genmapxml.php&#10;#&#9;php/genstorymap.php&#10;#&#9;php/login.php&#10;#&#9;php/logout.php&#10;#&#9;php/newEvent.php&#10;#&#9;php/phpinfo.php&#10;#&#9;php/session.php&#10;#&#9;php/test.php&#10;#&#9;php/uploads/5719b942ecd4fbbq.jpg&#10;#&#9;php/uploads/5719c79d0bbc0Melbourne_CoB_dots.png&#10;#&#9;php/uploads/5719c7a8f032ehorse.jpg&#10;#&#9;php/zomato.php&#10;#&#9;scss/style.scss&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/flash/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/images/hiddenfield.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/iframe/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/image/images/noimage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/images/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/magicline/images/hidpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/magicline/images/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/magicline/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_address.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_blockquote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_div.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_p.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_pre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angel_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angel_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angry_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/broken_heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/broken_heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/confused_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/confused_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/cry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/cry_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/devil_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/devil_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embarrassed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embarrassed_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/envelope.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/envelope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/kiss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/lightbulb.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/lightbulb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/omg_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/omg_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/regular_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/regular_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/sad_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/sad_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/shades_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/shades_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/teeth_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/teeth_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tongue_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tongue_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tounge_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/wink_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/wink_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/images/template1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/images/template2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/images/template3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/img/github-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/img/header-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/img/header-separator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/img/navigation-tip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/inlineall/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/sample.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/images/spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bird.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icon_14215_blue.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/locateme.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/photos/Meng.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/photos/butterfly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/photos/cowherd.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/photos/keremileasli.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/CHANGES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/adapters/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/build-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/contents.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/de-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/div/dialogs/div.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/find/dialogs/find.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/flash/dialogs/flash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/radio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/textarea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/textfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/iframe/dialogs/iframe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/pastefromword/filter/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/preview/preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/dialogs/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/dialogs/toolbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/dialogs/smiley.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/table/dialogs/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/templates/dialogs/templates.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/templates/dialogs/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/ciframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/wsc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/wsc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/css/samples.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/js/sample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/js/sf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/appendto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/uilanguages/languages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/datafiltering.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/dialog/assets/my_dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/dialog/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/divreplace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/enterkey/enterkey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/outputforflash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/outputhtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlineall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlinebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlinetextarea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/jquery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/magicline/magicline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/readonly.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/replacebyclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/replacebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample_posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/tabindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/toolbar/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/uicolor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/uilanguages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/wysiwygarea/fullpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/old/xhtmlstyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/css/fontello.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/skins/moono/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckeditor/styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/userprofile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/UPGRADING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/batch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/idtoken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/large-file-upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/multi-api.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/service-account.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/simple-file-upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/simple-query.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/styles/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/templates/base.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/examples/url-shortener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/AccessToken/Revoke.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/AccessToken/Verify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/AuthHandler/AuthHandlerFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/AuthHandler/Guzzle5AuthHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/AuthHandler/Guzzle6AuthHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Cache/Apc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Cache/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Cache/File.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Cache/Memcache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Cache/Memory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Cache/Null.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Collection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Http/Batch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Http/MediaFileUpload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Http/REST.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Service.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Service/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Service/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Service/Resource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Task/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Task/Retryable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Task/Runner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/Utils/UriTemplate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/src/Google/autoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/style/ruleset.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/BaseTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/AccessToken/RevokeTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/AccessToken/VerifyTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/CacheTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/ClientTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Http/BatchTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Http/MediaFileUploadTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Http/RESTTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/ModelTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Service/AdSenseTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Service/PagespeedonlineTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Service/PlusTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Service/ResourceTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Service/TasksTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Service/UrlshortenerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Service/YouTubeTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/ServiceTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Task/RunnerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/Google/Utils/UriTemplateTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/clearToken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/config/test.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/batchTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/idTokenTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/indexTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/largeFileUploadTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/multiApiTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/serviceAccountTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/simpleFileUploadTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/simpleQueryTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-php-client/tests/examples/urlShortenerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/user_female.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/user_male.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/readmore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/myprofile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/mystory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/calendar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/geolocation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/unlikeevent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/animate-custom.css" afterPath="$PROJECT_DIR$/assets/css/animate-custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.CSS.nuspec" afterPath="$PROJECT_DIR$/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.CSS.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.nuspec" afterPath="$PROJECT_DIR$/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/effects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/moment/src/locale/si.js" afterPath="$PROJECT_DIR$/bower_components/moment/src/locale/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dropdownbtn.css" afterPath="$PROJECT_DIR$/css/dropdownbtn.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/eventdetail.css" afterPath="$PROJECT_DIR$/css/eventdetail.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/storypop.css" afterPath="$PROJECT_DIR$/css/storypop.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/commap.js" afterPath="$PROJECT_DIR$/js/commap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/story.js" afterPath="$PROJECT_DIR$/js/story.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/storymap.js" afterPath="$PROJECT_DIR$/js/storymap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/community.php" afterPath="$PROJECT_DIR$/pages/community.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/event.php" afterPath="$PROJECT_DIR$/pages/event.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/eventDetail.php" afterPath="$PROJECT_DIR$/pages/eventDetail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/registration.php" afterPath="$PROJECT_DIR$/pages/registration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/dbinfo.php" afterPath="$PROJECT_DIR$/php/dbinfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/insertuser.php" afterPath="$PROJECT_DIR$/pages/insertuser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/myevent.php" afterPath="$PROJECT_DIR$/pages/myevent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/organize.php" afterPath="$PROJECT_DIR$/pages/organize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/poststory.php" afterPath="$PROJECT_DIR$/pages/poststory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/story.php" afterPath="$PROJECT_DIR$/pages/story.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/styles.css" afterPath="$PROJECT_DIR$/pages/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/deleteevent.php" afterPath="$PROJECT_DIR$/php/deleteevent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/eventDB.php" afterPath="$PROJECT_DIR$/php/eventDB.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/genmapxml.php" afterPath="$PROJECT_DIR$/php/genmapxml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/likeEvent.php" afterPath="$PROJECT_DIR$/php/likeEvent.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/login.php" afterPath="$PROJECT_DIR$/php/login.php" />
     </list>
     <ignored path="development.iws" />
@@ -31,17 +540,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="myprofile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/myprofile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.75">
+              <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="46" selection-end-column="87" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#3632#3693#0#HTML" expanded="false" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1462698965000" expanded="true" signature="323:366" placeholder="SELECT * FRO... users" />
+                <marker date="1462698965000" expanded="true" signature="5868:6536" placeholder="..." />
+                <marker date="1462698965000" expanded="true" signature="10283:10334" placeholder="SELECT * FRO... Story" />
+                <marker date="1462698965000" expanded="true" signature="12085:12153" placeholder="SELECT * FRO... Events" />
+                <marker date="1462698965000" expanded="true" signature="14588:14668" placeholder="SELECT * FRO... Events" />
+                <marker date="1462698965000" expanded="true" signature="16883:16895" placeholder="..." />
+                <marker date="1462698965000" expanded="true" signature="16896:17147" placeholder="..." />
+                <marker date="1462698965000" expanded="true" signature="16918:17136" placeholder="..." />
+                <marker date="1462698965000" expanded="true" signature="16950:17125" placeholder="..." />
+                <marker date="1462698965000" expanded="true" signature="16971:17043" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="organize.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/organize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-154.375">
-              <caret line="257" column="77" selection-start-line="257" selection-start-column="77" selection-end-line="257" selection-end-column="77" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="117" column="50" selection-start-line="117" selection-start-column="50" selection-end-line="117" selection-end-column="50" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1462326156000" expanded="true" signature="5044:5574" placeholder="..." />
+                <marker date="1462700124000" expanded="true" signature="5119:5787" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="poststory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/poststory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="160" column="50" selection-start-line="160" selection-start-column="50" selection-end-line="160" selection-end-column="50" />
+              <folding>
+                <marker date="1462700136000" expanded="true" signature="7158:7826" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -50,145 +593,104 @@
       <file leaf-file-name="registration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/registration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8235295">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="109" selection-end-column="6" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#fieldset#7;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1462455064000" expanded="true" signature="7000:7530" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.958333">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding>
-                <marker date="1462582990000" expanded="true" signature="464:528" placeholder="SELECT id FR... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-47.5">
-              <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-              <folding>
-                <marker date="1462162435000" expanded="true" signature="5365:5895" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventDetail.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eventDetail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/eventDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7376788">
-              <caret line="402" column="35" selection-start-line="402" selection-start-column="35" selection-end-line="402" selection-end-column="35" />
+            <state vertical-scroll-proportion="-1.8333334">
+              <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
               <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1462603510000" expanded="true" signature="1668:2020" placeholder="SELECT E.nam... " />
-                <marker date="1462603510000" expanded="true" signature="4482:4489" placeholder="SELECT E.nam... " />
-                <marker date="1462603510000" expanded="true" signature="4482:4511" placeholder="SELECT * FRO... UserEvent" />
-                <marker date="1462603510000" expanded="true" signature="4482:4520" placeholder="SELECT * FRO... UserEvent" />
-                <marker date="1462603510000" expanded="true" signature="4482:4526" placeholder="SELECT * FRO... UserEvent" />
-                <marker date="1462603510000" expanded="true" signature="4673:4710" placeholder="SELECT * FRO... UserEvent" />
-                <marker date="1462603510000" expanded="true" signature="4673:4719" placeholder="SELECT * FRO... UserEvent" />
-                <marker date="1462603510000" expanded="true" signature="4933:4944" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="4945:5095" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="5007:5095" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="5036:5095" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="5199:5663" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="5314:5648" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="5690:6078" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="5748:5777" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="5748:6063" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="8334:8864" placeholder="..." />
-                <marker date="1462603510000" expanded="true" signature="11066:11088" placeholder="..." />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1462640447000" expanded="true" signature="1666:2018" placeholder="SELECT E.id " />
+                <marker date="1462640447000" expanded="true" signature="2684:2728" placeholder="SELECT * FRO... UserEvent" />
+                <marker date="1462640447000" expanded="true" signature="2925:2984" placeholder="SELECT * FRO... UserEvent" />
+                <marker date="1462640447000" expanded="true" signature="8498:9166" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="likeEvent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/likeEvent.php">
+      <file leaf-file-name="insertuser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/insertuser.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <caret line="1" column="2" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="2" />
               <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
+                <element signature="e#20#111#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="myevent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/myevent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.75">
-              <caret line="48" column="45" selection-start-line="44" selection-start-column="4" selection-end-line="48" selection-end-column="45" />
+            <state vertical-scroll-proportion="-48.791668">
+              <caret line="230" column="29" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
               <folding>
-                <marker date="1462584246000" expanded="true" signature="6711:7244" placeholder="..." />
-                <marker date="1462584246000" expanded="true" signature="7565:7624" placeholder="..." />
-                <marker date="1462584246000" expanded="true" signature="19862:19881" placeholder="..." />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1462699147000" expanded="true" signature="330:398" placeholder="SELECT * FRO... Events" />
+                <marker date="1462699147000" expanded="true" signature="4502:5170" placeholder="..." />
+                <marker date="1462699147000" expanded="true" signature="5008:5170" placeholder="..." />
+                <marker date="1462699147000" expanded="true" signature="7921:7989" placeholder="SELECT * FRO... Events" />
+                <marker date="1462699147000" expanded="true" signature="10334:10414" placeholder="SELECT * FRO... Events" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/session.php">
+      <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/story.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state vertical-scroll-proportion="-13.75">
+              <caret line="183" column="50" selection-start-line="183" selection-start-column="50" selection-end-line="183" selection-end-column="50" />
               <folding>
-                <marker date="1461324333000" expanded="true" signature="491:541" placeholder="SELECT usern... users" />
+                <marker date="1462700085000" expanded="true" signature="7518:8186" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.708334">
-              <caret line="1072" column="10" selection-start-line="1072" selection-start-column="10" selection-end-line="1072" selection-end-column="10" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1461307797000" expanded="true" signature="1130:1306" placeholder="INSERT INTO Story... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,22 +706,28 @@
         <option value="$PROJECT_DIR$/css/header.css" />
         <option value="$PROJECT_DIR$/js/commap.js" />
         <option value="$PROJECT_DIR$/js/storymap.js" />
-        <option value="$PROJECT_DIR$/pages/community.php" />
-        <option value="$PROJECT_DIR$/pages/myevent.php" />
-        <option value="$PROJECT_DIR$/pages/story.php" />
         <option value="$PROJECT_DIR$/php/logout.php" />
         <option value="$PROJECT_DIR$/js/map.js" />
-        <option value="$PROJECT_DIR$/pages/event.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/organize.css" />
-        <option value="$PROJECT_DIR$/pages/organize.php" />
         <option value="$PROJECT_DIR$/php/dbinfo.php" />
-        <option value="$PROJECT_DIR$/php/login.php" />
         <option value="$PROJECT_DIR$/pages/registration.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/css/eventdetail.css" />
         <option value="$PROJECT_DIR$/php/likeEvent.php" />
+        <option value="$PROJECT_DIR$/php/login.php" />
+        <option value="$PROJECT_DIR$/css/eventdetail.css" />
         <option value="$PROJECT_DIR$/pages/eventDetail.php" />
+        <option value="$PROJECT_DIR$/css/userprofile.css" />
+        <option value="$PROJECT_DIR$/php/deleteevent.php" />
+        <option value="$PROJECT_DIR$/php/unlikeevent.php" />
+        <option value="$PROJECT_DIR$/pages/myprofile.php" />
+        <option value="$PROJECT_DIR$/pages/myevent.php" />
+        <option value="$PROJECT_DIR$/pages/mystory.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/pages/story.php" />
+        <option value="$PROJECT_DIR$/pages/event.php" />
+        <option value="$PROJECT_DIR$/pages/community.php" />
+        <option value="$PROJECT_DIR$/pages/organize.php" />
+        <option value="$PROJECT_DIR$/pages/poststory.php" />
       </list>
     </option>
   </component>
@@ -263,6 +771,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,28 +814,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="photos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="development" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crossculture" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.smarty" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cc" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="96" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="106" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="110" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="896" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="96" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="106" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="110" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="896" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/php" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.php">
@@ -388,24 +931,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33039647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -426,113 +969,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/organize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="193" column="74" selection-start-line="193" selection-start-column="65" selection-end-line="193" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462326156000" expanded="true" signature="5044:5574" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/newEvent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461327939000" expanded="true" signature="1890:2096" placeholder="INSERT INTO Events... " />
-            <marker date="1461327939000" expanded="true" signature="2305:2350" placeholder="SELECT * FRO... Venues" />
-            <marker date="1461327939000" expanded="true" signature="2529:2659" placeholder="INSERT INTO Venues... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Eventbrite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/dbupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/genstorymap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/zomato.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="92.458336">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/phpinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Front-end/polmo/assets/css/responsive.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36092716">
-          <caret line="0" column="11021" selection-start-line="0" selection-start-column="11021" selection-end-line="0" selection-end-column="11021" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/XAMPP/xamppfiles/htdocs/crossculture/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="150" selection-end-column="21" />
-          <folding>
-            <marker date="1461265899000" expanded="true" signature="6842:7375" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33282444">
-          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1568627">
           <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="119" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Front-end/polmo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,15 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/dropdownbtn.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="144.41667">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,7 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.208334">
           <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,8 +1005,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
           <folding>
-            <marker date="1462099180000" expanded="true" signature="2948:2966" placeholder="..." />
-            <marker date="1462099180000" expanded="true" signature="3000:3012" placeholder="..." />
+            <marker date="1462635390000" expanded="true" signature="2948:2966" placeholder="..." />
+            <marker date="1462635390000" expanded="true" signature="3000:3012" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -586,26 +1016,18 @@
         <state vertical-scroll-proportion="-13.259259">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
-            <marker date="1462108279000" expanded="true" signature="2445:2481" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="2559:2577" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="2640:2658" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="2725:2761" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="2846:2921" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="2976:3032" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="3604:3622" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="3623:4015" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="3656:3668" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="3725:4015" placeholder="..." />
-            <marker date="1462108279000" expanded="true" signature="3936:3950" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="2445:2481" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="2559:2577" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="2640:2658" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="2725:2761" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="2846:2921" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="2976:3032" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3604:3622" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3623:4015" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3656:3668" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3725:4015" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3936:3950" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,13 +1036,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="103" selection-start-line="101" selection-start-column="91" selection-end-line="101" selection-end-column="103" />
           <folding>
-            <marker date="1462162431000" expanded="true" signature="2883:2895" placeholder="..." />
-            <marker date="1462162431000" expanded="true" signature="3717:3735" placeholder="..." />
-            <marker date="1462162431000" expanded="true" signature="3736:4123" placeholder="..." />
-            <marker date="1462162431000" expanded="true" signature="3769:3781" placeholder="..." />
-            <marker date="1462162431000" expanded="true" signature="3782:4097" placeholder="..." />
-            <marker date="1462162431000" expanded="true" signature="3800:4097" placeholder="..." />
-            <marker date="1462162431000" expanded="true" signature="3905:3919" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="2883:2895" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3717:3735" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3736:4123" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3769:3781" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3782:4097" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3800:4097" placeholder="..." />
+            <marker date="1462635392000" expanded="true" signature="3905:3919" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -637,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,70 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="8.791667">
           <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
-          <folding>
-            <marker date="1461327939000" expanded="true" signature="1890:2096" placeholder="INSERT INTO Events... " />
-            <marker date="1461327939000" expanded="true" signature="2305:2350" placeholder="SELECT * FRO... Venues" />
-            <marker date="1461327939000" expanded="true" signature="2529:2659" placeholder="INSERT INTO Venues... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/insertuser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.29411766">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="2" />
-          <folding>
-            <marker date="1461307801000" expanded="true" signature="954:1179" placeholder="INSERT INTO Users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/poststory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461307799000" expanded="true" signature="6318:6838" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/story.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.208333">
-          <caret line="246" column="17" selection-start-line="246" selection-start-column="17" selection-end-line="246" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462157456000" expanded="true" signature="7196:7726" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/community.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <marker date="1462157349000" expanded="true" signature="5848:6378" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461307797000" expanded="true" signature="1130:1306" placeholder="INSERT INTO Story... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,18 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.041667">
           <caret line="1729" column="1" selection-start-line="1729" selection-start-column="1" selection-end-line="1729" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/myevent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <marker date="1462157434000" expanded="true" signature="330:398" placeholder="SELECT * FRO... Events" />
-            <marker date="1462157434000" expanded="true" signature="4342:4872" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,7 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,25 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.8717947">
           <caret line="186" column="28" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.708334">
-          <caret line="1072" column="10" selection-start-line="1072" selection-start-column="10" selection-end-line="1072" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <marker date="1461324333000" expanded="true" signature="491:541" placeholder="SELECT usern... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,7 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,135 +1130,326 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3323124">
           <caret line="1156" column="0" selection-start-line="1156" selection-start-column="0" selection-end-line="1156" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/zomato.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="76.208336">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/geolocation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/eventdetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.458334">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/organize.php">
+    <entry file="file://$PROJECT_DIR$/images/user_male.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-154.375">
-          <caret line="257" column="77" selection-start-line="257" selection-start-column="77" selection-end-line="257" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/user_female.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dropdownbtn.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-238.125">
+          <caret line="1044" column="48" selection-start-line="1044" selection-start-column="48" selection-end-line="1044" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462326156000" expanded="true" signature="5044:5574" placeholder="..." />
+            <marker date="1462634806000" expanded="true" signature="491:541" placeholder="SELECT usern... users" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/css/storypop.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75">
-          <caret line="48" column="45" selection-start-line="44" selection-start-column="4" selection-end-line="48" selection-end-column="45" />
-          <folding>
-            <marker date="1462584246000" expanded="true" signature="6711:7244" placeholder="..." />
-            <marker date="1462584246000" expanded="true" signature="7565:7624" placeholder="..." />
-            <marker date="1462584246000" expanded="true" signature="19862:19881" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-6.6782885">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/userprofile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.958333">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state vertical-scroll-proportion="-23.541666">
+          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
           <folding>
-            <marker date="1462582990000" expanded="true" signature="464:528" placeholder="SELECT id FR... users" />
+            <marker date="1462636359000" expanded="true" signature="473:543" placeholder="SELECT id as... users" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/registration.php">
+    <entry file="file://$PROJECT_DIR$/php/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8235295">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#fieldset#6;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#fieldset#7;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462455064000" expanded="true" signature="7000:7530" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/event.php">
+    <entry file="file://$PROJECT_DIR$/php/eventDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-47.5">
-          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1462162435000" expanded="true" signature="5365:5895" placeholder="..." />
+            <marker date="1462635827000" expanded="true" signature="2029:2073" placeholder="SELECT * FRO... Events" />
+            <marker date="1462635827000" expanded="true" signature="2263:2481" placeholder="INSERT INTO Events... " />
+            <marker date="1462635827000" expanded="true" signature="2784:2829" placeholder="SELECT * FRO... Venues" />
+            <marker date="1462635827000" expanded="true" signature="3027:3169" placeholder="INSERT INTO Venues... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/likeEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state vertical-scroll-proportion="-18.791666">
+          <caret line="44" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1462634174000" expanded="true" signature="404:463" placeholder="SELECT * FRO... UserEvent" />
+            <marker date="1462634174000" expanded="true" signature="634:710" placeholder="INSERT INTO UserEvent" />
+            <marker date="1462634174000" expanded="true" signature="1007:1076" placeholder="Delete From " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/eventdetail.css">
+    <entry file="file://$PROJECT_DIR$/php/deleteevent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.208334">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <marker date="1462696808000" expanded="true" signature="406:443" placeholder="Delete FROM " />
+            <marker date="1462696808000" expanded="true" signature="521:559" placeholder="Delete FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/unlikeevent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <marker date="1462697701000" expanded="true" signature="370:435" placeholder="Delete From " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mystory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.791666">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding>
+            <element signature="e#2215#2276#0#HTML" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462699965000" expanded="true" signature="298:349" placeholder="SELECT * FRO... Story" />
+            <marker date="1462699965000" expanded="true" signature="4451:5119" placeholder="..." />
+            <marker date="1462699965000" expanded="true" signature="7967:8018" placeholder="SELECT * FRO... Story" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="200" column="56" selection-start-line="200" selection-start-column="56" selection-end-line="200" selection-end-column="56" />
+          <folding>
+            <marker date="1462700064000" expanded="true" signature="7163:7852" placeholder="..." />
+            <marker date="1462700064000" expanded="true" signature="19834:22928" placeholder="..." />
+            <marker date="1462700064000" expanded="true" signature="20623:20642" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/community.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="138" column="50" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+          <folding>
+            <marker date="1462700100000" expanded="true" signature="5848:6516" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="129" column="50" selection-start-line="129" selection-start-column="50" selection-end-line="129" selection-end-column="50" />
+          <folding>
+            <marker date="1462700093000" expanded="true" signature="5365:5654" placeholder="..." />
+            <marker date="1462700093000" expanded="true" signature="5365:6033" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/eventDetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7376788">
-          <caret line="402" column="35" selection-start-line="402" selection-start-column="35" selection-end-line="402" selection-end-column="35" />
+        <state vertical-scroll-proportion="-1.8333334">
+          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462640447000" expanded="true" signature="1666:2018" placeholder="SELECT E.id " />
+            <marker date="1462640447000" expanded="true" signature="2684:2728" placeholder="SELECT * FRO... UserEvent" />
+            <marker date="1462640447000" expanded="true" signature="2925:2984" placeholder="SELECT * FRO... UserEvent" />
+            <marker date="1462640447000" expanded="true" signature="8498:9166" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/insertuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="2" />
+          <folding>
+            <element signature="e#20#111#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/myevent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-48.791668">
+          <caret line="230" column="29" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462603510000" expanded="true" signature="1668:2020" placeholder="SELECT E.nam... " />
-            <marker date="1462603510000" expanded="true" signature="4482:4489" placeholder="SELECT E.nam... " />
-            <marker date="1462603510000" expanded="true" signature="4482:4511" placeholder="SELECT * FRO... UserEvent" />
-            <marker date="1462603510000" expanded="true" signature="4482:4520" placeholder="SELECT * FRO... UserEvent" />
-            <marker date="1462603510000" expanded="true" signature="4482:4526" placeholder="SELECT * FRO... UserEvent" />
-            <marker date="1462603510000" expanded="true" signature="4673:4710" placeholder="SELECT * FRO... UserEvent" />
-            <marker date="1462603510000" expanded="true" signature="4673:4719" placeholder="SELECT * FRO... UserEvent" />
-            <marker date="1462603510000" expanded="true" signature="4933:4944" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="4945:5095" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="5007:5095" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="5036:5095" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="5199:5663" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="5314:5648" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="5690:6078" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="5748:5777" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="5748:6063" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="8334:8864" placeholder="..." />
-            <marker date="1462603510000" expanded="true" signature="11066:11088" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462699147000" expanded="true" signature="330:398" placeholder="SELECT * FRO... Events" />
+            <marker date="1462699147000" expanded="true" signature="4502:5170" placeholder="..." />
+            <marker date="1462699147000" expanded="true" signature="5008:5170" placeholder="..." />
+            <marker date="1462699147000" expanded="true" signature="7921:7989" placeholder="SELECT * FRO... Events" />
+            <marker date="1462699147000" expanded="true" signature="10334:10414" placeholder="SELECT * FRO... Events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/myprofile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="46" selection-end-column="87" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#3632#3693#0#HTML" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1462698965000" expanded="true" signature="323:366" placeholder="SELECT * FRO... users" />
+            <marker date="1462698965000" expanded="true" signature="5868:6536" placeholder="..." />
+            <marker date="1462698965000" expanded="true" signature="10283:10334" placeholder="SELECT * FRO... Story" />
+            <marker date="1462698965000" expanded="true" signature="12085:12153" placeholder="SELECT * FRO... Events" />
+            <marker date="1462698965000" expanded="true" signature="14588:14668" placeholder="SELECT * FRO... Events" />
+            <marker date="1462698965000" expanded="true" signature="16883:16895" placeholder="..." />
+            <marker date="1462698965000" expanded="true" signature="16896:17147" placeholder="..." />
+            <marker date="1462698965000" expanded="true" signature="16918:17136" placeholder="..." />
+            <marker date="1462698965000" expanded="true" signature="16950:17125" placeholder="..." />
+            <marker date="1462698965000" expanded="true" signature="16971:17043" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/organize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="117" column="50" selection-start-line="117" selection-start-column="50" selection-end-line="117" selection-end-column="50" />
+          <folding>
+            <marker date="1462700124000" expanded="true" signature="5119:5787" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/poststory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="160" column="50" selection-start-line="160" selection-start-column="50" selection-end-line="160" selection-end-column="50" />
+          <folding>
+            <marker date="1462700136000" expanded="true" signature="7158:7826" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="109" selection-end-column="6" />
+          <folding>
+            <marker date="1462455064000" expanded="true" signature="7000:7530" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/story.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="183" column="50" selection-start-line="183" selection-start-column="50" selection-end-line="183" selection-end-column="50" />
+          <folding>
+            <marker date="1462700085000" expanded="true" signature="7518:8186" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461307797000" expanded="true" signature="1130:1306" placeholder="INSERT INTO Story... " />
           </folding>
         </state>
       </provider>

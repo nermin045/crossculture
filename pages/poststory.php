@@ -5,7 +5,7 @@
  * Date: 20.04.2016
  * Time: AM 12:21
  */
-//include '../php/session.php';
+include '../php/session.php';
 ?>
 <!DOCTYPE>
 <html>
@@ -14,13 +14,18 @@
     <title>CrossCulture</title>
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/pwdwidget.css" />
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/pwdwidget.css"/>
+    <link rel="stylesheet" href="../css/animate.css">
     <link href="../css/main.css" rel="stylesheet">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-formhelpers.css" rel="stylesheet" media="screen">
+
+    <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+    <!--              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
     <link href="../css/Infowindow.css" rel="stylesheet">
+
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'>
@@ -32,30 +37,44 @@
     <link rel="stylesheet" href="../css/loginform.css">
     <link rel="stylesheet" href="../css/dropdownbtn.css">
     <link rel='stylesheet prefetch' href='https://octicons.github.com/components/octicons/octicons/octicons.css'>
+    <link href="../css/organize.css" rel="stylesheet">
 
 
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="../css/flag-icon.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--    <script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
     <script src="../js/pwdwidget.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
     <![endif]-->
     <script src="../js/pace.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- [profolio B] -->
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]>
-    <script src="../themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+    <script src="../js/bootstrap-formhelpers.min.js"></script>
+
+    <script type="text/javascript"
+            src="../bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet"/>
+
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--simple-line-icons-->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="..//assets/js/modernizr.custom.js"></script>
     <script src="../js/gen_validatorv4.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+
 
 
 </head>
@@ -139,9 +158,10 @@
                             echo $_SESSION['login_username'] . ' </a>';
                             echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
-                            <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
-                            <a href="#">My Events <span class="icon octicon octicon-tasklist"></span></a>
-                            <a href="#">My Stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="myprofile.php">My Profile <span class="icon octicon octicon-person"></span></a>
+                            <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
+                            <a href="mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>
                             <a href="../php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
                         } else {
@@ -157,31 +177,123 @@
 
 </header>
 
-<div id="reg">
-
-    <form id="storyform" enctype="multipart/form-data" action="upload.php" method="POST">
-        <legend><b>Post Your Story</b></legend>
-        <label for="title">Title of the Story</label><br>
-        <input type="text" name="title" id="title"><br><br>
-        <label for="content">Story</label><br>
-        <textarea id="content" name="content" rows="12" cols="60"></textarea><br><br>
-        <label for="culture">Culture</label><br>
-        <select id="culture" name="culture" onChange="OnDropDownChange(this);">
-            <option value="choose">Select one</option>
-            <option value="Chinese">Chinese</option>
-            <option value="Greek">Greek</option>
-            <option value="Indian">Indian</option>
-            <option value="Italian">Italian</option>
-            <option value="Turkish">Turkish</option>
-        </select><br><br>
-        <label for="file">Select image to upload:</label><br>
-        <input type="file" name="image" id="image" accept="image/*"><br><br>
-        <button type="submit" value="Post Now" name="submit">Post Now</button><br><br>
-
-    </form>
-
-
+<div class="titlediv">
+    <h2>Post Story</h2>
+    <h4>You can post your own stories here.</h4>
 </div>
+
+<div class="container-fluid contentdiv">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0">
+
+            <form id="storyform" class="formdiv" action="../php/upload.php" enctype="multipart/form-data" method="POST" name="input">
+
+                <div class="formrow">
+<!--                    <div class="rowtitle">-->
+<!--                        Title of the Story-->
+<!--                    </div>-->
+                    <div>
+                        <label for="title">Title of Story</label><br>
+                        <input type="text" name="title" id="title">
+                    </div>
+                </div>
+
+                <div class="formrow">
+<!--                    <div class="rowtitle">-->
+<!--                        Story-->
+<!--                    </div>-->
+                    <div>
+                        <label for="content">Story</label><br>
+                        <textarea id="content" name="content" rows="12" cols="60"></textarea><br><br>
+                        <script type="text/javascript">
+                            CKEDITOR.replace( 'content' );
+                        </script>
+                    </div>
+                </div>
+
+                <div class="formrow">
+<!--                    <div class="rowtitle">-->
+<!--                        Culture-->
+<!--                    </div>-->
+                    <label for="culture">Culture</label><br>
+                    <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" id="culture" name="culture" value="Chinese" autocomplete="off"
+                                       checked="true"> Chinese
+                                <span class="flag-icon flag-icon-cn"></span>
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" id="culture" name="culture" value="Greek" autocomplete="off"
+                                > Greek
+                                <span class="flag-icon flag-icon-gr"></span>
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" id="culture" name="culture" value="Indian" autocomplete="off"
+                                > Indian
+                                <span class="flag-icon flag-icon-in"></span>
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" id="culture" name="culture" value="Italian" autocomplete="off"> Italian
+                                <span class="flag-icon flag-icon-it"></span>
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" id="culture" name="culture" value="Turkish" autocomplete="off">
+                                Turkish
+                                <span class="flag-icon flag-icon-tr"></span>
+                            </label>
+                    </div>
+                </div>
+
+
+                <div class="formrow">
+<!--                    <div class="rowtitle">-->
+<!--                        Image-->
+<!--                    </div>-->
+                    <div class="forminput">
+                        <label for="image">Story Image</label><br>
+                        <input type='file' onchange="readURL(this);" name="image" accept="image/*"/>
+                        <img id="blah" src="#" alt="Please upload an image..."/>
+                    </div>
+                </div>
+
+                <div class="formrow">
+                    <button type="submit" name="submit" value="Post Now" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--<div id="reg">-->
+<!---->
+<!--    <form id="storyform" enctype="multipart/form-data" action="../php/upload.php" method="POST">-->
+<!--        <legend><b>Post Your Story</b></legend>-->
+<!--        <label for="title">Title of the Story</label><br>-->
+<!--        <input type="text" name="title" id="title"><br><br>-->
+<!--        <label for="content">Story</label><br>-->
+<!--        <textarea id="content" name="content" rows="12" cols="60"></textarea><br><br>-->
+<!--        <script type="text/javascript">-->
+<!--            CKEDITOR.replace( 'content' );-->
+<!--        </script>-->
+<!--        <label for="culture">Culture</label><br>-->
+<!--        <select id="culture" name="culture" onChange="OnDropDownChange(this);">-->
+<!--            <option value="choose">Select one</option>-->
+<!--            <option value="Chinese">Chinese</option>-->
+<!--            <option value="Greek">Greek</option>-->
+<!--            <option value="Indian">Indian</option>-->
+<!--            <option value="Italian">Italian</option>-->
+<!--            <option value="Turkish">Turkish</option>-->
+<!--        </select><br><br>-->
+<!--        <label for="file">Select image to upload:</label><br>-->
+<!--        <input type="file" name="image" id="image" accept="image/*"><br><br>-->
+<!--        <button type="submit" value="Post Now" name="submit">Post Now</button><br><br>-->
+<!---->
+<!--    </form>-->
+<!---->
+<!---->
+<!--</div>-->
 
 <section class="rowfooter breath" >
     <div class="col-md-12 footerlinks"  style="background-color: #adadad;bottom: 0;color: black;">
@@ -190,14 +302,31 @@
 </section>
 </body>
 
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
 <script type="text/javascript">
     function OnDropDownChange(dropDown) {
         var selectedValue = dropDown.options[dropDown.selectedIndex].value;
-        document.getElementById("interest").value = selectedValue;
+        document.getElementById("culture").value = selectedValue;
     }
 
 </script>
-
+<script src="../js/maporganize.js"></script>
 <script type="text/javascript" src="../js/loginform.js"></script>
 <script src="../js/dropdownbtn.js"></script>
 

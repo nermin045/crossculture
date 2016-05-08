@@ -47,8 +47,13 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 
     <script src="js/pace.js"></script>
+
 
     <script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
 
@@ -96,7 +101,19 @@ if (isset($get_array['logged'])) {
     });
     "
         , '</script>';
+    }else if ($name == 'successful') {
+        echo '<script type="text/javascript">'
+        , " $(document).ready(function () {
+    $('#popup3').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'
+        });
+    });
+    "
+        , '</script>';
     }
+
 }
 ?>
 
@@ -181,9 +198,10 @@ if (isset($get_array['logged'])) {
                         echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
                         echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
-                            <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
+                            <a href="pages/myprofile.php">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="pages/myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
-                            <a href="#">My stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="pages/mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
+                            <a href="pages/poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>
                             <a href="php/logout.php">Logout <span class="icon octicon octicon-sign-out"></span></a>
                         </div>';
                     } else {
@@ -271,7 +289,7 @@ End Fixed Navigation
                     <ul class="dropdown-menu form-control drop-item" aria-labelledby="dropdownMenu1">
                         <li><a id="aclt">All Cultures</a></li>
                         <li role="separator" class="divider" style="margin: 0px;"></li>
-                        <li><a id="cnclt" href="">Chinese</a></li>
+                        <li><a id="cnclt">Chinese</a></li>
                         <li><a id="inclt">Indian</a></li>
                         <li><a id="grclt">Greek</a></li>
                         <li><a id="itclt">Italian</a></li>
@@ -440,6 +458,12 @@ End Fixed Navigation
 <div id="popup2">
     <span class="button b-close"><span>X</span></span>
     <span class="logo">Sorry. <br> Your username or password was wrong.</span><br>
+
+</div>
+
+<div id="popup3">
+    <span class="button b-close"><span>X</span></span>
+    <span class="logo">Registration Successful<br>You can login now</span><br>
 
 </div>
 

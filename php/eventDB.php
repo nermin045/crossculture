@@ -6,7 +6,9 @@
  * Time: 7:20 PM
  */
 require 'Eventbrite.php';
-require 'dbinfo.php';
+require "dbinfo.php";
+
+
 
 function getEventInfo($culture){
     //Initialize a Eventbrite object with access token
@@ -62,6 +64,7 @@ function getEventInfo($culture){
         $address2 = $address["address_2"];
         $city = $address["city"];
         $postal_code = $address["postal_code"];
+        
 
         //****** Judge if the Event id exist
         $query3 = "SELECT * FROM Events WHERE eid = " . "'$eid'";
