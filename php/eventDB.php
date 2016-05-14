@@ -6,9 +6,7 @@
  * Time: 7:20 PM
  */
 require 'Eventbrite.php';
-require "dbinfo.php";
-
-
+require("dbinfo.php");
 
 function getEventInfo($culture){
     //Initialize a Eventbrite object with access token
@@ -45,7 +43,7 @@ function getEventInfo($culture){
         $name = $event["name"]["text"];
         $name = addslashes($name);
         $descp = $event["description"]["html"];
-        //$descp = addslashes($descp);
+        $descp = addslashes($descp);
         $eid = $event["id"];
         $start = $event["start"]["local"];
         $end = $event["end"]["local"];

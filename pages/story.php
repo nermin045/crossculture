@@ -60,9 +60,7 @@ session_start();
 <body id="deneme" onload="firstLoad()">
 
 <div class="pop-up" id="popupdiv">
-    <div>
-        <a href="javascript:story('hide');"></a>
-    </div>
+
 </div>
 
 
@@ -181,7 +179,7 @@ session_start();
                         echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
                         echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
-                            <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
+                            <a href="myprofile.php">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
                             <a href="mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>

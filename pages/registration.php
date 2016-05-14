@@ -78,6 +78,15 @@ if (isset($_SESSION['login_username'])) {
     <script src="../js/gen_validatorv4.js" type="text/javascript"></script>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/
+javascript"></script>
+    <script src="../jQuery-Validation-Engine/js/jquery.validationEngine.js"></script>
+    <script src="../jQuery-Validation-Engine/js/languages/jquery.validationEngine-en.js"></script>
+    <link rel="stylesheet" href="../jQuery-Validation-Engine/css/validationEngine.jquery.css" type="text/css"/>
+
+
+
+
 </head>
 <body>
 
@@ -222,7 +231,7 @@ if (isset($_SESSION['login_username'])) {
             <fieldset class="form-group row">
                 <div class="col-md-5">
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" class="form-control ">
+                    <input type="text" name="username" id="username" class="validate[required] form-control">
                 </div>
             </fieldset>
             <div class="row">

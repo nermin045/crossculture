@@ -24,6 +24,8 @@ $result = $conn->query($query1);
     <title>Cross Culture</title>
     <link href="../css/header.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
     <link href="../css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/loginform.css">
     <link rel="stylesheet" href="../css/dropdownbtn.css">
@@ -58,7 +60,7 @@ $result = $conn->query($query1);
 <!--Fixed Navigation
 ==================================== -->
 <header id="navigation" class="nav navbar-static-top">
-    <div class="container">
+    <div class="container" style="min-width: 100%">
 
         <div class="navbar-header">
             <!-- responsive nav button -->
@@ -68,7 +70,7 @@ $result = $conn->query($query1);
             <!-- /responsive nav button -->
 
             <!-- logo -->
-            <a class="navbar-brand" href="../index.php">
+            <a class="navbar-brand" href="../index.php" style="padding-top: 15px;padding-bottom: 15px">
                 <img src="../images/logo.png" width="112" height="36" alt="Logo">
             </a>
             <!-- /logo -->
@@ -105,7 +107,7 @@ $result = $conn->query($query1);
                         echo '<a href="#">' . $_SESSION['login_username'] . ' </a>';
                         echo '<div id="menu1" class="menu">
                             <div class="arrow"></div>
-                            <a href="#">My Profile <span class="icon octicon octicon-person"></span></a>
+                            <a href="myprofile.php">My Profile <span class="icon octicon octicon-person"></span></a>
                             <a href="myevent.php">My Events <span class="icon octicon octicon-tasklist"></span></a>
                             <a href="mystory.php">My Stories <span class="icon octicon octicon-rocket"></span></a>
                             <a href="poststory.php">Post Story<span class="icon octicon octicon-pencil"></span></a>
@@ -160,62 +162,124 @@ $result = $conn->query($query1);
     <h4></h4>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-        <ul class="list-group">
-            <?php
-            $count = 0;
-            foreach($result as $row) {
-                $count++;
-                $eventstart = $row['start'];
-                $eventend = $row['end'];
-                echo '<li class="list-group-item row">';
-                echo '<div class="col-md-2">';
-                echo '<img width=130px src="'.$row['logo']. '"">';
-                echo '</div>';
-                echo '<div class="col-md-6">';
-                echo '<h4>'. $row['name']. '</h4>';
-                echo 'From: ' .
-                      substr($eventstart,8,2).'/'.
-                      substr($eventstart,5,2).'/'.
-                      substr($eventstart,0,4).'  '.
-                      substr($eventstart,11,5);
-//                    substr($eventstart, 8,-9) . '/' .
-//                    substr($eventstart, 5,-12) . '/' .
-//                    substr($eventstart, 0,-15) . ' ' .
-//                    substr($eventstart, 11,-3);
-                echo '<br>';
-                echo 'To: ' .
-                      substr($eventend,8,2).'/'.
-                      substr($eventend,5,2).'/'.
-                      substr($eventend,0,4).'  '.
-                      substr($eventend,11,5);
-//                    substr($eventend, 8,-9) . '/' .
-//                    substr($eventend, 5,-12) . '/' .
-//                    substr($eventend, 0,-15) . ' ' .
-//                    substr($eventend, 11,-3);
-                echo '</div>';
-                echo '<div class="col-md-2" >';
-                echo '<a href="eventDetail.php?event='. $row['name'] .'" class="btn btn-default" style="margin-top: 20%">View Detail</a>';
-                echo '</div>';
-                echo '<div class="col-md-2">';
-                echo '<a href="../php/deleteevent.php?event='. $row['name'] .'&venue='.$row['venue']. '" class="btn btn-default" style="margin-top: 20%">Delete</a>';
-                echo '</div>';
-                echo '</li>';
-            }
-            if ($count == 0){
-                echo '<li class="list-group-item row">';
-                echo '<div class="col-md-12">';
-                echo '<h3> Sorry, you have not organized any event </h3>';
-                echo '</div>';
-                echo '</li>';
-            }
-            ?>
-        </ul>
+    <div class="col-md-10 col-md-offset-1">
+        <!--        My Event Card-->
+        <div class="card">
+            <div class="card-header">
+                <h4>My Organized Events</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+                <?php
+                $organizer = $_SESSION['login_username'];
+                $conn = new mysqli($hn, $un, $pw, $db);
+                if ($conn->connect_error) die($conn->connect_error);
+                $query1 = "SELECT * FROM Events WHERE eid = 0 AND organizer = " . "'$organizer'";
+                $result = $conn->query($query1);
+                $count = 0;
+                foreach ($result as $row) {
+                    $count++;
+                    $eventstart = $row['start'];
+                    $eventend = $row['end'];
+                    echo '<li class="list-group-item row">';
+                    echo '<div class="col-md-2">';
+                    echo '<img width="100%" src="' . $row['logo'] . '" style="margin-top:20%">';
+                    echo '</div>';
+                    echo '<div class="col-md-8">';
+                    echo '<h6>' . $row['name'] . '</h6>';
+                    echo 'From: ' .
+                        substr($eventstart, 8, 2) . '/' .
+                        substr($eventstart, 5, 2) . '/' .
+                        substr($eventstart, 0, 4) . '  ' .
+                        substr($eventstart, 11, 5);
+                    echo '<br>';
+                    echo 'To: ' .
+                        substr($eventend, 8, 2) . '/' .
+                        substr($eventend, 5, 2) . '/' .
+                        substr($eventend, 0, 4) . '  ' .
+                        substr($eventend, 11, 5);
+                    echo '</div>';
+                    echo '<div class="col-md-2" >';
+                    echo '<a href="eventDetail.php?event=' . $row['name'] . '" class="btn btn-info btn-sm" style="margin-top: 20%; width:70px">Detail</a>';
+                    echo '<a href="../php/deleteevent.php?event=' . $row['name'] . '&venue=' . $row['venue'] . '" class="btn btn-danger btn-sm" style="margin-top: 20%; width:70px">Delete</a>';
+                    echo '</div>';
+                    echo '</li>';
+
+                }
+                if ($count == 0) {
+                    echo '<li class="list-group-item"><h6>You have not organized any event.</h6></li>';
+                }
+                ?>
+            </ul>
+            <div class="card-block">
+                <a href="myevent.php" class="btn btn-primary">See More</a>
+                <a href="myprofile.php" class="btn btn-primary">Go to My Profile</a>
+            </div>
+        </div>
+
+        <!--        My Favourite Event Card-->
+        <div class="card">
+            <div class="card-header">
+                <h4>My Favourite Events</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+                <?php
+                $userid = $_SESSION['login_userid'];
+                $query = "SELECT * FROM Events, UserEvent UE WHERE UE.userid='$userid' and id = UE.eventid";
+                $result = $conn->query($query);
+                if (!$result) die($conn->error);
+                $count = 0;
+                foreach ($result as $row) {
+                    $count++;
+                    $eventstart = $row['start'];
+                    $eventend = $row['end'];
+                    echo '<li class="list-group-item row">';
+                    echo '<div class="col-md-2">';
+                    echo '<img width="100%" src="' . $row['logo'] . '" style="margin-top:20%">';
+                    echo '</div>';
+                    echo '<div class="col-md-8">';
+                    echo '<h6>' . $row['name'] . '</h6>';
+                    echo 'From: ' .
+                        substr($eventstart, 8, 2) . '/' .
+                        substr($eventstart, 5, 2) . '/' .
+                        substr($eventstart, 0, 4) . '  ' .
+                        substr($eventstart, 11, 5);
+                    echo '<br>';
+                    echo 'To: ' .
+                        substr($eventend, 8, 2) . '/' .
+                        substr($eventend, 5, 2) . '/' .
+                        substr($eventend, 0, 4) . '  ' .
+                        substr($eventend, 11, 5);
+                    echo '</div>';
+                    echo '<div class="col-md-2" >';
+                    echo '<a href="eventDetail.php?event=' . $row['name'] . '" class="btn btn-info btn-sm" style="margin-top: 20%; width:70px"> Detail </a>';
+                    echo '<a href="../php/unlikeevent.php?eid=' . $row['id'] . '&uid=' . $userid . '" class="btn btn-danger btn-sm" style="margin-top: 20%; width:70px">Unlike</a>';
+                    echo '</div>';
+                    echo '</li>';
+
+                }
+                if ($count == 0) {
+                    echo '<li class="list-group-item"><h6>You have not liked any event.</h6></li>';
+                }
+                ?>
+            </ul>
+            <div class="card-block">
+                <a href="myevent.php" class="btn btn-primary">See More</a>
+                <a href="myprofile.php" class="btn btn-primary">Go to My Profile</a>
+            </div>
         </div>
     </div>
 
 </div>
+
+
+<section class="rowfooter breath container-fluid" style="padding: 0px">
+    <div class="row">
+        <div class="col-md-12"
+             style="background-color: #adadad; color:black; text-align: center; height: 60px">
+            <p><br>© 2016 Dream Builders. All Rights Reserved</p>
+        </div>
+    </div>
+</section>
 <script type="text/javascript" src="../js/loginform.js"></script>
 <script src="../js/dropdownbtn.js"></script>
 </body>

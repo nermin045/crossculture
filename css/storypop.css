@@ -1,5 +1,5 @@
 .back{
-    background-color: #8a8a8a;
+    /*background-color: #8a8a8a;*/
 }
 
 .blur-out {
@@ -12,9 +12,14 @@
 }
 
 .blur-in {
-    -webkit-filter: blur(8px);
+    -webkit-filter: blur(0.1px);
     opacity: 1;
 }
+
+.op{
+    opacity: 0.2;
+}
+
 
 
 .hide {
@@ -190,8 +195,8 @@
     max-width: 650px;
     max-height: 600px;
     width: 100%;
-    border: 5px solid #5e5e5e;
-    border-radius: 40px;
+    /*border: 5px solid #5e5e5e;*/
+    border-radius: 10px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     margin-left: -160px;

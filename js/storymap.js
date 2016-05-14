@@ -133,7 +133,8 @@ function load(culture) {
             //document.write(type);
 
 
-            var popupdiv = '<div id="popupdiv" style="text-align: center; margin-top: 7px;">'+
+            var popupdiv =  '<div><img onclick="closepop();" src="../images/close_btn.jpeg" height="20px" style="float: right; margin-top: 2px; margin-right: 2px;"></div>' +
+                '<div id="popupdiv" style="text-align: center; margin-top: 7px;">'+
                 '<h2>'+title+'</h2></div>'+
                 '<div style="text-align: center"><b>'+cultur+' Story</b></div>'+
                 '<div style="text-align: center"><b>Posted by: '+uname+'</b></div>'+
@@ -211,7 +212,7 @@ function load(culture) {
     function bindPopup(marker,map,popupdiv,point) {
         google.maps.event.addListener(marker, 'click', function(){
             story('show',popupdiv);
-            map.setCenter(point);
+            //map.setCenter(point);
             // window.document.write(popupdiv);
         })
         google.maps.event.addListener(map, 'click', function(){
@@ -286,4 +287,9 @@ SidebarItem.prototype.remove = function(){
     if(!this.div) return false;
     this.div.removeChild(this.button);
     return true;
+}
+
+function closepop() {
+    story('hide');
+
 }

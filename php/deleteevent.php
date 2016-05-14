@@ -27,5 +27,9 @@ if (!$result) die($conn->error);
 $query = "Delete FROM Venues WHERE id = '$venue'";
 $result = $conn->query($query);
 if (!$result) die($conn->error);
-header('Location: ../pages/myevent.php');
+if(isset($_SERVER['HTTP_REFERER'])) {
+    header('Location: '.$_SERVER['HTTP_REFERER']);
+} else {
+    header("Location: ../index.php");
+}
 ?>

@@ -11,6 +11,7 @@ function story(showhide,html){
         document.getElementById('popupdiv').innerHTML = html;
     }else if(showhide == "hide"){
         $('.pop-up').addClass('blur-out');
+        // $('#back').removeClass('op');
         $('#back').removeClass('blur-in');
         // e.stopPropagation();
         document.getElementById('popupdiv').style.visibility="hidden";
